@@ -19,5 +19,26 @@
     "name_vi": "Bình Dương",
     "name_ko": "빈즈엉",
     "region": "South"
+  },
+  {
+    "id": 4,
+    "name_en": "Ba Ria - Vung Tau",
+    "name_vi": "Bà Rịa - Vũng Tàu",
+    "name_ko": "바리아붕따우",
+    "region": "South"
+  },
+  {
+    "id": 5,
+    "name_en": "Dong Nai",
+    "name_vi": "Đồng Nai",
+    "name_ko": "동나이",
+    "region": "South"
+  },
+  {
+    "id": 6,
+    "name_en": "Binh Dinh",
+    "name_vi": "Bình Định",
+    "name_ko": "빈딘",
+    "region": "Central"
   }
 ]

@@ -42,5 +42,9 @@
   {"id": 39, "city_id": 3, "name_en": "Thuan An", "name_vi": "Thuận An", "district_type": "urban"},
   {"id": 40, "city_id": 3, "name_en": "Ben Cat", "name_vi": "Bến Cát", "district_type": "suburban"},
   {"id": 41, "city_id": 3, "name_en": "Tan Uyen", "name_vi": "Tân Uyên", "district_type": "suburban"},
-  {"id": 42, "city_id": 3, "name_en": "Bau Bang", "name_vi": "Bàu Bàng", "district_type": "suburban"}
+  {"id": 42, "city_id": 3, "name_en": "Bau Bang", "name_vi": "Bàu Bàng", "district_type": "suburban"},
+
+  {"id": 43, "city_id": 4, "name_en": "Vung Tau", "name_vi": "Vũng Tàu", "district_type": "urban"},
+  {"id": 44, "city_id": 5, "name_en": "Nhon Trach", "name_vi": "Nhơn Trạch", "district_type": "suburban"},
+  {"id": 45, "city_id": 6, "name_en": "Quy Nhon", "name_vi": "Quy Nhơn", "district_type": "urban"}
 ]

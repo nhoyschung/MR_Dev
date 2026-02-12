@@ -26,6 +26,12 @@ _CITY_ALIASES: dict[str, str] = {
     "ha noi": "hanoi",
     "binh duong": "binh duong",
     "bd": "binh duong",
+    "vung tau": "ba ria - vung tau",
+    "brvt": "ba ria - vung tau",
+    "dong nai": "dong nai",
+    "nhon trach": "dong nai",
+    "binh dinh": "binh dinh",
+    "quy nhon": "binh dinh",
 }
 
 
@@ -236,3 +242,152 @@ def avg_price_by_district(
         .order_by(func.avg(PriceRecord.price_usd_per_m2).desc())
     )
     return list(session.execute(stmt).all())
+
+
+# ---------------------------------------------------------------------------
+# Price trend analysis
+# ---------------------------------------------------------------------------
+
+def get_city_price_trend(
+    session: Session, city_name: str,
+) -> list[tuple[int, str, float, int]]:
+    """Average price per period for a city.
+
+    Returns list of (year, half, avg_price_usd, project_count) ordered chronologically.
+    """
+    resolved = resolve_city_name(city_name)
+    stmt = (
+        select(
+            ReportPeriod.year,
+            ReportPeriod.half,
+            func.avg(PriceRecord.price_usd_per_m2),
+            func.count(PriceRecord.id),
+        )
+        .join(PriceRecord, ReportPeriod.id == PriceRecord.period_id)
+        .join(Project, PriceRecord.project_id == Project.id)
+        .join(District, Project.district_id == District.id)
+        .join(City, District.city_id == City.id)
+        .where(
+            func.lower(City.name_en) == resolved,
+            PriceRecord.price_usd_per_m2.isnot(None),
+        )
+        .group_by(ReportPeriod.year, ReportPeriod.half)
+        .order_by(ReportPeriod.year, ReportPeriod.half)
+    )
+    return list(session.execute(stmt).all())
+
+
+def get_grade_price_summary(
+    session: Session, city_id: int, year: int, half: str,
+) -> list[tuple[str, float, float, float, int]]:
+    """Price stats per grade for a city/period.
+
+    Returns list of (grade_code, avg_price, min_price, max_price, count)
+    ordered by avg_price desc.
+    """
+    stmt = (
+        select(
+            Project.grade_primary,
+            func.avg(PriceRecord.price_usd_per_m2),
+            func.min(PriceRecord.price_usd_per_m2),
+            func.max(PriceRecord.price_usd_per_m2),
+            func.count(PriceRecord.id),
+        )
+        .join(PriceRecord, Project.id == PriceRecord.project_id)
+        .join(ReportPeriod, PriceRecord.period_id == ReportPeriod.id)
+        .join(District, Project.district_id == District.id)
+        .where(
+            District.city_id == city_id,
+            ReportPeriod.year == year,
+            ReportPeriod.half == half,
+            PriceRecord.price_usd_per_m2.isnot(None),
+            Project.grade_primary.isnot(None),
+        )
+        .group_by(Project.grade_primary)
+        .order_by(func.avg(PriceRecord.price_usd_per_m2).desc())
+    )
+    return list(session.execute(stmt).all())
+
+
+def get_project_price_changes(
+    session: Session, city_id: int,
+) -> list[dict]:
+    """Find projects with prices in multiple periods to show trends.
+
+    Returns list of dicts with project_name, periods with prices, and changes.
+    """
+    # Get all prices for city projects, ordered by project and time
+    stmt = (
+        select(
+            Project.name,
+            ReportPeriod.year,
+            ReportPeriod.half,
+            PriceRecord.price_usd_per_m2,
+        )
+        .join(PriceRecord, Project.id == PriceRecord.project_id)
+        .join(ReportPeriod, PriceRecord.period_id == ReportPeriod.id)
+        .join(District, Project.district_id == District.id)
+        .where(
+            District.city_id == city_id,
+            PriceRecord.price_usd_per_m2.isnot(None),
+        )
+        .order_by(Project.name, ReportPeriod.year, ReportPeriod.half)
+    )
+    rows = session.execute(stmt).all()
+
+    # Group by project
+    projects: dict[str, list] = {}
+    for name, year, half, price in rows:
+        projects.setdefault(name, []).append({
+            "period": f"{year}-{half}",
+            "price": price,
+        })
+
+    # Only return projects with 2+ periods
+    results = []
+    for name, prices in projects.items():
+        if len(prices) < 2:
+            continue
+        first = prices[0]["price"]
+        last = prices[-1]["price"]
+        change_pct = ((last - first) / first) * 100 if first else 0
+        results.append({
+            "project_name": name,
+            "first_price": first,
+            "last_price": last,
+            "change_pct": change_pct,
+            "periods": prices,
+        })
+
+    return sorted(results, key=lambda x: abs(x["change_pct"]), reverse=True)
+
+
+def get_price_range_by_city(
+    session: Session, city_name: str, year: int, half: str,
+) -> Optional[tuple[float, float, float]]:
+    """Get min, avg, max price for a city in a period.
+
+    Returns (min_price, avg_price, max_price) or None if no data.
+    """
+    resolved = resolve_city_name(city_name)
+    stmt = (
+        select(
+            func.min(PriceRecord.price_usd_per_m2),
+            func.avg(PriceRecord.price_usd_per_m2),
+            func.max(PriceRecord.price_usd_per_m2),
+        )
+        .join(Project, PriceRecord.project_id == Project.id)
+        .join(District, Project.district_id == District.id)
+        .join(City, District.city_id == City.id)
+        .join(ReportPeriod, PriceRecord.period_id == ReportPeriod.id)
+        .where(
+            func.lower(City.name_en) == resolved,
+            ReportPeriod.year == year,
+            ReportPeriod.half == half,
+            PriceRecord.price_usd_per_m2.isnot(None),
+        )
+    )
+    row = session.execute(stmt).one_or_none()
+    if row and row[0] is not None:
+        return (row[0], row[1], row[2])
+    return None

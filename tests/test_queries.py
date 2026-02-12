@@ -11,7 +11,8 @@ from src.db.queries import (
     get_period, list_projects_by_city, list_projects_by_grade,
     list_projects_by_developer, get_latest_price, get_price_history,
     get_grade_for_price, count_projects_by_city, avg_price_by_district,
-    resolve_city_name,
+    resolve_city_name, get_city_price_trend, get_grade_price_summary,
+    get_project_price_changes, get_price_range_by_city,
 )
 from src.seeders.city_seeder import CitySeeder
 from src.seeders.grade_seeder import GradeSeeder
@@ -168,3 +169,50 @@ class TestAggregations:
         assert len(avgs) > 0
         for district_name, avg_price in avgs:
             assert avg_price > 0
+
+
+class TestPriceTrends:
+    def test_city_price_trend(self, session):
+        trend = get_city_price_trend(session, "HCMC")
+        assert len(trend) >= 1
+        year, half, avg_price, count = trend[0]
+        assert year == 2024
+        assert half == "H1"
+        assert avg_price > 0
+        assert count > 0
+
+    def test_city_price_trend_alias(self, session):
+        trend = get_city_price_trend(session, "Saigon")
+        assert len(trend) >= 1
+
+    def test_city_price_trend_no_data(self, session):
+        trend = get_city_price_trend(session, "Nonexistent")
+        assert trend == []
+
+    def test_grade_price_summary(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        summary = get_grade_price_summary(session, hcmc.id, 2024, "H1")
+        assert len(summary) > 0
+        for grade, avg_p, min_p, max_p, cnt in summary:
+            assert grade is not None
+            assert avg_p > 0
+            assert min_p <= avg_p <= max_p
+            assert cnt > 0
+
+    def test_project_price_changes_single_period(self, session):
+        """With only one period, no projects should have changes."""
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        changes = get_project_price_changes(session, hcmc.id)
+        # Single period = no multi-period projects
+        assert isinstance(changes, list)
+
+    def test_price_range_by_city(self, session):
+        result = get_price_range_by_city(session, "HCMC", 2024, "H1")
+        assert result is not None
+        min_p, avg_p, max_p = result
+        assert min_p > 0
+        assert min_p <= avg_p <= max_p
+
+    def test_price_range_no_data(self, session):
+        result = get_price_range_by_city(session, "HCMC", 2099, "H1")
+        assert result is None

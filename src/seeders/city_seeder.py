@@ -31,6 +31,13 @@ class DistrictSchema(BaseModel):
     district_type: Optional[str] = None
 
 
+class WardSchema(BaseModel):
+    id: int
+    district_id: int
+    name_en: str
+    name_vi: Optional[str] = None
+
+
 class CitySeeder(BaseSeeder):
     """Seeds cities, districts, and wards."""
 
@@ -41,6 +48,11 @@ class CitySeeder(BaseSeeder):
         districts = self.load_json("districts.json")
         for d in districts:
             DistrictSchema(**d)
+        wards_file = self.seed_dir / "wards.json"
+        if wards_file.exists():
+            wards = self.load_json("wards.json")
+            for w in wards:
+                WardSchema(**w)
         return True
 
     def seed(self) -> int:
@@ -75,6 +87,21 @@ class CitySeeder(BaseSeeder):
             )
             if created:
                 count += 1
+
+        # Seed wards if file exists
+        wards_file = self.seed_dir / "wards.json"
+        if wards_file.exists():
+            wards = self.load_json("wards.json")
+            for w_data in wards:
+                validated = WardSchema(**w_data)
+                _, created = self._get_or_create(
+                    Ward,
+                    name_en=validated.name_en,
+                    district_id=validated.district_id,
+                    defaults={"name_vi": validated.name_vi},
+                )
+                if created:
+                    count += 1
 
         self.session.commit()
         return count
