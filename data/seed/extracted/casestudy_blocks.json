@@ -1,0 +1,431 @@
+[
+  {
+    "project_name": "AVA CENTER",
+    "block_name": "B",
+    "floors": 6,
+    "floor_functions": [
+      "1-6F: Commercial"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "AVA CENTER",
+    "block_name": "A",
+    "floors": 40,
+    "floor_functions": [
+      "1F: Shophouse",
+      "2F: Shophouse + Officetel",
+      "3F: Offictel + Facilities",
+      "4-40F: Officetel + Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "block_name": "2",
+    "floors": null,
+    "floor_functions": [
+      "1-6F: retail (mall) , co-working space",
+      "7-24F: officetel (202 units) –25F: Facilities"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "block_name": "T1",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "block_name": "T2",
+    "floors": null,
+    "floor_functions": [
+      "1-5F: retail podium",
+      "6-24F: office"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "block_name": "T3",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "block_name": "2",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "block_name": "1",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "block_name": "National Housing Organization JSC",
+    "floors": null,
+    "floor_functions": [
+      "2F: Shophouse",
+      "3-4F: Office",
+      "6-19F: Apartment",
+      "1-5F: Commercial"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "block_name": "A",
+    "floors": 1,
+    "floor_functions": [
+      "2-3F: Apt + Retail",
+      "4F: Apt + Facilites",
+      "5-30F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "block_name": "B",
+    "floors": 1,
+    "floor_functions": [
+      "2-3F: Apt + Retail",
+      "4F: Apt + Facilites",
+      "5-30F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "block_name": "1",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": [
+      "1-2F: Mall",
+      "3-29F: Office"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TIEN BO PLAZA",
+    "block_name": "SERVICED",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 14,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "block_name": "TOCHI",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "block_name": "MIZU",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "block_name": "A",
+    "floors": 25,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "block_name": "B",
+    "floors": 25,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "block_name": "C",
+    "floors": 25,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "block_name": "D",
+    "floors": 25,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "block_name": "E",
+    "floors": 5,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "block_name": "Pedestrian way",
+    "floors": null,
+    "floor_functions": [
+      "1F: Shophouse",
+      "2-3F: Shophouse + Office",
+      "4F: Facilities + Office",
+      "5-12F: Officetel (Sold out)",
+      "13-25F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BRG DIAMOND PARK PLAZA",
+    "block_name": "O",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 23,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BRG DIAMOND PARK PLAZA",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 23,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BRG DIAMOND PARK PLAZA",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": null,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 23,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HARMONY SQUARE",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": [
+      "1-4F: SH + Facilities",
+      "5-32F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 25,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HARMONY SQUARE",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": [
+      "1-4F: SH + Facilities",
+      "5-32F: Office"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 25,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": [
+      "1-3F: Mall",
+      "9-27F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": [
+      "1-3F: Mall",
+      "9-27F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "block_name": "A",
+    "floors": null,
+    "floor_functions": [
+      "1-2F: Office (Rumor)",
+      "3-4F: Commercial + Facility",
+      "5-16F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "block_name": "B",
+    "floors": null,
+    "floor_functions": [
+      "1-2F: Office (Rumor)",
+      "3-4F: Commercial + Facility",
+      "5-16F: Apt"
+    ],
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.85
+    }
+  }
+]

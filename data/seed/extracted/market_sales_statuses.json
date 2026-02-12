@@ -1,0 +1,240 @@
+[
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "sales_rate_pct": 98.0,
+    "sold_units": 613,
+    "launched_units": 616,
+    "available_units": 3,
+    "sale_description": "Sold 98% (613/616 units) after 8 months\n1USD = 25,300 VND\nSPARK",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "sales_rate_pct": 99.0,
+    "sold_units": 815,
+    "launched_units": 824,
+    "available_units": 9,
+    "sale_description": "Sold 99% (815/824 units) in 5 months\nRemark\nSold 96% (793/824 units) within 1 day",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "sales_rate_pct": 97.0,
+    "sold_units": 809,
+    "launched_units": 836,
+    "available_units": 27,
+    "sale_description": "Sold 97% (809/836 units) \n3 weeks\nBooking",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EATON PARK",
+    "city": "Ho Chi Minh City",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out \nSold out \nSold 90%",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 145,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out\nTH &SH Villa: Sold out\nVilla: Sold 5/27 units",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "STARLAKE CITY – (P5) THE PRIME K8",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold 100% apt block \n(284/284 units) in 1d\nPlanning",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 130,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE NELSON PRIVATE RESIDENCES",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out (175/175 units) in 2 months\nRemark\nPackage reserved for foreigners (63 units)",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 150,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLORIA BY SILK PATH",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out in 2024\n1USD = 25,300 VND\nNational Housing Organization JSC",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 164,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out (within 4 months)\n01 PROJECT SUMMARY\nNational Housing Organization JSC",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHSC– IMPERIA SMART CITY –",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out \nTower V1\n(SPRING)",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 303,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out (2,184/2,184 in 1 month)\nTower M1\n(MAYFAIR)",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out (1,731/1,731) in 4 months\n01 PROJECT SUMMARY\nNational Housing Organization JSC",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 354,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out (2,477/2,477) in 9 months\nRemark\n(P1) The Liberty (L1): 11/2024",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out after 7M\nRemark\nPR2 sold 50% (240/481 units) in 2H",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "60% sold out (180 units) in launching day\nSold 90% (270/300 released units in 1 month\n14-38F: Apt units",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out\nSold out Gio Dong 1,\nBooking Gio Dong 2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LA PURA",
+    "city": "Binh Duong",
+    "sales_rate_pct": 100.0,
+    "sold_units": null,
+    "launched_units": null,
+    "available_units": null,
+    "sale_description": "Sold out 95% (950/ 1,000) on launching day\nRemark\n6,201 bookings before launching",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 107,
+      "confidence": 0.85
+    }
+  }
+]

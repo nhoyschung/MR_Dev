@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Database (generated)
+data/mr_system.db
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+nul
+
+# Claude Code (user-local, not project-specific)
+.claude/skills/
+.claude/settings.local.json
+
+# User resources - PDFs (too large for git)
+user_resources/**/*.pdf
+
+# Extracted text files (regenerable from PDFs)
+user_resources/**/extracted/

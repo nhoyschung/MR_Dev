@@ -1,0 +1,266 @@
+[
+  {
+    "project_name": "AVA CENTER",
+    "type_name": "Shophouse",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "AVA CENTER",
+    "type_name": "Officetel",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 4.0,
+    "gross_area_m2": 3.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "type_name": "Shophouse",
+    "area_min": 2.0,
+    "area_max": 3.0,
+    "gross_area_m2": 2.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "type_name": "SA",
+    "area_min": 100.0,
+    "area_max": 100.0,
+    "gross_area_m2": 100.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "type_name": "Officetel",
+    "area_min": 1501.0,
+    "area_max": 1501.0,
+    "gross_area_m2": 1501.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 4.0,
+    "gross_area_m2": 3.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "type_name": "Shophouse",
+    "area_min": 7.0,
+    "area_max": 12.0,
+    "gross_area_m2": 9.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "type_name": "Officetel",
+    "area_min": 13.0,
+    "area_max": 14.0,
+    "gross_area_m2": 13.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "type_name": "Officetel",
+    "area_min": 9.0,
+    "area_max": 9.0,
+    "gross_area_m2": 9.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "type_name": "Officetel",
+    "area_min": 21017.0,
+    "area_max": 21017.0,
+    "gross_area_m2": 21017.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 4.0,
+    "gross_area_m2": 3.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "type_name": "Officetel",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "type_name": "Officetel",
+    "area_min": 12.0,
+    "area_max": 12.0,
+    "gross_area_m2": 12.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "type_name": "Shophouse",
+    "area_min": 2.0,
+    "area_max": 3.0,
+    "gross_area_m2": 2.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "type_name": "Shophouse",
+    "area_min": 2.0,
+    "area_max": 4.0,
+    "gross_area_m2": 3.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 6.0,
+    "gross_area_m2": 4.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "type_name": "Condotel",
+    "area_min": 65.0,
+    "area_max": 65.0,
+    "gross_area_m2": 65.0,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "type_name": "Condotel",
+    "area_min": 39.0,
+    "area_max": 40.0,
+    "gross_area_m2": 39.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "type_name": "duplex",
+    "area_min": 26.0,
+    "area_max": 27.0,
+    "gross_area_m2": 26.5,
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.8
+    }
+  }
+]

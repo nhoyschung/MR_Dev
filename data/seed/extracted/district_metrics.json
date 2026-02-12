@@ -1,0 +1,24 @@
+[
+  {
+    "city": "Ho Chi Minh City",
+    "metric_type": "avg_price_change_pct",
+    "value_numeric": 1.22,
+    "value_text": "Average secondary price increase rate",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.9
+    }
+  },
+  {
+    "city": "Da Nang",
+    "metric_type": "avg_price",
+    "value_numeric": 2461.0,
+    "value_text": "Average secondary price USD/m2",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.85
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {"city_id": 1, "grade_code": "SL", "min_price_usd": 12000, "max_price_usd": 999999, "segment": "super-luxury", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "L", "min_price_usd": 5000, "max_price_usd": 12000, "segment": "luxury", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "H-I", "min_price_usd": 4000, "max_price_usd": 5000, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "H-II", "min_price_usd": 2500, "max_price_usd": 4000, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "M-I", "min_price_usd": 2000, "max_price_usd": 2500, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "M-II", "min_price_usd": 1500, "max_price_usd": 2000, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "M-III", "min_price_usd": 1200, "max_price_usd": 1500, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "A-I", "min_price_usd": 900, "max_price_usd": 1200, "segment": "affordable", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 1, "grade_code": "A-II", "min_price_usd": 0, "max_price_usd": 900, "segment": "affordable", "period_year": 2024, "period_half": "H1"},
+
+  {"city_id": 2, "grade_code": "L", "min_price_usd": 5000, "max_price_usd": 12000, "segment": "luxury", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 2, "grade_code": "H-I", "min_price_usd": 4000, "max_price_usd": 5000, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 2, "grade_code": "H-II", "min_price_usd": 2500, "max_price_usd": 4000, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 2, "grade_code": "M", "min_price_usd": 1500, "max_price_usd": 2500, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 2, "grade_code": "A", "min_price_usd": 0, "max_price_usd": 1500, "segment": "affordable", "period_year": 2024, "period_half": "H1"},
+
+  {"city_id": 3, "grade_code": "H-I", "min_price_usd": 3000, "max_price_usd": 999999, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 3, "grade_code": "H-II", "min_price_usd": 2000, "max_price_usd": 3000, "segment": "high-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 3, "grade_code": "M-I", "min_price_usd": 1600, "max_price_usd": 2000, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 3, "grade_code": "M-II", "min_price_usd": 1200, "max_price_usd": 1600, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 3, "grade_code": "M-III", "min_price_usd": 1000, "max_price_usd": 1200, "segment": "mid-end", "period_year": 2024, "period_half": "H1"},
+  {"city_id": 3, "grade_code": "A", "min_price_usd": 0, "max_price_usd": 1000, "segment": "affordable", "period_year": 2024, "period_half": "H1"}
+]

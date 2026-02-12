@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name_en": "Ho Chi Minh City",
+    "name_vi": "Thành phố Hồ Chí Minh",
+    "name_ko": "호치민시",
+    "region": "South"
+  },
+  {
+    "id": 2,
+    "name_en": "Hanoi",
+    "name_vi": "Hà Nội",
+    "name_ko": "하노이",
+    "region": "North"
+  },
+  {
+    "id": 3,
+    "name_en": "Binh Duong",
+    "name_vi": "Bình Dương",
+    "name_ko": "빈즈엉",
+    "region": "South"
+  }
+]

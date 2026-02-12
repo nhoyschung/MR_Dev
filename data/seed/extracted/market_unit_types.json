@@ -1,0 +1,6246 @@
+[
+  {
+    "project_name": "II. ON-SALES PROJECTS",
+    "city": "Ho Chi Minh City",
+    "type_name": "SHOPHOUSE",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 22,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 56.6,
+    "area_max": 61.0,
+    "gross_area_m2": 58.8,
+    "typical_layout_description": "56.6-61.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 76.8,
+    "area_max": 84.4,
+    "gross_area_m2": 80.6,
+    "typical_layout_description": "76.8-84.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 113.5,
+    "area_max": 143.7,
+    "gross_area_m2": 128.6,
+    "typical_layout_description": "113.5-143.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 136.6,
+    "area_max": 180.8,
+    "gross_area_m2": 158.7,
+    "typical_layout_description": "136.6-180.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH DL",
+    "area_min": 143.9,
+    "area_max": 372.2,
+    "gross_area_m2": 258.1,
+    "typical_layout_description": "143.9-372.2m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 96.2,
+    "area_max": 246.8,
+    "gross_area_m2": 171.5,
+    "typical_layout_description": "96.2-246.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 47.4,
+    "area_max": 48.4,
+    "gross_area_m2": 47.9,
+    "typical_layout_description": "47.4-48.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 65.5,
+    "area_max": 80.8,
+    "gross_area_m2": 73.2,
+    "typical_layout_description": "65.5-80.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 89.7,
+    "area_max": 129.8,
+    "gross_area_m2": 109.8,
+    "typical_layout_description": "89.7-129.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 109.4,
+    "area_max": 151.6,
+    "gross_area_m2": 130.5,
+    "typical_layout_description": "109.4-151.6m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 161.0,
+    "area_max": 225.4,
+    "gross_area_m2": 193.2,
+    "typical_layout_description": "161.0-225.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "DL",
+    "area_min": 146.7,
+    "area_max": 250.0,
+    "gross_area_m2": 198.3,
+    "typical_layout_description": "146.7-250.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH DL",
+    "area_min": 238.0,
+    "area_max": 325.7,
+    "gross_area_m2": 281.9,
+    "typical_layout_description": "238.0-325.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 51.9,
+    "area_max": 54.8,
+    "gross_area_m2": 53.3,
+    "typical_layout_description": "51.9-54.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 77.5,
+    "area_max": 80.5,
+    "gross_area_m2": 79.0,
+    "typical_layout_description": "77.5-80.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2.5BR",
+    "area_min": 76.8,
+    "area_max": 76.8,
+    "gross_area_m2": 76.8,
+    "typical_layout_description": "76.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 98.4,
+    "area_max": 110.0,
+    "gross_area_m2": 104.2,
+    "typical_layout_description": "98.4-110.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 128.5,
+    "area_max": 153.3,
+    "gross_area_m2": 140.9,
+    "typical_layout_description": "128.5-153.3m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "DL",
+    "area_min": 75.9,
+    "area_max": 128.9,
+    "gross_area_m2": 102.4,
+    "typical_layout_description": "75.9-128.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 51.0,
+    "area_max": 55.8,
+    "gross_area_m2": 53.4,
+    "typical_layout_description": "51.0-55.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 71.7,
+    "area_max": 80.0,
+    "gross_area_m2": 75.8,
+    "typical_layout_description": "71.7-80.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 103.7,
+    "area_max": 104.8,
+    "gross_area_m2": 104.2,
+    "typical_layout_description": "103.7-104.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 207.7,
+    "area_max": 223.4,
+    "gross_area_m2": 215.6,
+    "typical_layout_description": "207.7-223.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "Studio",
+    "area_min": 49.14,
+    "area_max": 49.14,
+    "gross_area_m2": 49.1,
+    "typical_layout_description": "49.14m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 71.0,
+    "area_max": 85.06,
+    "gross_area_m2": 78.0,
+    "typical_layout_description": "71.0-85.06m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 95.01,
+    "area_max": 94.93,
+    "gross_area_m2": 95.0,
+    "typical_layout_description": "95.01-94.93m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "DL",
+    "area_min": 107.78,
+    "area_max": 151.19,
+    "gross_area_m2": 129.5,
+    "typical_layout_description": "107.78-151.19m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 32.0,
+    "area_max": 32.0,
+    "gross_area_m2": 32.0,
+    "typical_layout_description": "32.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 27,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 90.44,
+    "area_max": 90.44,
+    "gross_area_m2": 90.4,
+    "typical_layout_description": "90.44m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 115.4,
+    "area_max": 135.28,
+    "gross_area_m2": 125.3,
+    "typical_layout_description": "115.4-135.28m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 191.43,
+    "area_max": 236.7,
+    "gross_area_m2": 214.1,
+    "typical_layout_description": "191.43-236.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 134.69,
+    "area_max": 242.69,
+    "gross_area_m2": 188.7,
+    "typical_layout_description": "134.69-242.69m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 59.0,
+    "area_max": 79.37,
+    "gross_area_m2": 69.2,
+    "typical_layout_description": "59.0-79.37m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 96.95,
+    "area_max": 105.9,
+    "gross_area_m2": 101.4,
+    "typical_layout_description": "96.95-105.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 145.4,
+    "area_max": 180.12,
+    "gross_area_m2": 162.8,
+    "typical_layout_description": "145.4-180.12m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 118.37,
+    "area_max": 134.34,
+    "gross_area_m2": 126.4,
+    "typical_layout_description": "118.37-134.34m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 118.37,
+    "area_max": 123.9,
+    "gross_area_m2": 121.1,
+    "typical_layout_description": "118.37-123.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 136.76,
+    "area_max": 191.77,
+    "gross_area_m2": 164.3,
+    "typical_layout_description": "136.76-191.77m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "1.5BR",
+    "area_min": 69.46,
+    "area_max": 70.67,
+    "gross_area_m2": 70.1,
+    "typical_layout_description": "69.46-70.67m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 102.19,
+    "area_max": 104.5,
+    "gross_area_m2": 103.3,
+    "typical_layout_description": "102.19-104.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 137.52,
+    "area_max": 173.8,
+    "gross_area_m2": 155.7,
+    "typical_layout_description": "137.52-173.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 70.67,
+    "area_max": 373.98,
+    "gross_area_m2": 222.3,
+    "typical_layout_description": "70.67-373.98m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "typical_layout_description": "10.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 40,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT RATIO",
+    "city": "Ho Chi Minh City",
+    "type_name": "DUPLEX",
+    "area_min": 400.0,
+    "area_max": 400.0,
+    "gross_area_m2": 400.0,
+    "typical_layout_description": "400.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 41,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 56.6,
+    "area_max": 61.0,
+    "gross_area_m2": 58.8,
+    "typical_layout_description": "56.6-61.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 76.8,
+    "area_max": 84.4,
+    "gross_area_m2": 80.6,
+    "typical_layout_description": "76.8-84.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 113.5,
+    "area_max": 143.7,
+    "gross_area_m2": 128.6,
+    "typical_layout_description": "113.5-143.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 136.6,
+    "area_max": 180.8,
+    "gross_area_m2": 158.7,
+    "typical_layout_description": "136.6-180.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "duplex",
+    "area_min": 143.9,
+    "area_max": 372.2,
+    "gross_area_m2": 258.1,
+    "typical_layout_description": "143.9-372.2m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 96.2,
+    "area_max": 246.8,
+    "gross_area_m2": 171.5,
+    "typical_layout_description": "96.2-246.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 3.0,
+    "area_max": 4.0,
+    "gross_area_m2": 3.5,
+    "typical_layout_description": "3.0-4.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 50,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Studio",
+    "area_min": 17.0,
+    "area_max": 17.0,
+    "gross_area_m2": 17.0,
+    "typical_layout_description": "17.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 55,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 47.4,
+    "area_max": 48.4,
+    "gross_area_m2": 47.9,
+    "typical_layout_description": "47.4-48.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 65.5,
+    "area_max": 80.8,
+    "gross_area_m2": 73.2,
+    "typical_layout_description": "65.5-80.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 89.7,
+    "area_max": 129.8,
+    "gross_area_m2": 109.8,
+    "typical_layout_description": "89.7-129.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 109.4,
+    "area_max": 151.6,
+    "gross_area_m2": 130.5,
+    "typical_layout_description": "109.4-151.6m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 161.0,
+    "area_max": 225.4,
+    "gross_area_m2": 193.2,
+    "typical_layout_description": "161.0-225.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "Duplex",
+    "area_min": 146.7,
+    "area_max": 250.0,
+    "gross_area_m2": 198.3,
+    "typical_layout_description": "146.7-250.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLOBAL CITY –",
+    "city": "Ho Chi Minh City",
+    "type_name": "duplex",
+    "area_min": 238.0,
+    "area_max": 325.7,
+    "gross_area_m2": 281.9,
+    "typical_layout_description": "238.0-325.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 64,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 191.5,
+    "area_max": 191.5,
+    "gross_area_m2": 191.5,
+    "typical_layout_description": "191.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 93,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 213.1,
+    "area_max": 213.1,
+    "gross_area_m2": 213.1,
+    "typical_layout_description": "213.1m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 94,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 225.4,
+    "area_max": 225.4,
+    "gross_area_m2": 225.4,
+    "typical_layout_description": "225.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 215.0,
+    "area_max": 215.0,
+    "gross_area_m2": 215.0,
+    "typical_layout_description": "215.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 96,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 199.0,
+    "area_max": 199.0,
+    "gross_area_m2": 199.0,
+    "typical_layout_description": "199.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 97,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 219.1,
+    "area_max": 219.1,
+    "gross_area_m2": 219.1,
+    "typical_layout_description": "219.1m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 98,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 51.9,
+    "area_max": 54.8,
+    "gross_area_m2": 53.3,
+    "typical_layout_description": "51.9-54.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 77.5,
+    "area_max": 80.5,
+    "gross_area_m2": 79.0,
+    "typical_layout_description": "77.5-80.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "2.5BR",
+    "area_min": 76.8,
+    "area_max": 76.8,
+    "gross_area_m2": 76.8,
+    "typical_layout_description": "76.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 98.4,
+    "area_max": 110.0,
+    "gross_area_m2": 104.2,
+    "typical_layout_description": "98.4-110.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "4BR",
+    "area_min": 128.5,
+    "area_max": 153.3,
+    "gross_area_m2": 140.9,
+    "typical_layout_description": "128.5-153.3m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BLOCK B2",
+    "city": "Ho Chi Minh City",
+    "type_name": "Duplex",
+    "area_min": 75.9,
+    "area_max": 128.9,
+    "gross_area_m2": 102.4,
+    "typical_layout_description": "75.9-128.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EATON PARK",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 51.0,
+    "area_max": 55.8,
+    "gross_area_m2": 53.4,
+    "typical_layout_description": "51.0-55.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 145,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EATON PARK",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 71.7,
+    "area_max": 80.0,
+    "gross_area_m2": 75.8,
+    "typical_layout_description": "71.7-80.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 145,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EATON PARK",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 103.7,
+    "area_max": 104.8,
+    "gross_area_m2": 104.2,
+    "typical_layout_description": "103.7-104.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 145,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EATON PARK",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 207.7,
+    "area_max": 223.4,
+    "gross_area_m2": 215.6,
+    "typical_layout_description": "207.7-223.4m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 145,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MASTER PLAN & CIRCULATION",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 12.0,
+    "area_max": 12.0,
+    "gross_area_m2": 12.0,
+    "typical_layout_description": "12.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 148,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MASTER PLAN & CIRCULATION",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 72.0,
+    "area_max": 72.0,
+    "gross_area_m2": 72.0,
+    "typical_layout_description": "72.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 148,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 153,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 153,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 153,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 154,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 154,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 154,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 155,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 155,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 156,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 156,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "Duplex",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 156,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 157,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 157,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 157,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "1BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 158,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 158,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 158,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Studio",
+    "area_min": 13.0,
+    "area_max": 13.0,
+    "gross_area_m2": 13.0,
+    "typical_layout_description": "13.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 169,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Ho Chi Minh City",
+    "type_name": "STUDIO",
+    "area_min": 49.8,
+    "area_max": 49.8,
+    "gross_area_m2": 49.8,
+    "typical_layout_description": "49.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MIZUKI PARK – (P11)TRELLIA COVE –",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 59.0,
+    "area_max": 79.37,
+    "gross_area_m2": 69.2,
+    "typical_layout_description": "59.0-79.37m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 187,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MIZUKI PARK – (P11)TRELLIA COVE –",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 96.95,
+    "area_max": 105.93,
+    "gross_area_m2": 101.4,
+    "typical_layout_description": "96.95-105.93m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 187,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE SCULPTURA",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 90.44,
+    "area_max": 90.44,
+    "gross_area_m2": 90.4,
+    "typical_layout_description": "90.44m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE SCULPTURA",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 115.4,
+    "area_max": 135.28,
+    "gross_area_m2": 125.3,
+    "typical_layout_description": "115.4-135.28m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE SCULPTURA",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 191.43,
+    "area_max": 236.7,
+    "gross_area_m2": 214.1,
+    "typical_layout_description": "191.43-236.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE SCULPTURA",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 134.69,
+    "area_max": 242.69,
+    "gross_area_m2": 188.7,
+    "typical_layout_description": "134.69-242.69m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PENTHOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PENTHOUSE",
+    "area_min": 191.43,
+    "area_max": 191.43,
+    "gross_area_m2": 191.4,
+    "typical_layout_description": "191.43m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 219,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PENTHOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PENTHOUSE",
+    "area_min": 231.6,
+    "area_max": 231.6,
+    "gross_area_m2": 231.6,
+    "typical_layout_description": "231.6m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 220,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PENTHOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PENTHOUSE",
+    "area_min": 232.14,
+    "area_max": 232.14,
+    "gross_area_m2": 232.1,
+    "typical_layout_description": "232.14m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 220,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PENTHOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PENTHOUSE",
+    "area_min": 236.7,
+    "area_max": 236.7,
+    "gross_area_m2": 236.7,
+    "typical_layout_description": "236.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 221,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PENTHOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PENTHOUSE",
+    "area_min": 235.9,
+    "area_max": 235.9,
+    "gross_area_m2": 235.9,
+    "typical_layout_description": "235.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 221,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE REGENCY",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 225,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE REGENCY",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 225,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE REGENCY",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 118.37,
+    "area_max": 134.34,
+    "gross_area_m2": 126.4,
+    "typical_layout_description": "118.37-134.34m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 225,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE REGENCY",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 118.37,
+    "area_max": 123.9,
+    "gross_area_m2": 121.1,
+    "typical_layout_description": "118.37-123.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 225,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 7.0,
+    "area_max": 7.0,
+    "gross_area_m2": 7.0,
+    "typical_layout_description": "7.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "1.5BR",
+    "area_min": 69.46,
+    "area_max": 70.67,
+    "gross_area_m2": 70.1,
+    "typical_layout_description": "69.46-70.67m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 102.19,
+    "area_max": 104.5,
+    "gross_area_m2": 103.3,
+    "typical_layout_description": "102.19-104.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 137.52,
+    "area_max": 173.8,
+    "gross_area_m2": 155.7,
+    "typical_layout_description": "137.52-173.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VAN PHUC CITY – (P4) DIAMOND SKY",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 70.67,
+    "area_max": 373.98,
+    "gross_area_m2": 222.3,
+    "typical_layout_description": "70.67-373.98m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 240,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 177.0,
+    "area_max": 177.0,
+    "gross_area_m2": 177.0,
+    "typical_layout_description": "177.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 328.0,
+    "area_max": 328.0,
+    "gross_area_m2": 328.0,
+    "typical_layout_description": "328.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 171.0,
+    "area_max": 171.0,
+    "gross_area_m2": 171.0,
+    "typical_layout_description": "171.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "PH",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 7.0,
+    "area_max": 7.0,
+    "gross_area_m2": 7.0,
+    "typical_layout_description": "7.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 100.0,
+    "area_max": 140.0,
+    "gross_area_m2": 120.0,
+    "typical_layout_description": "100.0-140.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 154.0,
+    "area_max": 207.0,
+    "gross_area_m2": 180.5,
+    "typical_layout_description": "154.0-207.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 161.0,
+    "area_max": 207.0,
+    "gross_area_m2": 184.0,
+    "typical_layout_description": "161.0-207.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "1.5BR",
+    "area_min": 69.46,
+    "area_max": 70.67,
+    "gross_area_m2": 70.1,
+    "typical_layout_description": "69.46-70.67m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "2BR",
+    "area_min": 102.19,
+    "area_max": 104.5,
+    "gross_area_m2": 103.3,
+    "typical_layout_description": "102.19-104.5m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "3BR",
+    "area_min": 137.52,
+    "area_max": 173.8,
+    "gross_area_m2": 155.7,
+    "typical_layout_description": "137.52-173.8m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "Penthouse",
+    "area_min": 70.67,
+    "area_max": 373.98,
+    "gross_area_m2": 222.3,
+    "typical_layout_description": "70.67-373.98m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 4210.0,
+    "area_max": 4210.0,
+    "gross_area_m2": 4210.0,
+    "typical_layout_description": "4210.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 5376.0,
+    "area_max": 5376.0,
+    "gross_area_m2": 5376.0,
+    "typical_layout_description": "5376.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 10.1,
+    "area_max": 141.0,
+    "gross_area_m2": 75.5,
+    "typical_layout_description": "10.1-141.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 25.9,
+    "area_max": 34.9,
+    "gross_area_m2": 30.4,
+    "typical_layout_description": "25.9-34.9m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANDED HOUSE",
+    "city": "Ho Chi Minh City",
+    "type_name": "SH",
+    "area_min": 20.7,
+    "area_max": 26.7,
+    "gross_area_m2": 23.7,
+    "typical_layout_description": "20.7-26.7m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 241,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 9.0,
+    "area_max": 9.0,
+    "gross_area_m2": 9.0,
+    "typical_layout_description": "9.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "typical_layout_description": "10.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 11.0,
+    "area_max": 11.0,
+    "gross_area_m2": 11.0,
+    "typical_layout_description": "11.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 12.0,
+    "area_max": 12.0,
+    "gross_area_m2": 12.0,
+    "typical_layout_description": "12.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 13.0,
+    "area_max": 13.0,
+    "gross_area_m2": 13.0,
+    "typical_layout_description": "13.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 14.0,
+    "area_max": 14.0,
+    "gross_area_m2": 14.0,
+    "typical_layout_description": "14.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "Shophouse",
+    "area_min": 15.0,
+    "area_max": 15.0,
+    "gross_area_m2": 15.0,
+    "typical_layout_description": "15.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 246,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Ho Chi Minh City",
+    "type_name": "studio",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "typical_layout_description": "10.0m2",
+    "_meta": {
+      "source_file": "hcmc_pass2.txt",
+      "page": 247,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ITEMS",
+    "city": "Hanoi",
+    "type_name": "Duplex",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 15,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ITEMS",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 23.4,
+    "area_max": 31.4,
+    "gross_area_m2": 27.4,
+    "typical_layout_description": "23.4-31.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 15,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "OPEN-SPACE CONCEPT WITH DUAL BALCONY",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 23,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "III. ZONE I",
+    "city": "Hanoi",
+    "type_name": "Shophouse",
+    "area_min": 7.0,
+    "area_max": 7.0,
+    "gross_area_m2": 7.0,
+    "typical_layout_description": "7.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 25,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 57.0,
+    "area_max": 73.0,
+    "gross_area_m2": 65.0,
+    "typical_layout_description": "57.0-73.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 82.0,
+    "area_max": 82.0,
+    "gross_area_m2": 82.0,
+    "typical_layout_description": "82.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 83.0,
+    "area_max": 87.0,
+    "gross_area_m2": 85.0,
+    "typical_layout_description": "83.0-87.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 106.0,
+    "area_max": 106.0,
+    "gross_area_m2": 106.0,
+    "typical_layout_description": "106.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 188.2,
+    "area_max": 192.8,
+    "gross_area_m2": 190.5,
+    "typical_layout_description": "188.2-192.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "PH DL",
+    "area_min": 280.0,
+    "area_max": 580.0,
+    "gross_area_m2": 430.0,
+    "typical_layout_description": "280.0-580.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 49.61,
+    "area_max": 51.86,
+    "gross_area_m2": 50.7,
+    "typical_layout_description": "49.61-51.86m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 87.01,
+    "area_max": 96.48,
+    "gross_area_m2": 91.7,
+    "typical_layout_description": "87.01-96.48m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 126.09,
+    "area_max": 126.09,
+    "gross_area_m2": 126.1,
+    "typical_layout_description": "126.09m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 222.73,
+    "area_max": 232.71,
+    "gross_area_m2": 227.7,
+    "typical_layout_description": "222.73-232.71m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "SH",
+    "area_min": 255.0,
+    "area_max": 255.0,
+    "gross_area_m2": 255.0,
+    "typical_layout_description": "255.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 29.0,
+    "area_max": 36.0,
+    "gross_area_m2": 32.5,
+    "typical_layout_description": "29.0-36.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 36.8,
+    "area_max": 41.1,
+    "gross_area_m2": 39.0,
+    "typical_layout_description": "36.8-41.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 42.7,
+    "area_max": 63.8,
+    "gross_area_m2": 53.2,
+    "typical_layout_description": "42.7-63.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 60.7,
+    "area_max": 90.5,
+    "gross_area_m2": 75.6,
+    "typical_layout_description": "60.7-90.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 95.0,
+    "area_max": 122.5,
+    "gross_area_m2": 108.8,
+    "typical_layout_description": "95.0-122.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 121.0,
+    "area_max": 166.0,
+    "gross_area_m2": 143.5,
+    "typical_layout_description": "121.0-166.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 82.9,
+    "area_max": 83.4,
+    "gross_area_m2": 83.2,
+    "typical_layout_description": "82.9-83.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 93.0,
+    "area_max": 116.8,
+    "gross_area_m2": 104.9,
+    "typical_layout_description": "93.0-116.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 163.8,
+    "area_max": 190.7,
+    "gross_area_m2": 177.2,
+    "typical_layout_description": "163.8-190.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "DL",
+    "area_min": 146.2,
+    "area_max": 315.0,
+    "gross_area_m2": 230.6,
+    "typical_layout_description": "146.2-315.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PROJECT NAME",
+    "city": "Hanoi",
+    "type_name": "PH DL",
+    "area_min": 653.4,
+    "area_max": 653.4,
+    "gross_area_m2": 653.4,
+    "typical_layout_description": "653.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 30.0,
+    "area_max": 30.0,
+    "gross_area_m2": 30.0,
+    "typical_layout_description": "30.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 32,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "III. ZONE II",
+    "city": "Hanoi",
+    "type_name": "Shophouse",
+    "area_min": 7.0,
+    "area_max": 7.0,
+    "gross_area_m2": 7.0,
+    "typical_layout_description": "7.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 39,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 27.3,
+    "area_max": 30.7,
+    "gross_area_m2": 29.0,
+    "typical_layout_description": "27.3-30.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 44.9,
+    "area_max": 48.0,
+    "gross_area_m2": 46.5,
+    "typical_layout_description": "44.9-48.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 62.2,
+    "area_max": 69.2,
+    "gross_area_m2": 65.7,
+    "typical_layout_description": "62.2-69.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 82.2,
+    "area_max": 83.3,
+    "gross_area_m2": 82.8,
+    "typical_layout_description": "82.2-83.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 48.6,
+    "area_max": 51.0,
+    "gross_area_m2": 49.8,
+    "typical_layout_description": "48.6-51.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 60.3,
+    "area_max": 78.0,
+    "gross_area_m2": 69.2,
+    "typical_layout_description": "60.3-78.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 72.1,
+    "area_max": 74.9,
+    "gross_area_m2": 73.5,
+    "typical_layout_description": "72.1-74.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 98.8,
+    "area_max": 126.8,
+    "gross_area_m2": 112.8,
+    "typical_layout_description": "98.8-126.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 130.6,
+    "area_max": 173.2,
+    "gross_area_m2": 151.9,
+    "typical_layout_description": "130.6-173.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 46.2,
+    "area_max": 51.3,
+    "gross_area_m2": 48.8,
+    "typical_layout_description": "46.2-51.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 58.8,
+    "area_max": 81.0,
+    "gross_area_m2": 69.9,
+    "typical_layout_description": "58.8-81.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 88.4,
+    "area_max": 125.8,
+    "gross_area_m2": 107.1,
+    "typical_layout_description": "88.4-125.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3.5BR",
+    "area_min": 127.4,
+    "area_max": 127.4,
+    "gross_area_m2": 127.4,
+    "typical_layout_description": "127.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 138.0,
+    "area_max": 146.9,
+    "gross_area_m2": 142.4,
+    "typical_layout_description": "138.0-146.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "DL",
+    "area_min": 135.6,
+    "area_max": 246.4,
+    "gross_area_m2": 191.0,
+    "typical_layout_description": "135.6-246.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 346.2,
+    "area_max": 401.9,
+    "gross_area_m2": 374.0,
+    "typical_layout_description": "346.2-401.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH DL",
+    "area_min": 337.5,
+    "area_max": 411.7,
+    "gross_area_m2": 374.6,
+    "typical_layout_description": "337.5-411.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 56.1,
+    "area_max": 63.9,
+    "gross_area_m2": 60.0,
+    "typical_layout_description": "56.1-63.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 63.4,
+    "area_max": 79.6,
+    "gross_area_m2": 71.5,
+    "typical_layout_description": "63.4-79.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 96.9,
+    "area_max": 98.7,
+    "gross_area_m2": 97.8,
+    "typical_layout_description": "96.9-98.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 84.0,
+    "area_max": 117.0,
+    "gross_area_m2": 100.5,
+    "typical_layout_description": "84.0-117.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "SH",
+    "area_min": 64.5,
+    "area_max": 212.7,
+    "gross_area_m2": 138.6,
+    "typical_layout_description": "64.5-212.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 37.0,
+    "area_max": 37.0,
+    "gross_area_m2": 37.0,
+    "typical_layout_description": "37.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 82.0,
+    "area_max": 86.0,
+    "gross_area_m2": 84.0,
+    "typical_layout_description": "82.0-86.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 110.0,
+    "area_max": 122.0,
+    "gross_area_m2": 116.0,
+    "typical_layout_description": "110.0-122.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 144.0,
+    "area_max": 149.4,
+    "gross_area_m2": 146.7,
+    "typical_layout_description": "144.0-149.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "DL",
+    "area_min": 389.0,
+    "area_max": 469.0,
+    "gross_area_m2": 429.0,
+    "typical_layout_description": "389.0-469.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 781.0,
+    "area_max": 781.0,
+    "gross_area_m2": 781.0,
+    "typical_layout_description": "781.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 42,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 20.0,
+    "area_max": 20.0,
+    "gross_area_m2": 20.0,
+    "typical_layout_description": "20.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 46,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IV. ZONE III",
+    "city": "Hanoi",
+    "type_name": "Shophouse",
+    "area_min": 7.0,
+    "area_max": 7.0,
+    "gross_area_m2": 7.0,
+    "typical_layout_description": "7.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 53,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 29.7,
+    "area_max": 41.4,
+    "gross_area_m2": 35.5,
+    "typical_layout_description": "29.7-41.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 46.1,
+    "area_max": 47.2,
+    "gross_area_m2": 46.7,
+    "typical_layout_description": "46.1-47.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 50.7,
+    "area_max": 58.8,
+    "gross_area_m2": 54.8,
+    "typical_layout_description": "50.7-58.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 66.1,
+    "area_max": 80.1,
+    "gross_area_m2": 73.1,
+    "typical_layout_description": "66.1-80.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 79.0,
+    "area_max": 83.3,
+    "gross_area_m2": 81.2,
+    "typical_layout_description": "79.0-83.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 80.4,
+    "area_max": 105.6,
+    "gross_area_m2": 93.0,
+    "typical_layout_description": "80.4-105.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 121.4,
+    "area_max": 121.4,
+    "gross_area_m2": 121.4,
+    "typical_layout_description": "121.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 28.9,
+    "area_max": 34.8,
+    "gross_area_m2": 31.8,
+    "typical_layout_description": "28.9-34.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 44.3,
+    "area_max": 50.1,
+    "gross_area_m2": 47.2,
+    "typical_layout_description": "44.3-50.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 67.8,
+    "area_max": 73.7,
+    "gross_area_m2": 70.8,
+    "typical_layout_description": "67.8-73.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 69.3,
+    "area_max": 75.2,
+    "gross_area_m2": 72.2,
+    "typical_layout_description": "69.3-75.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 89.3,
+    "area_max": 93.7,
+    "gross_area_m2": 91.5,
+    "typical_layout_description": "89.3-93.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 166.8,
+    "area_max": 201.0,
+    "gross_area_m2": 183.9,
+    "typical_layout_description": "166.8-201.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 46.2,
+    "area_max": 46.2,
+    "gross_area_m2": 46.2,
+    "typical_layout_description": "46.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 58.5,
+    "area_max": 70.0,
+    "gross_area_m2": 64.2,
+    "typical_layout_description": "58.5-70.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 88.4,
+    "area_max": 88.4,
+    "gross_area_m2": 88.4,
+    "typical_layout_description": "88.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 92.1,
+    "area_max": 109.9,
+    "gross_area_m2": 101.0,
+    "typical_layout_description": "92.1-109.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "DL",
+    "area_min": 130.2,
+    "area_max": 210.4,
+    "gross_area_m2": 170.3,
+    "typical_layout_description": "130.2-210.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH DL",
+    "area_min": 379.3,
+    "area_max": 379.3,
+    "gross_area_m2": 379.3,
+    "typical_layout_description": "379.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 449.0,
+    "area_max": 451.3,
+    "gross_area_m2": 450.1,
+    "typical_layout_description": "449.0-451.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 37.2,
+    "area_max": 37.8,
+    "gross_area_m2": 37.5,
+    "typical_layout_description": "37.2-37.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 50.4,
+    "area_max": 52.3,
+    "gross_area_m2": 51.3,
+    "typical_layout_description": "50.4-52.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 68.5,
+    "area_max": 81.6,
+    "gross_area_m2": 75.0,
+    "typical_layout_description": "68.5-81.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 98.7,
+    "area_max": 100.9,
+    "gross_area_m2": 99.8,
+    "typical_layout_description": "98.7-100.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 31.0,
+    "area_max": 33.5,
+    "gross_area_m2": 32.2,
+    "typical_layout_description": "31.0-33.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 42.4,
+    "area_max": 42.4,
+    "gross_area_m2": 42.4,
+    "typical_layout_description": "42.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 45.7,
+    "area_max": 51.1,
+    "gross_area_m2": 48.4,
+    "typical_layout_description": "45.7-51.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 60.5,
+    "area_max": 75.4,
+    "gross_area_m2": 68.0,
+    "typical_layout_description": "60.5-75.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 90.1,
+    "area_max": 94.5,
+    "gross_area_m2": 92.3,
+    "typical_layout_description": "90.1-94.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 56,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 20.0,
+    "area_max": 20.0,
+    "gross_area_m2": 20.0,
+    "typical_layout_description": "20.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 60,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CIPUTRA CITY - NOBLE CRYSTAL TAY HO",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 82.9,
+    "area_max": 83.4,
+    "gross_area_m2": 83.2,
+    "typical_layout_description": "82.9-83.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CIPUTRA CITY - NOBLE CRYSTAL TAY HO",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 93.0,
+    "area_max": 116.8,
+    "gross_area_m2": 104.9,
+    "typical_layout_description": "93.0-116.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CIPUTRA CITY - NOBLE CRYSTAL TAY HO",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 163.8,
+    "area_max": 190.7,
+    "gross_area_m2": 177.2,
+    "typical_layout_description": "163.8-190.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CIPUTRA CITY - NOBLE CRYSTAL TAY HO",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 653.4,
+    "area_max": 653.4,
+    "gross_area_m2": 653.4,
+    "typical_layout_description": "653.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SECTION & PRODUCT TYPE DISTRIBUTION",
+    "city": "Hanoi",
+    "type_name": "Duplex",
+    "area_min": 39.0,
+    "area_max": 40.0,
+    "gross_area_m2": 39.5,
+    "typical_layout_description": "39.0-40.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 79,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 82,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 86,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 87,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 88,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 29.0,
+    "area_max": 36.0,
+    "gross_area_m2": 32.5,
+    "typical_layout_description": "29.0-36.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 36.8,
+    "area_max": 41.1,
+    "gross_area_m2": 39.0,
+    "typical_layout_description": "36.8-41.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 60.7,
+    "area_max": 90.5,
+    "gross_area_m2": 75.6,
+    "typical_layout_description": "60.7-90.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 95.0,
+    "area_max": 122.5,
+    "gross_area_m2": 108.8,
+    "typical_layout_description": "95.0-122.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 121.0,
+    "area_max": 166.0,
+    "gross_area_m2": 143.5,
+    "typical_layout_description": "121.0-166.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 95,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 106,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 109,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 110,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 112,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 115,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 33.87,
+    "area_max": 33.87,
+    "gross_area_m2": 33.9,
+    "typical_layout_description": "33.87m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 116,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 38.41,
+    "area_max": 38.41,
+    "gross_area_m2": 38.4,
+    "typical_layout_description": "38.41m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 116,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "STARLAKE CITY – (P5) THE PRIME K8",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 49.61,
+    "area_max": 51.86,
+    "gross_area_m2": 50.7,
+    "typical_layout_description": "49.61-51.86m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 130,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "STARLAKE CITY – (P5) THE PRIME K8",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 87.01,
+    "area_max": 96.48,
+    "gross_area_m2": 91.7,
+    "typical_layout_description": "87.01-96.48m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 130,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "STARLAKE CITY – (P5) THE PRIME K8",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 126.09,
+    "area_max": 126.09,
+    "gross_area_m2": 126.1,
+    "typical_layout_description": "126.09m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 130,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "STARLAKE CITY – (P5) THE PRIME K8",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 222.73,
+    "area_max": 232.71,
+    "gross_area_m2": 227.7,
+    "typical_layout_description": "222.73-232.71m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 130,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE NELSON PRIVATE RESIDENCES",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 83.0,
+    "area_max": 87.0,
+    "gross_area_m2": 85.0,
+    "typical_layout_description": "83.0-87.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 150,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE NELSON PRIVATE RESIDENCES",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 106.0,
+    "area_max": 106.0,
+    "gross_area_m2": 106.0,
+    "typical_layout_description": "106.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 150,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE NELSON PRIVATE RESIDENCES",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 188.2,
+    "area_max": 192.8,
+    "gross_area_m2": 190.5,
+    "typical_layout_description": "188.2-192.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 150,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE NELSON PRIVATE RESIDENCES",
+    "city": "Hanoi",
+    "type_name": "Duplex",
+    "area_min": 280.0,
+    "area_max": 580.0,
+    "gross_area_m2": 430.0,
+    "typical_layout_description": "280.0-580.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 150,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLORIA BY SILK PATH",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 57.0,
+    "area_max": 73.0,
+    "gross_area_m2": 65.0,
+    "typical_layout_description": "57.0-73.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 164,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GLORIA BY SILK PATH",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 82.0,
+    "area_max": 82.0,
+    "gross_area_m2": 82.0,
+    "typical_layout_description": "82.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 164,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "SH",
+    "area_min": 15.0,
+    "area_max": 15.0,
+    "gross_area_m2": 15.0,
+    "typical_layout_description": "15.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 37.0,
+    "area_max": 37.0,
+    "gross_area_m2": 37.0,
+    "typical_layout_description": "37.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 82.0,
+    "area_max": 86.0,
+    "gross_area_m2": 84.0,
+    "typical_layout_description": "82.0-86.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 110.0,
+    "area_max": 122.0,
+    "gross_area_m2": 116.0,
+    "typical_layout_description": "110.0-122.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 144.0,
+    "area_max": 149.4,
+    "gross_area_m2": 146.7,
+    "typical_layout_description": "144.0-149.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "Duplex",
+    "area_min": 389.0,
+    "area_max": 469.0,
+    "gross_area_m2": 429.0,
+    "typical_layout_description": "389.0-469.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MATRIX ONE –",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 781.0,
+    "area_max": 781.0,
+    "gross_area_m2": 781.0,
+    "typical_layout_description": "781.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THA MATRIX ONE PREMIUM",
+    "city": "Hanoi",
+    "type_name": "Duplex",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 192,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THA MATRIX ONE PREMIUM",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 193,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 41.0,
+    "area_max": 41.0,
+    "gross_area_m2": 41.0,
+    "typical_layout_description": "41.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 195,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT FINISHING",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 202,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FLC PREMIER PARC –",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 56.1,
+    "area_max": 63.9,
+    "gross_area_m2": 60.0,
+    "typical_layout_description": "56.1-63.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FLC PREMIER PARC –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 63.4,
+    "area_max": 79.6,
+    "gross_area_m2": 71.5,
+    "typical_layout_description": "63.4-79.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FLC PREMIER PARC –",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 96.9,
+    "area_max": 98.7,
+    "gross_area_m2": 97.8,
+    "typical_layout_description": "96.9-98.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FLC PREMIER PARC –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 84.0,
+    "area_max": 117.0,
+    "gross_area_m2": 100.5,
+    "typical_layout_description": "84.0-117.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FLC PREMIER PARC –",
+    "city": "Hanoi",
+    "type_name": "SH",
+    "area_min": 64.5,
+    "area_max": 212.7,
+    "gross_area_m2": 138.6,
+    "typical_layout_description": "64.5-212.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT FINISHING",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 299,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHSC– IMPERIA SMART CITY –",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 27.3,
+    "area_max": 30.7,
+    "gross_area_m2": 29.0,
+    "typical_layout_description": "27.3-30.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 303,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHSC– IMPERIA SMART CITY –",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 44.9,
+    "area_max": 48.0,
+    "gross_area_m2": 46.5,
+    "typical_layout_description": "44.9-48.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 303,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHSC– IMPERIA SMART CITY –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 62.2,
+    "area_max": 69.2,
+    "gross_area_m2": 65.7,
+    "typical_layout_description": "62.2-69.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 303,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHSC– IMPERIA SMART CITY –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 82.2,
+    "area_max": 83.3,
+    "gross_area_m2": 82.8,
+    "typical_layout_description": "82.2-83.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 303,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE MOTROLINES",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 311,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 312,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 313,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 32.2,
+    "area_max": 32.2,
+    "gross_area_m2": 32.2,
+    "typical_layout_description": "32.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 314,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 34.3,
+    "area_max": 34.3,
+    "gross_area_m2": 34.3,
+    "typical_layout_description": "34.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 314,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 31.0,
+    "area_max": 33.5,
+    "gross_area_m2": 32.2,
+    "typical_layout_description": "31.0-33.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 42.4,
+    "area_max": 42.4,
+    "gross_area_m2": 42.4,
+    "typical_layout_description": "42.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 45.7,
+    "area_max": 51.1,
+    "gross_area_m2": 48.4,
+    "typical_layout_description": "45.7-51.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 60.5,
+    "area_max": 75.4,
+    "gross_area_m2": 68.0,
+    "typical_layout_description": "60.5-75.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – (P5) IMPERIA SIGNATURE -",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 90.1,
+    "area_max": 94.5,
+    "gross_area_m2": 92.3,
+    "typical_layout_description": "90.1-94.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 328,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 336,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 337,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 338,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 339,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 340,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "IMPERIA SIGNATURE",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 341,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 34.5,
+    "area_max": 37.4,
+    "gross_area_m2": 36.0,
+    "typical_layout_description": "34.5-37.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 342,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT FINISHING",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 347,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 37.2,
+    "area_max": 37.8,
+    "gross_area_m2": 37.5,
+    "typical_layout_description": "37.2-37.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 354,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 50.4,
+    "area_max": 52.3,
+    "gross_area_m2": 51.3,
+    "typical_layout_description": "50.4-52.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 354,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 68.5,
+    "area_max": 81.6,
+    "gross_area_m2": 75.0,
+    "typical_layout_description": "68.5-81.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 354,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 98.7,
+    "area_max": 100.9,
+    "gross_area_m2": 99.8,
+    "typical_layout_description": "98.7-100.9m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 354,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 364,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHGG – IMPERIA SIGNATURE CO LOA –",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 364,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 365,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 365,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 37.6,
+    "area_max": 37.8,
+    "gross_area_m2": 37.7,
+    "typical_layout_description": "37.6-37.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 366,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 46.2,
+    "area_max": 46.2,
+    "gross_area_m2": 46.2,
+    "typical_layout_description": "46.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 58.5,
+    "area_max": 70.0,
+    "gross_area_m2": 64.2,
+    "typical_layout_description": "58.5-70.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 88.4,
+    "area_max": 88.4,
+    "gross_area_m2": 88.4,
+    "typical_layout_description": "88.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 92.1,
+    "area_max": 115.8,
+    "gross_area_m2": 103.9,
+    "typical_layout_description": "92.1-115.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "DL",
+    "area_min": 130.2,
+    "area_max": 210.4,
+    "gross_area_m2": 170.3,
+    "typical_layout_description": "130.2-210.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 162.6,
+    "area_max": 197.5,
+    "gross_area_m2": 180.1,
+    "typical_layout_description": "162.6-197.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "PH",
+    "area_min": 449.0,
+    "area_max": 451.3,
+    "gross_area_m2": 450.1,
+    "typical_layout_description": "449.0-451.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "PH DL",
+    "area_min": 379.3,
+    "area_max": 379.3,
+    "gross_area_m2": 379.3,
+    "typical_layout_description": "379.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "I & II",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 375,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 386,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 387,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 388,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT FINISHING",
+    "city": "Hanoi",
+    "type_name": "DUPLEX",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 406,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 28.9,
+    "area_max": 34.8,
+    "gross_area_m2": 31.8,
+    "typical_layout_description": "28.9-34.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 44.3,
+    "area_max": 50.1,
+    "gross_area_m2": 47.2,
+    "typical_layout_description": "44.3-50.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 67.8,
+    "area_max": 73.7,
+    "gross_area_m2": 70.8,
+    "typical_layout_description": "67.8-73.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 69.3,
+    "area_max": 75.2,
+    "gross_area_m2": 72.2,
+    "typical_layout_description": "69.3-75.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 89.3,
+    "area_max": 93.7,
+    "gross_area_m2": 91.5,
+    "typical_layout_description": "89.3-93.7m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 166.8,
+    "area_max": 201.0,
+    "gross_area_m2": 183.9,
+    "typical_layout_description": "166.8-201.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 409,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERI HOMES –",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 421,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 422,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP 1 – MASTERISE HOMES –",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 423,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 28.9,
+    "area_max": 34.8,
+    "gross_area_m2": 31.8,
+    "typical_layout_description": "28.9-34.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 424,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 166.8,
+    "area_max": 166.8,
+    "gross_area_m2": 166.8,
+    "typical_layout_description": "166.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 429,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 172.4,
+    "area_max": 172.4,
+    "gross_area_m2": 172.4,
+    "typical_layout_description": "172.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 430,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Hanoi",
+    "type_name": "Penthouse",
+    "area_min": 201.0,
+    "area_max": 201.0,
+    "gross_area_m2": 201.0,
+    "typical_layout_description": "201.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 430,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT FINISHING",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 2.5,
+    "area_max": 2.5,
+    "gross_area_m2": 2.5,
+    "typical_layout_description": "2.5m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 431,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "Studio",
+    "area_min": 29.7,
+    "area_max": 41.4,
+    "gross_area_m2": 35.5,
+    "typical_layout_description": "29.7-41.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "1BR",
+    "area_min": 46.1,
+    "area_max": 47.2,
+    "gross_area_m2": 46.7,
+    "typical_layout_description": "46.1-47.2m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "1.5BR",
+    "area_min": 50.7,
+    "area_max": 58.8,
+    "gross_area_m2": 54.8,
+    "typical_layout_description": "50.7-58.8m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "2BR",
+    "area_min": 66.1,
+    "area_max": 80.1,
+    "gross_area_m2": 73.1,
+    "typical_layout_description": "66.1-80.1m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "2.5BR",
+    "area_min": 79.0,
+    "area_max": 83.3,
+    "gross_area_m2": 81.2,
+    "typical_layout_description": "79.0-83.3m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "3BR",
+    "area_min": 80.4,
+    "area_max": 105.6,
+    "gross_area_m2": 93.0,
+    "typical_layout_description": "80.4-105.6m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VHOP1 – (P9) THE METROPOLITAN –",
+    "city": "Hanoi",
+    "type_name": "4BR",
+    "area_min": 121.4,
+    "area_max": 121.4,
+    "gross_area_m2": 121.4,
+    "typical_layout_description": "121.4m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 435,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 443,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 444,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 445,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 446,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Hanoi",
+    "type_name": "STUDIO",
+    "area_min": 5.0,
+    "area_max": 5.0,
+    "gross_area_m2": 5.0,
+    "typical_layout_description": "5.0m2",
+    "_meta": {
+      "source_file": "hanoi_pass2.txt",
+      "page": 447,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LOCATION",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 2272.0,
+    "area_max": 2272.0,
+    "gross_area_m2": 2272.0,
+    "typical_layout_description": "2272.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 20,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "typical_layout_description": "10.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "Condotel",
+    "area_min": 65.0,
+    "area_max": 65.0,
+    "gross_area_m2": 65.0,
+    "typical_layout_description": "65.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "PH",
+    "area_min": 9.0,
+    "area_max": 9.0,
+    "gross_area_m2": 9.0,
+    "typical_layout_description": "9.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 84.0,
+    "area_max": 84.0,
+    "gross_area_m2": 84.0,
+    "typical_layout_description": "84.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 29.0,
+    "area_max": 29.0,
+    "gross_area_m2": 29.0,
+    "typical_layout_description": "29.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 19.0,
+    "area_max": 19.0,
+    "gross_area_m2": 19.0,
+    "typical_layout_description": "19.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "Condotel",
+    "area_min": 32.5,
+    "area_max": 42.5,
+    "gross_area_m2": 37.5,
+    "typical_layout_description": "32.5-42.5m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "Duplex",
+    "area_min": 41.5,
+    "area_max": 131.0,
+    "gross_area_m2": 86.2,
+    "typical_layout_description": "41.5-131.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 75.8,
+    "area_max": 182.0,
+    "gross_area_m2": 128.9,
+    "typical_layout_description": "75.8-182.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 60.19,
+    "area_max": 66.84,
+    "gross_area_m2": 63.5,
+    "typical_layout_description": "60.19-66.84m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 37.86,
+    "area_max": 82.76,
+    "gross_area_m2": 60.3,
+    "typical_layout_description": "37.86-82.76m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 38.55,
+    "area_max": 91.73,
+    "gross_area_m2": 65.1,
+    "typical_layout_description": "38.55-91.73m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 68.4,
+    "area_max": 260.82,
+    "gross_area_m2": 164.6,
+    "typical_layout_description": "68.4-260.82m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 21,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 20.0,
+    "area_max": 29.99,
+    "gross_area_m2": 25.0,
+    "typical_layout_description": "20.0-29.99m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 5.0,
+    "area_max": 5.0,
+    "gross_area_m2": 5.0,
+    "typical_layout_description": "5.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "H-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 10.0,
+    "area_max": 10.0,
+    "gross_area_m2": 10.0,
+    "typical_layout_description": "10.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 25,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "M-II",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 14.0,
+    "area_max": 14.0,
+    "gross_area_m2": 14.0,
+    "typical_layout_description": "14.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 37,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT RATIO",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 20.0,
+    "area_max": 20.0,
+    "gross_area_m2": 20.0,
+    "typical_layout_description": "20.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 38,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT RATIO",
+    "city": "Binh Duong",
+    "type_name": "Duplex",
+    "area_min": 100.0,
+    "area_max": 100.0,
+    "gross_area_m2": 100.0,
+    "typical_layout_description": "100.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 38,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "Studio",
+    "area_min": 29.3,
+    "area_max": 29.3,
+    "gross_area_m2": 29.3,
+    "typical_layout_description": "29.3m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 39.6,
+    "area_max": 46.2,
+    "gross_area_m2": 42.9,
+    "typical_layout_description": "39.6-46.2m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 53.6,
+    "area_max": 62.3,
+    "gross_area_m2": 58.0,
+    "typical_layout_description": "53.6-62.3m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 74.8,
+    "area_max": 86.7,
+    "gross_area_m2": 80.8,
+    "typical_layout_description": "74.8-86.7m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "Penthouse",
+    "area_min": 41.5,
+    "area_max": 131.0,
+    "gross_area_m2": 86.2,
+    "typical_layout_description": "41.5-131.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 75.8,
+    "area_max": 182.0,
+    "gross_area_m2": 128.9,
+    "typical_layout_description": "75.8-182.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 47,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 57,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Binh Duong",
+    "type_name": "Penthouse",
+    "area_min": 9.0,
+    "area_max": 9.0,
+    "gross_area_m2": 9.0,
+    "typical_layout_description": "9.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 58,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Binh Duong",
+    "type_name": "Studio",
+    "area_min": 29.3,
+    "area_max": 29.3,
+    "gross_area_m2": 29.3,
+    "typical_layout_description": "29.3m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 59,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 227.0,
+    "area_max": 227.0,
+    "gross_area_m2": 227.0,
+    "typical_layout_description": "227.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 2272.0,
+    "area_max": 2272.0,
+    "gross_area_m2": 2272.0,
+    "typical_layout_description": "2272.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Studio",
+    "area_min": 36.0,
+    "area_max": 36.0,
+    "gross_area_m2": 36.0,
+    "typical_layout_description": "36.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 31.52,
+    "area_max": 48.27,
+    "gross_area_m2": 39.9,
+    "typical_layout_description": "31.52-48.27m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 60.19,
+    "area_max": 66.84,
+    "gross_area_m2": 63.5,
+    "typical_layout_description": "60.19-66.84m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PICITY SKY PARK - (P2) SKYZEN",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 5.0,
+    "area_max": 5.0,
+    "gross_area_m2": 5.0,
+    "typical_layout_description": "5.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 69,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Binh Duong",
+    "type_name": "Studio",
+    "area_min": 15.0,
+    "area_max": 15.0,
+    "gross_area_m2": 15.0,
+    "typical_layout_description": "15.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 74,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "OFFICETEL",
+    "area_min": 26.0,
+    "area_max": 26.0,
+    "gross_area_m2": 26.0,
+    "typical_layout_description": "26.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 79,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 80,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 81,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 82,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT LAYOUT",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 36.0,
+    "area_max": 36.0,
+    "gross_area_m2": 36.0,
+    "typical_layout_description": "36.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 83,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 84.0,
+    "area_max": 84.0,
+    "gross_area_m2": 84.0,
+    "typical_layout_description": "84.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 37.86,
+    "area_max": 82.76,
+    "gross_area_m2": 60.3,
+    "typical_layout_description": "37.86-82.76m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "1BR",
+    "area_min": 40.84,
+    "area_max": 41.29,
+    "gross_area_m2": 41.1,
+    "typical_layout_description": "40.84-41.29m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 65.1,
+    "area_max": 65.1,
+    "gross_area_m2": 65.1,
+    "typical_layout_description": "65.1m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO RIVERSIDE",
+    "city": "Binh Duong",
+    "type_name": "2.5BR",
+    "area_min": 75.5,
+    "area_max": 75.5,
+    "gross_area_m2": 75.5,
+    "typical_layout_description": "75.5m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 89,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "SHOPHOUSE",
+    "area_min": 51.0,
+    "area_max": 51.0,
+    "gross_area_m2": 51.0,
+    "typical_layout_description": "51.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 100,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "SHOPHOUSE",
+    "area_min": 33.0,
+    "area_max": 33.0,
+    "gross_area_m2": 33.0,
+    "typical_layout_description": "33.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 100,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 101,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL UNIT LAYOUT",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 41.3,
+    "area_max": 41.3,
+    "gross_area_m2": 41.3,
+    "typical_layout_description": "41.3m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 102,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LA PURA",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 31.18,
+    "area_max": 40.73,
+    "gross_area_m2": 36.0,
+    "typical_layout_description": "31.18-40.73m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 107,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LA PURA",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 82.65,
+    "area_max": 85.55,
+    "gross_area_m2": 84.1,
+    "typical_layout_description": "82.65-85.55m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 107,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LA PURA",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 38.55,
+    "area_max": 91.73,
+    "gross_area_m2": 65.1,
+    "typical_layout_description": "38.55-91.73m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 107,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SECTION & PRODUCT TYPE DISTRIBUTION",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 4.0,
+    "area_max": 18.0,
+    "gross_area_m2": 11.0,
+    "typical_layout_description": "4.0-18.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 117,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Binh Duong",
+    "type_name": "1BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 118,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 118,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 118,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 118,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 2.0,
+    "area_max": 2.0,
+    "gross_area_m2": 2.0,
+    "typical_layout_description": "2.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 118,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SECTION & PRODUCT TYPE DISTRIBUTION",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 11.0,
+    "area_max": 15.0,
+    "gross_area_m2": 13.0,
+    "typical_layout_description": "11.0-15.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 133,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SYMLIFE",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 14.0,
+    "area_max": 14.0,
+    "gross_area_m2": 14.0,
+    "typical_layout_description": "14.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 146,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SYMLIFE",
+    "city": "Binh Duong",
+    "type_name": "1BR",
+    "area_min": 51.9,
+    "area_max": 51.9,
+    "gross_area_m2": 51.9,
+    "typical_layout_description": "51.9m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 146,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SYMLIFE",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 70.6,
+    "area_max": 80.8,
+    "gross_area_m2": 75.7,
+    "typical_layout_description": "70.6-80.8m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 146,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SYMLIFE",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 92.1,
+    "area_max": 92.1,
+    "gross_area_m2": 92.1,
+    "typical_layout_description": "92.1m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 146,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SYMLIFE",
+    "city": "Binh Duong",
+    "type_name": "4.5BR",
+    "area_min": 211.7,
+    "area_max": 233.6,
+    "gross_area_m2": 222.6,
+    "typical_layout_description": "211.7-233.6m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 146,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MASTER PLAN & CIRCULATION",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 1501.0,
+    "area_max": 1501.0,
+    "gross_area_m2": 1501.0,
+    "typical_layout_description": "1501.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 165,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 8.0,
+    "area_max": 8.0,
+    "gross_area_m2": 8.0,
+    "typical_layout_description": "8.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "PH",
+    "area_min": 6.0,
+    "area_max": 6.0,
+    "gross_area_m2": 6.0,
+    "typical_layout_description": "6.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 48.5,
+    "area_max": 51.7,
+    "gross_area_m2": 50.1,
+    "typical_layout_description": "48.5-51.7m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 67.9,
+    "area_max": 83.3,
+    "gross_area_m2": 75.6,
+    "typical_layout_description": "67.9-83.3m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 86.8,
+    "area_max": 92.0,
+    "gross_area_m2": 89.4,
+    "typical_layout_description": "86.8-92.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "Penthouse",
+    "area_min": 202.79,
+    "area_max": 263.83,
+    "gross_area_m2": 233.3,
+    "typical_layout_description": "202.79-263.83m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "ART STELLA",
+    "city": "Binh Duong",
+    "type_name": "Duplex",
+    "area_min": 163.76,
+    "area_max": 242.18,
+    "gross_area_m2": 203.0,
+    "typical_layout_description": "163.76-242.18m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 179,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "PENTHOUSE",
+    "area_min": 3.0,
+    "area_max": 3.0,
+    "gross_area_m2": 3.0,
+    "typical_layout_description": "3.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 192,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "DUPLEX",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 192,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "UNIT TYPE",
+    "city": "Binh Duong",
+    "type_name": "PENTHOUSE",
+    "area_min": 4.0,
+    "area_max": 4.0,
+    "gross_area_m2": 4.0,
+    "typical_layout_description": "4.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 193,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 27.0,
+    "area_max": 27.0,
+    "gross_area_m2": 27.0,
+    "typical_layout_description": "27.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 1854.0,
+    "area_max": 1854.0,
+    "gross_area_m2": 1854.0,
+    "typical_layout_description": "1854.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "1BR",
+    "area_min": 40.07,
+    "area_max": 40.07,
+    "gross_area_m2": 40.1,
+    "typical_layout_description": "40.07m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 56.25,
+    "area_max": 56.25,
+    "gross_area_m2": 56.2,
+    "typical_layout_description": "56.25m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 62.47,
+    "area_max": 68.26,
+    "gross_area_m2": 65.4,
+    "typical_layout_description": "62.47-68.26m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "3BR",
+    "area_min": 81.48,
+    "area_max": 81.48,
+    "gross_area_m2": 81.5,
+    "typical_layout_description": "81.48m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TT AVIO – (P2) BLOCK ORION",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 28.7,
+    "area_max": 67.41,
+    "gross_area_m2": 48.1,
+    "typical_layout_description": "28.7-67.41m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 203,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "MASTER PLAN & CIRCULATION",
+    "city": "Binh Duong",
+    "type_name": "Officetel",
+    "area_min": 1854.0,
+    "area_max": 1854.0,
+    "gross_area_m2": 1854.0,
+    "typical_layout_description": "1854.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 206,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 57.0,
+    "area_max": 57.0,
+    "gross_area_m2": 57.0,
+    "typical_layout_description": "57.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 207,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL FLOOR PLAN",
+    "city": "Binh Duong",
+    "type_name": "studio",
+    "area_min": 37.0,
+    "area_max": 39.0,
+    "gross_area_m2": 38.0,
+    "typical_layout_description": "37.0-39.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 215,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TYPICAL UNIT LAYOUT",
+    "city": "Binh Duong",
+    "type_name": "STUDIO",
+    "area_min": 40.07,
+    "area_max": 40.07,
+    "gross_area_m2": 40.1,
+    "typical_layout_description": "40.07m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 216,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "PAYMENT SCHEDULE",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 1.0,
+    "area_max": 1.0,
+    "gross_area_m2": 1.0,
+    "typical_layout_description": "1.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 222,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE ASPIRA",
+    "city": "Binh Duong",
+    "type_name": "SH",
+    "area_min": 8.0,
+    "area_max": 8.0,
+    "gross_area_m2": 8.0,
+    "typical_layout_description": "8.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 224,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE ASPIRA",
+    "city": "Binh Duong",
+    "type_name": "1BR",
+    "area_min": 39.43,
+    "area_max": 41.56,
+    "gross_area_m2": 40.5,
+    "typical_layout_description": "39.43-41.56m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 224,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE ASPIRA",
+    "city": "Binh Duong",
+    "type_name": "1.5BR",
+    "area_min": 54.15,
+    "area_max": 57.13,
+    "gross_area_m2": 55.6,
+    "typical_layout_description": "54.15-57.13m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 224,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE ASPIRA",
+    "city": "Binh Duong",
+    "type_name": "2BR",
+    "area_min": 64.35,
+    "area_max": 69.44,
+    "gross_area_m2": 66.9,
+    "typical_layout_description": "64.35-69.44m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 224,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE ASPIRA",
+    "city": "Binh Duong",
+    "type_name": "2.5BR",
+    "area_min": 80.75,
+    "area_max": 83.72,
+    "gross_area_m2": 82.2,
+    "typical_layout_description": "80.75-83.72m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 224,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 17.0,
+    "area_max": 17.0,
+    "gross_area_m2": 17.0,
+    "typical_layout_description": "17.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 228,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "FACILITIES",
+    "city": "Binh Duong",
+    "type_name": "Shophouse",
+    "area_min": 19.0,
+    "area_max": 19.0,
+    "gross_area_m2": 19.0,
+    "typical_layout_description": "19.0m2",
+    "_meta": {
+      "source_file": "binh_duong_pass2.txt",
+      "page": 228,
+      "confidence": 0.85
+    }
+  }
+]

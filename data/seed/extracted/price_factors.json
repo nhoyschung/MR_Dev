@@ -1,0 +1,518 @@
+[
+  {
+    "project_name": "Grand Riverside",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 9.39,
+    "description": "Supply shortage in 1BR type",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Safira",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 9.29,
+    "description": "Good product, Nam Ly Bridge is speeding, benefit from The Global City facilities",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Safira",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 9.29,
+    "description": "Good product, Nam Ly Bridge is speeding, benefit from The Global City facilities",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Safira",
+    "factor_type": "increase",
+    "factor_category": "construction",
+    "rate_pct": 9.29,
+    "description": "Good product, Nam Ly Bridge is speeding, benefit from The Global City facilities",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "One Verandah",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 9.0,
+    "description": "Nice location, not many apt. project in the area, good operation",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "One Verandah",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 9.0,
+    "description": "Nice location, not many apt. project in the area, good operation",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "One Verandah",
+    "factor_type": "increase",
+    "factor_category": "construction",
+    "rate_pct": 9.0,
+    "description": "Nice location, not many apt. project in the area, good operation",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Ricca",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 7.93,
+    "description": "Good management, Nam Ly Bridge is speeding, benefit from The Global City facilities Hado Centrosa Garden - (P3)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Ricca",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 7.93,
+    "description": "Good management, Nam Ly Bridge is speeding, benefit from The Global City facilities Hado Centrosa Garden - (P3)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Ricca",
+    "factor_type": "increase",
+    "factor_category": "construction",
+    "rate_pct": 7.93,
+    "description": "Good management, Nam Ly Bridge is speeding, benefit from The Global City facilities Hado Centrosa Garden - (P3)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Jasmine 1-2",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 6.83,
+    "description": "Nice location (in the CBD) and supply shortage in 1BR type",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Jasmine 1-2",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 6.83,
+    "description": "Nice location (in the CBD) and supply shortage in 1BR type",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The Eastern",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 6.65,
+    "description": "Nam Ly Bridge is speeding, benefit from The Global City facilities",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Topaz City - (P2) Topaz Elite",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 6.13,
+    "description": "Ta Quang Buu Street finished connecting",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Mizuki Park - (P5) MP1 & MP2",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 6.0,
+    "description": "Release of next phases (same grade, newer unit), the apartment subsidence has been repaired and renovated by the investor",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Vista Verde",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 5.31,
+    "description": "Nice location, not many apt. project in the area",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Vista Verde",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 5.31,
+    "description": "Nice location, not many apt. project in the area",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The River",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 5.1,
+    "description": "Very nice location, cheaper price than other riverside projects, new Thu Thiem Park",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The River",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 5.1,
+    "description": "Very nice location, cheaper price than other riverside projects, new Thu Thiem Park",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The River",
+    "factor_type": "increase",
+    "factor_category": "construction",
+    "rate_pct": 5.1,
+    "description": "Very nice location, cheaper price than other riverside projects, new Thu Thiem Park",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Golden Mansion",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 5.06,
+    "description": "Just few apartment projects in the area , the only one have pink book",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Tecco Central Home",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 5.01,
+    "description": "Just few apartment projects in the area National Housing Organization JSC",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Lideco",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 3.7,
+    "description": "High-density residential area with various amenity, competitive price: 1,110usd/m2 Citadines Marina",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Lideco",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 3.7,
+    "description": "High-density residential area with various amenity, competitive price: 1,110usd/m2 Citadines Marina",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Lideco",
+    "factor_type": "increase",
+    "factor_category": "construction",
+    "rate_pct": 3.7,
+    "description": "High-density residential area with various amenity, competitive price: 1,110usd/m2 Citadines Marina",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Ha Long",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 2.7,
+    "description": "Serviced apartment building operated by Ascott, easy for leased out",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Green Bay Garden",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 1.12,
+    "description": "Market situation",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Dragon Castle",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 1.03,
+    "description": "Supply shortage, Ground breaking of Aeon Mall in Bai Chay",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Dragon Castle",
+    "factor_type": "increase",
+    "factor_category": "supply_shortage",
+    "rate_pct": 1.03,
+    "description": "Supply shortage, Ground breaking of Aeon Mall in Bai Chay",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Green Bay Premium",
+    "factor_type": "increase",
+    "factor_category": "location",
+    "rate_pct": 0.92,
+    "description": "Market situation National Housing Organization JSC",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "First Home",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -5.77,
+    "description": "Handover 8 years",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Opal Riverside",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -6.07,
+    "description": "Handover 7 years, no pink book, competitive project nearby (Opal Garden) Masteri Center Point - (P2)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Tecco Town",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -6.71,
+    "description": "Degraded elevator, late pink book hand over 4S Riverside Linh Dong",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Tecco Town",
+    "factor_type": "decrease",
+    "factor_category": "legal",
+    "rate_pct": -6.71,
+    "description": "Degraded elevator, late pink book hand over 4S Riverside Linh Dong",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Moonlight Centre Point",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -7.04,
+    "description": "Construction Delaying: 3 years",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "C.T Plaza Nguyen Hong",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -14.92,
+    "description": "Construction Delaying: 10 years",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Metro Star",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -28.33,
+    "description": "Legal issue, delayed construction, supply shortage in 2nd market REAL ESTATE MARKET (2024-Q1)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The Sapphire Residence (S1)",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -2.84,
+    "description": "The price is too high compared with its grade quality (M-III) and competes with the other block (S2) (better quality, concept & operation)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The Sapphire Residence (S1)",
+    "factor_type": "decrease",
+    "factor_category": "legal",
+    "rate_pct": -2.84,
+    "description": "The price is too high compared with its grade quality (M-III) and competes with the other block (S2) (better quality, concept & operation)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The Ruby",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -2.71,
+    "description": "Delay in handover (~1.5 years)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "Green Diamond",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -2.46,
+    "description": "Market situation New Life Tower (Gemex Tower)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A La Carte",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -2.25,
+    "description": "Market situation",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "The Holiday Ha Long",
+    "factor_type": "decrease",
+    "factor_category": "old_project",
+    "rate_pct": -1.85,
+    "description": "Delay in handover  (~1 year)",
+    "_meta": {
+      "source_file": "sales_price_pass2.txt",
+      "page": null,
+      "confidence": 0.8
+    }
+  }
+]

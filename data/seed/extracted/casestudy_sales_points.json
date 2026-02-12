@@ -1,0 +1,462 @@
+[
+  {
+    "project_name": "AVA CENTER",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking at lobby,  parking Nam Tu Liem, Ha Noi 1 BLOCK A – 40F: 1F: Shophouse 2F: Shophouse + Of",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "category": "design",
+    "description": "Access: site_gated - control - Site gated - 3 check-point: Main gate,  sub-gate, lobby Pedestrian way Vehicle way 1 Main entrance Main entran",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "category": "pricing",
+    "description": "Primary price: $1,502 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "category": "design",
+    "description": "Access: fence_gated - control - Fence gated - Check-in at security gate &  lobby 03 HERITAGE WESTLAKE 1 National Housing Organization JSC Guard",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "category": "pricing",
+    "description": "Primary price: $4,600 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "category": "design",
+    "description": "Access: building_gated - control - Building gated - Checking points: parking,  lobby Tower 1 Tower 2 Mall + Office Mall + Serviced Apartment B1-B4 +",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "category": "pricing",
+    "description": "Primary price: $2,772 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "category": "design",
+    "description": "Access: open - control - Open type - 2 Check-points: Parking &  lobby Pedestrian way Vehicle way Satellite image Signage APT. basement",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "category": "pricing",
+    "description": "Primary price: $1,300 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "category": "design",
+    "description": "Access: open - control - Opened type - Checking points at lobby,  elevator BLOCK A: 1F: Shophouse 2-3F: Apt + Retail 4F: Apt + Facilites",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "category": "pricing",
+    "description": "Primary price: $1,030 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "category": "design",
+    "description": "Access: gated - control - Gated type 1 1 School Community  room Community  room Lobby Lobby Lobby Basement Entrance/ exit Facilities clu",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking point at lobby,  parking 03 EPIC TOWER 1 2 National Housing Organization JSC Project ima",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "category": "pricing",
+    "description": "Primary price: $3,190 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VINHOMES WEST POINT",
+    "category": "design",
+    "description": "Access: building_gated - control - Building gated - Checking points: parking,  lobby Cau Giay, Ha Noi Pedestrian way Vehicle way Facility zone 1 2 WE",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 15,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "VINHOMES WEST POINT",
+    "category": "pricing",
+    "description": "Primary price: $1,828 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 15,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "category": "design",
+    "description": "Access: building_gated - control - Building gated - Checking points: parking,  lobby Thuan An, Binh Duong NR 13 Pedestrian way Vehicle way Facility z",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "category": "pricing",
+    "description": "Primary price: $1,586 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "category": "design",
+    "description": "Access: open - control - Open type - Check-point: Elevator 1 1 2 Satellite image Perspective image Sub-entrance Main entrance  Signage",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "category": "pricing",
+    "description": "Primary price: $1,202 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking point at parking,  lobby 13 TRINITY TOWER  Pedestrian way Vehicle way 1 1 National Housi",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "category": "pricing",
+    "description": "Primary price: $1,531 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "category": "design",
+    "description": "Access: building_gated - control - Building gated - Checking points at  lobby and parking Pedestrian way Vehicle way Pedestrian entrance Satellite im",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "category": "pricing",
+    "description": "Primary price: $3,900 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "HARMONY SQUARE",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 25,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking points:  parking,  lobby Pedestrian way Vehicle way Facility zone 8 8 8 8 8 8 9 Lobby Lo",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "category": "pricing",
+    "description": "Primary price: $1,779 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking point at vehicle  parking National Housing Organization JSC 2 1 Perspective image Di An,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "category": "pricing",
+    "description": "Primary price: $1,787 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "NOBLE CRYSTAL TAY HO",
+    "category": "pricing",
+    "description": "Primary price: $7,302 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 30,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "category": "design",
+    "description": "Access: building_gated - control - Building gated - Free access to retail floors  (1-4F) 1 Dong Anh, Ha Noi Entrance Pedestrian way Vehicle way Facil",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "category": "pricing",
+    "description": "Primary price: $3,518 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "category": "pricing",
+    "description": "Sales rate: 100.0%",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "category": "design",
+    "description": "Access: building_gated - s control Building gated Xuan Thuy F1 F2 F3 F5 F6 Pedestrian way Vehicle way Facility zone Hanoi National  University Hanoi",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 33,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "category": "pricing",
+    "description": "Primary price: $7,157 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 33,
+      "confidence": 0.9
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "category": "design",
+    "description": "Access: open - control - Open type - Checking points:  parking,  lobby 1 Lien Phuong Street Basement Lobby Lobby 1 Drop-off Drop-off B",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.85
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "category": "pricing",
+    "description": "Primary price: $6,600 USD/m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.9
+    }
+  }
+]

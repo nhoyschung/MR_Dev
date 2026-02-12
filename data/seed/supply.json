@@ -1,0 +1,22 @@
+[
+  {"district_id": 2, "period_year": 2024, "period_half": "H1", "total_inventory": 5200, "new_supply": 1200, "sold_units": 900, "absorption_rate_pct": 75.0, "remaining_inventory": 4300},
+  {"district_id": 5, "period_year": 2024, "period_half": "H1", "total_inventory": 3800, "new_supply": 800, "sold_units": 650, "absorption_rate_pct": 81.3, "remaining_inventory": 3150},
+  {"district_id": 6, "period_year": 2024, "period_half": "H1", "total_inventory": 8500, "new_supply": 2000, "sold_units": 1500, "absorption_rate_pct": 75.0, "remaining_inventory": 7000},
+  {"district_id": 7, "period_year": 2024, "period_half": "H1", "total_inventory": 4200, "new_supply": 500, "sold_units": 400, "absorption_rate_pct": 80.0, "remaining_inventory": 3800},
+  {"district_id": 8, "period_year": 2024, "period_half": "H1", "total_inventory": 6000, "new_supply": 1500, "sold_units": 1100, "absorption_rate_pct": 73.3, "remaining_inventory": 4900},
+  {"district_id": 9, "period_year": 2024, "period_half": "H1", "total_inventory": 2500, "new_supply": 600, "sold_units": 450, "absorption_rate_pct": 75.0, "remaining_inventory": 2050},
+  {"district_id": 11, "period_year": 2024, "period_half": "H1", "total_inventory": 3000, "new_supply": 700, "sold_units": 500, "absorption_rate_pct": 71.4, "remaining_inventory": 2500},
+  {"district_id": 12, "period_year": 2024, "period_half": "H1", "total_inventory": 4500, "new_supply": 1000, "sold_units": 700, "absorption_rate_pct": 70.0, "remaining_inventory": 3800},
+  {"district_id": 16, "period_year": 2024, "period_half": "H1", "total_inventory": 1800, "new_supply": 400, "sold_units": 300, "absorption_rate_pct": 75.0, "remaining_inventory": 1500},
+  {"district_id": 22, "period_year": 2024, "period_half": "H1", "total_inventory": 2200, "new_supply": 500, "sold_units": 350, "absorption_rate_pct": 70.0, "remaining_inventory": 1850},
+  {"district_id": 25, "period_year": 2024, "period_half": "H1", "total_inventory": 3500, "new_supply": 900, "sold_units": 750, "absorption_rate_pct": 83.3, "remaining_inventory": 2750},
+  {"district_id": 27, "period_year": 2024, "period_half": "H1", "total_inventory": 4000, "new_supply": 1200, "sold_units": 1000, "absorption_rate_pct": 83.3, "remaining_inventory": 3000},
+  {"district_id": 28, "period_year": 2024, "period_half": "H1", "total_inventory": 5000, "new_supply": 1500, "sold_units": 1200, "absorption_rate_pct": 80.0, "remaining_inventory": 3800},
+  {"district_id": 29, "period_year": 2024, "period_half": "H1", "total_inventory": 2000, "new_supply": 400, "sold_units": 320, "absorption_rate_pct": 80.0, "remaining_inventory": 1680},
+  {"district_id": 31, "period_year": 2024, "period_half": "H1", "total_inventory": 6500, "new_supply": 2000, "sold_units": 1600, "absorption_rate_pct": 80.0, "remaining_inventory": 4900},
+  {"district_id": 35, "period_year": 2024, "period_half": "H1", "total_inventory": 3000, "new_supply": 1000, "sold_units": 800, "absorption_rate_pct": 80.0, "remaining_inventory": 2200},
+  {"district_id": 36, "period_year": 2024, "period_half": "H1", "total_inventory": 4500, "new_supply": 1200, "sold_units": 900, "absorption_rate_pct": 75.0, "remaining_inventory": 3600},
+  {"district_id": 37, "period_year": 2024, "period_half": "H1", "total_inventory": 2500, "new_supply": 600, "sold_units": 450, "absorption_rate_pct": 75.0, "remaining_inventory": 2050},
+  {"district_id": 38, "period_year": 2024, "period_half": "H1", "total_inventory": 4000, "new_supply": 1200, "sold_units": 900, "absorption_rate_pct": 75.0, "remaining_inventory": 3100},
+  {"district_id": 39, "period_year": 2024, "period_half": "H1", "total_inventory": 5500, "new_supply": 1800, "sold_units": 1300, "absorption_rate_pct": 72.2, "remaining_inventory": 4200}
+]

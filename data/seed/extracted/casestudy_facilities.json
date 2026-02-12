@@ -1,0 +1,822 @@
+[
+  {
+    "project_name": "AVA CENTER",
+    "facility_type": "park",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "AVA CENTER",
+    "facility_type": "commercial",
+    "description": "1F: Shophouse",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "AVA CENTER",
+    "facility_type": "parking",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 4,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "facility_type": "park",
+    "description": "parking lot",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "facility_type": "commercial",
+    "description": "Community mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "facility_type": "security",
+    "description": "- 3 check-point: Main gate,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VISTA VERDE",
+    "facility_type": "parking",
+    "description": "parking lot",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 5,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "facility_type": "commercial",
+    "description": "1-6F: retail (mall) , co-working space",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "facility_type": "clubhouse",
+    "description": "1-6F: retail (mall) , co-working space",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "facility_type": "security",
+    "description": "Check-in at security gate &",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "HERITAGE WESTLAKE",
+    "facility_type": "parking",
+    "description": "Basement",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 6,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "pool",
+    "description": "[Rooftop] Retail (Sky pool), garden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "gym",
+    "description": "[2-4F] : Retail (Gym) + Commercial, Retail (Kichi, Mala)",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "park",
+    "description": "[Rooftop] Retail (Sky pool), garden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "commercial",
+    "description": "1-4F: Mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "playground",
+    "description": "game), lounge, kids room, meeting",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "clubhouse",
+    "description": "[13F] Community room (library +",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LANCASTER LUMINAIRE",
+    "facility_type": "parking",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 7,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "facility_type": "park",
+    "description": "- 2 Check-points: Parking &",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "facility_type": "commercial",
+    "description": "Mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "facility_type": "security",
+    "description": "- 2 Check-points: Parking &",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BICONSI TOWER",
+    "facility_type": "parking",
+    "description": "- 2 Check-points: Parking &",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 9,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "facility_type": "commercial",
+    "description": "2-3F: Apt + Retail",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "GATEWAY VUNG TAU",
+    "facility_type": "parking",
+    "description": "Basement entrance",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 10,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "facility_type": "commercial",
+    "description": "1-3F: Mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "facility_type": "school",
+    "description": "School",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "facility_type": "playground",
+    "description": "Kids playground",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE GIO",
+    "facility_type": "parking",
+    "description": "Basement",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 11,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "pool",
+    "description": "[Rooftop] Infinity pool, sky bar,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "gym",
+    "description": "[2F] Gym (Apt), library, restaurant,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "park",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "commercial",
+    "description": "Mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "clubhouse",
+    "description": "& LOUNGE",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "EPIC TOWER",
+    "facility_type": "parking",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 12,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TIEN BO PLAZA",
+    "facility_type": "commercial",
+    "description": "BLOCK OFFICE + MALL:",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 14,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VINHOMES WEST POINT",
+    "facility_type": "park",
+    "description": "- Checking points: parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 15,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VINHOMES WEST POINT",
+    "facility_type": "commercial",
+    "description": "2-4F: Mall + Officetel",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 15,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "VINHOMES WEST POINT",
+    "facility_type": "parking",
+    "description": "- Checking points: parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 15,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "park",
+    "description": "and parking entrance",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "commercial",
+    "description": "1-2F: Facilities + Shophouse",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "school",
+    "description": "Kindergarten",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "playground",
+    "description": "& children playground",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "clubhouse",
+    "description": "Library",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "security",
+    "description": "Security",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE FELIX",
+    "facility_type": "parking",
+    "description": "and parking entrance",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 16,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LEXINGTON RESIDENCE",
+    "facility_type": "commercial",
+    "description": "Shophouse and Officetel: 21,017m2",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 18,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "facility_type": "park",
+    "description": "Kindergarden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "facility_type": "commercial",
+    "description": "1-2F: Shophouse",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "facility_type": "school",
+    "description": "Kindergarden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "facility_type": "security",
+    "description": "- Checking points:  security",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "CENTANA THU THIEM",
+    "facility_type": "parking",
+    "description": "guard, parking entrance",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 20,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "facility_type": "park",
+    "description": "Checking point at parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "facility_type": "commercial",
+    "description": "Shophouse",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "facility_type": "school",
+    "description": "Kindergarten",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "TRINITY TOWER",
+    "facility_type": "parking",
+    "description": "Checking point at parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 22,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BRG DIAMOND PARK PLAZA",
+    "facility_type": "park",
+    "description": "14 BRG DIAMOND PARK PLAZA",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 23,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "facility_type": "park",
+    "description": "lobby and parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "facility_type": "commercial",
+    "description": "1F: Shophouse",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE RIVERSIDE",
+    "facility_type": "parking",
+    "description": "lobby and parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 24,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "facility_type": "park",
+    "description": "Kindergarden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "facility_type": "commercial",
+    "description": "1-3F: Shophouse + Parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "facility_type": "school",
+    "description": "Kindergarden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "A&T SAIGON RIVERSIDE",
+    "facility_type": "parking",
+    "description": "- Checking points:  parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 27,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "facility_type": "park",
+    "description": "Garden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "facility_type": "commercial",
+    "description": "1-3F: Mall",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "facility_type": "playground",
+    "description": "Pickleball",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "BCONS CITY",
+    "facility_type": "parking",
+    "description": "parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 28,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "NOBLE CRYSTAL TAY HO",
+    "facility_type": "pool",
+    "description": "Crystal Lagoon – Artificial beach",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 30,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "NOBLE CRYSTAL TAY HO",
+    "facility_type": "commercial",
+    "description": "Mall Entrance",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 30,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "NOBLE CRYSTAL TAY HO",
+    "facility_type": "security",
+    "description": "Security gate",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 30,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "NOBLE CRYSTAL TAY HO",
+    "facility_type": "parking",
+    "description": "Basement",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 30,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "pool",
+    "description": "pool",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "park",
+    "description": "Garden",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "commercial",
+    "description": "Free access to retail floors",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "playground",
+    "description": "playground",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "clubhouse",
+    "description": "Offer “Signature sky lounge” & “Concierge” service",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "THE COSMOPOLITAN CO LOA",
+    "facility_type": "parking",
+    "description": "3 interconnected basement parking",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 31,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "facility_type": "school",
+    "description": "of Education",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 33,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "SUN FELIZA SUITES",
+    "facility_type": "parking",
+    "description": "Basement",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 33,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "facility_type": "park",
+    "description": "- Checking points:  parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "facility_type": "commercial",
+    "description": "3-4F: Commercial + Facility",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.8
+    }
+  },
+  {
+    "project_name": "LUMIERE MIDTOWN",
+    "facility_type": "parking",
+    "description": "- Checking points:  parking,",
+    "_meta": {
+      "source_file": "mixed_use_casestudy_full.txt",
+      "page": 34,
+      "confidence": 0.8
+    }
+  }
+]
