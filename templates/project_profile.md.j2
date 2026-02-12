@@ -47,7 +47,7 @@
 |-------|---------|
 | **Name** | {{ developer.name_en }} |
 | **Stock Code** | {{ developer.stock_code | default("Private") }} |
-| **HQ** | {{ developer.hq_city | default("N/A") }} |
+| **HQ** | {{ developer.hq_city.name_en if developer.hq_city else "N/A" }} |
 | **Established** | {{ developer.established_year | default("N/A") }} |
 
 ### Other Projects by {{ developer.name_en }}

@@ -51,8 +51,19 @@ Trend: — (single period data)
 from src.db.connection import get_session
 from src.db.queries import (
     get_latest_price, get_price_history, get_grade_for_price,
-    get_city_by_name, list_projects_by_grade,
+    get_city_by_name, list_projects_by_grade, resolve_city_name,
 )
+```
+
+City aliases supported: HCMC, HCM, Saigon, BD, Ha Noi, etc.
+
+For project lookup, use substring matching:
+```python
+from sqlalchemy import select
+from src.db.models import Project
+project = session.execute(
+    select(Project).where(Project.name.ilike(f"%{name}%")).limit(1)
+).scalar_one_or_none()
 ```
 
 $ARGUMENTS

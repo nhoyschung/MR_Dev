@@ -13,12 +13,35 @@ from src.db.models import (
 
 
 # ---------------------------------------------------------------------------
+# City name aliases
+# ---------------------------------------------------------------------------
+
+_CITY_ALIASES: dict[str, str] = {
+    "hcmc": "ho chi minh city",
+    "hcm": "ho chi minh city",
+    "saigon": "ho chi minh city",
+    "sai gon": "ho chi minh city",
+    "ho chi minh": "ho chi minh city",
+    "tp hcm": "ho chi minh city",
+    "ha noi": "hanoi",
+    "binh duong": "binh duong",
+    "bd": "binh duong",
+}
+
+
+def resolve_city_name(name: str) -> str:
+    """Resolve common aliases to canonical city name."""
+    return _CITY_ALIASES.get(name.strip().lower(), name.strip().lower())
+
+
+# ---------------------------------------------------------------------------
 # Lookup helpers
 # ---------------------------------------------------------------------------
 
 def get_city_by_name(session: Session, name: str) -> Optional[City]:
-    """Find a city by English name (case-insensitive)."""
-    stmt = select(City).where(func.lower(City.name_en) == name.lower())
+    """Find a city by English name or alias (case-insensitive)."""
+    resolved = resolve_city_name(name)
+    stmt = select(City).where(func.lower(City.name_en) == resolved)
     return session.execute(stmt).scalar_one_or_none()
 
 
@@ -50,11 +73,12 @@ def get_period(session: Session, year: int, half: str) -> Optional[ReportPeriod]
 
 def list_projects_by_city(session: Session, city_name: str) -> list[Project]:
     """Get all projects in a city, ordered by name."""
+    resolved = resolve_city_name(city_name)
     stmt = (
         select(Project)
         .join(District)
         .join(City)
-        .where(func.lower(City.name_en) == city_name.lower())
+        .where(func.lower(City.name_en) == resolved)
         .order_by(Project.name)
     )
     return list(session.execute(stmt).scalars().all())

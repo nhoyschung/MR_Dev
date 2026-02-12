@@ -11,6 +11,7 @@ from src.db.queries import (
     get_period, list_projects_by_city, list_projects_by_grade,
     list_projects_by_developer, get_latest_price, get_price_history,
     get_grade_for_price, count_projects_by_city, avg_price_by_district,
+    resolve_city_name,
 )
 from src.seeders.city_seeder import CitySeeder
 from src.seeders.grade_seeder import GradeSeeder
@@ -50,6 +51,21 @@ class TestLookupHelpers:
         assert city is not None
         assert city.name_en == "Hanoi"
 
+    def test_get_city_by_alias_hcmc(self, session):
+        city = get_city_by_name(session, "HCMC")
+        assert city is not None
+        assert city.name_en == "Ho Chi Minh City"
+
+    def test_get_city_by_alias_saigon(self, session):
+        city = get_city_by_name(session, "Saigon")
+        assert city is not None
+        assert city.name_en == "Ho Chi Minh City"
+
+    def test_get_city_by_alias_bd(self, session):
+        city = get_city_by_name(session, "BD")
+        assert city is not None
+        assert city.name_en == "Binh Duong"
+
     def test_get_city_not_found(self, session):
         assert get_city_by_name(session, "Nonexistent") is None
 
@@ -69,11 +85,35 @@ class TestLookupHelpers:
         assert period.year == 2024
 
 
+class TestResolveCityName:
+    def test_hcmc_aliases(self):
+        assert resolve_city_name("HCMC") == "ho chi minh city"
+        assert resolve_city_name("hcm") == "ho chi minh city"
+        assert resolve_city_name("Saigon") == "ho chi minh city"
+        assert resolve_city_name("  Ho Chi Minh  ") == "ho chi minh city"
+
+    def test_hanoi_aliases(self):
+        assert resolve_city_name("Ha Noi") == "hanoi"
+        assert resolve_city_name("Hanoi") == "hanoi"
+
+    def test_binh_duong_aliases(self):
+        assert resolve_city_name("BD") == "binh duong"
+
+    def test_unknown_passthrough(self):
+        assert resolve_city_name("Da Nang") == "da nang"
+
+
 class TestProjectQueries:
     def test_list_by_city(self, session):
         projects = list_projects_by_city(session, "Ho Chi Minh City")
         assert len(projects) > 0
         # All should be in HCMC districts
+        for p in projects:
+            assert p.district.city.name_en == "Ho Chi Minh City"
+
+    def test_list_by_city_alias(self, session):
+        projects = list_projects_by_city(session, "HCMC")
+        assert len(projects) > 0
         for p in projects:
             assert p.district.city.name_en == "Ho Chi Minh City"
 

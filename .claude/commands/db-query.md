@@ -45,12 +45,14 @@ Execute queries against the MR-System database and return formatted results.
 ```python
 from src.db.connection import get_session
 from src.db.models import *
+from src.db.queries import get_city_by_name, resolve_city_name
 from sqlalchemy import select, func
 
-session = get_session()
-# Execute queries...
-session.close()
+with get_session() as session:
+    # Execute queries...
 ```
+
+City aliases supported: HCMC/HCM/Saigon → Ho Chi Minh City, BD → Binh Duong, Ha Noi → Hanoi.
 
 ## Output Format
 - Always show results in a markdown table

@@ -52,10 +52,12 @@ Table of all projects in the district:
 ```python
 from src.db.connection import get_session
 from src.db.queries import (
-    get_district_by_name, get_district_supply, get_district_metrics,
-    avg_price_by_district,
+    get_city_by_name, get_district_by_name, get_district_supply,
+    get_district_metrics, avg_price_by_district,
 )
 from src.db.models import Project, District
 ```
+
+City aliases supported: HCMC, HCM, Saigon, BD, Ha Noi, etc.
 
 $ARGUMENTS

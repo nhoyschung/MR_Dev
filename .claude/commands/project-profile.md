@@ -47,7 +47,21 @@ Query the database for the specified project and produce a detailed profile:
 - Absorption rate
 - Inventory status
 
-## Database Queries
+## Quick Render (Preferred)
+
+Use the pre-built renderer for a complete template-based report:
+```python
+from src.db.connection import get_session
+from src.reports.project_profile import render_project_profile
+
+with get_session() as s:
+    report = render_project_profile(s, project_name)
+    # report is a complete markdown string
+```
+
+Parse project name from `$ARGUMENTS`. Supports exact or substring match.
+
+## Manual Queries (For Custom Analysis)
 
 ```python
 from src.db.connection import get_session
@@ -60,5 +74,6 @@ from src.db.queries import (
 
 ## Output Format
 Structured markdown with headers, tables, and key metrics highlighted.
+After rendering, review the output and add any additional insights or commentary as needed.
 
 $ARGUMENTS

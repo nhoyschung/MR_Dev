@@ -43,7 +43,22 @@ Show the distribution of projects across the grading system (SL/L/H-I/H-II/M-I/M
 ### 6. Key Takeaways
 3-5 bullet points summarizing the market state for investors and developers.
 
-## Database Queries
+## Quick Render (Preferred)
+
+Use the pre-built renderer for a complete template-based report:
+```python
+from src.db.connection import get_session
+from src.reports.market_briefing import render_market_briefing
+
+with get_session() as s:
+    report = render_market_briefing(s, city_name, year, half)
+    # report is a complete markdown string
+```
+
+Parse arguments from `$ARGUMENTS`: e.g. "HCMC 2024-H1" → city_name="HCMC", year=2024, half="H1".
+City aliases are supported: HCMC, HCM, Saigon, BD, Ha Noi.
+
+## Manual Queries (For Custom Analysis)
 
 Use the helpers in `src/db/queries.py`:
 ```python
@@ -56,5 +71,6 @@ from src.db.queries import (
 
 ## Output Format
 Markdown report with tables and bullet points. Include the period and data source counts at the top.
+After rendering, review the output and add any additional insights or commentary as needed.
 
 $ARGUMENTS
