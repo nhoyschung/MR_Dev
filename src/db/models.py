@@ -404,6 +404,18 @@ class SourceReport(Base):
     ingested_at: Mapped[Optional[datetime]] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     status: Mapped[Optional[str]] = mapped_column(String(30), default="pending")
 
+    # PDF metadata fields (added for collection system)
+    pdf_path: Mapped[Optional[str]] = mapped_column(String(500))
+    file_size_mb: Mapped[Optional[float]] = mapped_column(Float)
+    pdf_created_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
+
+    # Extraction tracking fields
+    extraction_started_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
+    extraction_completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
+    extraction_time_sec: Mapped[Optional[float]] = mapped_column(Float)
+    quality_score: Mapped[Optional[float]] = mapped_column(Float)
+    extracted_text_length: Mapped[Optional[int]] = mapped_column(Integer)
+
     city: Mapped[Optional[City]] = relationship(back_populates="source_reports")
     period: Mapped[Optional[ReportPeriod]] = relationship(back_populates="source_reports")
     data_lineage_records: Mapped[list[DataLineage]] = relationship(back_populates="source_report")
