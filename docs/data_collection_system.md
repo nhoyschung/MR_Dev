@@ -177,10 +177,14 @@ with get_session() as session:
 
 ## 다음 단계 (Phase 2-3)
 
-### Phase 2: 자동화 (Task #22)
-- [ ] 파일 시스템 감시자 (watchdog)
-- [ ] 실시간 신규 파일 감지
-- [ ] 자동 트리거 수집
+### Phase 2: 자동화 (Task #22) ✅ 완료
+- [x] 파일 시스템 감시자 (watchdog)
+- [x] 실시간 신규 파일 감지
+- [x] 자동 트리거 수집
+- [x] Debouncing 및 중복 방지
+- [x] 초기 스캔 기능
+- [x] 콜백 시스템
+- [x] 8개 단위 테스트 (100% 통과)
 
 ### Phase 3: CLI & 모니터링 (Task #23)
 - [ ] CLI 명령어:
