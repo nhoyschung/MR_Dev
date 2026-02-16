@@ -14,6 +14,9 @@ from src.reports.renderer import render_template
 from src.utils.geo_utils import (
     find_nearby_projects, find_competitors_by_grade, get_district_from_coords
 )
+from src.utils.infrastructure_scoring import get_district_infrastructure_score
+from src.utils.regulatory_data import get_regulatory_info, estimate_max_units
+from src.reports.location_map import create_competitor_map, save_map_to_file
 
 
 # Grade groupings for segmentation
@@ -70,7 +73,44 @@ def _analyze_location(
         "accessibility": [],
         "strengths": [],
         "weaknesses": [],
+        "infrastructure_score": None,
+        "regulatory_info": None,
     }
+
+    # Regulatory information
+    if district:
+        reg_info = get_regulatory_info(district.name_en)
+        if reg_info:
+            location_analysis["regulatory_info"] = reg_info
+
+            # Add constraints to weaknesses if applicable
+            if reg_info.flood_zone:
+                location_analysis["weaknesses"].append("Located in flood risk zone - mitigation required")
+            if reg_info.protected_area:
+                location_analysis["weaknesses"].append("Protected/heritage area - additional approvals required")
+            if reg_info.max_plot_ratio and reg_info.max_plot_ratio < 3.0:
+                location_analysis["weaknesses"].append(f"Low plot ratio ({reg_info.max_plot_ratio}) limits development density")
+
+    # Infrastructure scoring
+    if district:
+        infra_score = get_district_infrastructure_score(district.name_en)
+        if infra_score:
+            location_analysis["infrastructure_score"] = infra_score
+            score = infra_score["total_score"]
+            grade = infra_score["grade"]
+
+            # Add to accessibility notes
+            location_analysis["accessibility"].append(
+                f"Infrastructure Score: {score}/100 (Grade {grade})"
+            )
+
+            # Add strengths/weaknesses based on score
+            if score >= 80:
+                location_analysis["strengths"].append(f"Excellent infrastructure (Grade {grade})")
+            elif score >= 60:
+                location_analysis["strengths"].append(f"Good infrastructure (Grade {grade})")
+            elif score < 50:
+                location_analysis["weaknesses"].append(f"Limited infrastructure (Grade {grade})")
 
     # Basic accessibility analysis
     if district:
@@ -255,6 +295,7 @@ def _recommend_product_mix(
     land_input: dict,
     target_grades: list[str],
     market_data: dict,
+    regulatory_info=None,
 ) -> dict:
     """Recommend optimal product mix based on market analysis."""
     land_area_ha = land_input.get("land_area_ha", 0)
@@ -275,14 +316,21 @@ def _recommend_product_mix(
     elif segment == "Affordable":
         unit_mix = {"Studio": 20, "1BR": 40, "2BR": 30, "3BR": 10}
 
-    # Estimate total units (assuming 1,500 m2 per unit average)
-    estimated_units = int(land_area_m2 / 1500)
+    # Estimate total units based on regulatory constraints or default
+    if regulatory_info and regulatory_info.max_plot_ratio:
+        estimated_units = estimate_max_units(land_area_m2, regulatory_info.max_plot_ratio)
+    else:
+        # Default: assuming 1,500 m2 per unit average
+        estimated_units = int(land_area_m2 / 1500)
 
     recommendations = {
         "estimated_total_units": estimated_units,
         "unit_mix": unit_mix,
         "development_phases": 1 if estimated_units < 1000 else 2,
         "recommended_grades": target_grades,
+        "max_plot_ratio": regulatory_info.max_plot_ratio if regulatory_info else None,
+        "max_building_height_m": regulatory_info.max_building_height_m if regulatory_info else None,
+        "max_building_floors": regulatory_info.max_building_floors if regulatory_info else None,
     }
 
     return recommendations
@@ -386,8 +434,29 @@ def generate_land_review_report(
     market_data = _analyze_market(session, city, district, target_grades, latest_period)
     competitors = _find_competitors(session, land_input, target_grades, radius_km=5.0)
     swot = _generate_swot_analysis(land_input, location_data, market_data, competitors)
-    product_mix = _recommend_product_mix(session, land_input, target_grades, market_data)
+    product_mix = _recommend_product_mix(session, land_input, target_grades, market_data, location_data.get("regulatory_info"))
     pricing = _pricing_strategy(market_data, target_grades, segment)
+
+    # Generate competitor location map if coordinates provided
+    competitor_map_html = None
+    if land_input.get("latitude") and land_input.get("longitude") and competitors:
+        # Get raw competitor list with Project objects for map
+        competitor_projects = find_competitors_by_grade(
+            session,
+            land_input["latitude"],
+            land_input["longitude"],
+            target_grades,
+            radius_km=5.0,
+            limit=10
+        )
+
+        competitor_map_html = create_competitor_map(
+            land_lat=land_input["latitude"],
+            land_lon=land_input["longitude"],
+            competitors=competitor_projects,
+            land_name=f"{city.name_en} {district.name_en if district else ''} Land Site",
+            zoom_start=13,
+        )
 
     # Build context for template
     context = {
@@ -405,6 +474,7 @@ def generate_land_review_report(
         "market_analysis": market_data,
         "competitors": competitors,
         "competitor_count": len(competitors),
+        "competitor_map": competitor_map_html,
         "swot_analysis": swot,
         "product_recommendations": product_mix,
         "pricing_strategy": pricing,

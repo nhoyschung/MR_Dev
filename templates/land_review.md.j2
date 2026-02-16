@@ -42,6 +42,40 @@ This comprehensive land review analyzes the development potential of a {{ land_a
 *Accessibility data to be determined based on detailed site survey*
 {% endif %}
 
+{% if location_analysis.infrastructure_score -%}
+
+**Infrastructure Assessment:**
+
+| Category | Score | Grade |
+|----------|-------|-------|
+| Public Transport | {{ location_analysis.infrastructure_score.breakdown.public_transport }}/30 | {% if location_analysis.infrastructure_score.breakdown.public_transport >= 24 %}🟢 Excellent{% elif location_analysis.infrastructure_score.breakdown.public_transport >= 18 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| Roads & Highways | {{ location_analysis.infrastructure_score.breakdown.roads_highways }}/20 | {% if location_analysis.infrastructure_score.breakdown.roads_highways >= 16 %}🟢 Excellent{% elif location_analysis.infrastructure_score.breakdown.roads_highways >= 12 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| Education | {{ location_analysis.infrastructure_score.breakdown.education }}/20 | {% if location_analysis.infrastructure_score.breakdown.education >= 16 %}🟢 Excellent{% elif location_analysis.infrastructure_score.breakdown.education >= 12 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| Healthcare | {{ location_analysis.infrastructure_score.breakdown.healthcare }}/15 | {% if location_analysis.infrastructure_score.breakdown.healthcare >= 12 %}🟢 Excellent{% elif location_analysis.infrastructure_score.breakdown.healthcare >= 9 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| Commercial | {{ location_analysis.infrastructure_score.breakdown.commercial }}/15 | {% if location_analysis.infrastructure_score.breakdown.commercial >= 12 %}🟢 Excellent{% elif location_analysis.infrastructure_score.breakdown.commercial >= 9 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| **Total Score** | **{{ location_analysis.infrastructure_score.total_score }}/100** | **{{ location_analysis.infrastructure_score.grade }}** |
+
+{% endif %}
+
+{% if location_analysis.regulatory_info -%}
+
+**Regulatory & Zoning Information:**
+
+| Parameter | Value | Impact |
+|-----------|-------|--------|
+| **Zoning Type** | {{ location_analysis.regulatory_info.zoning_type }} | {% if location_analysis.regulatory_info.zoning_type == 'mixed-use' %}✓ Flexible development options{% elif location_analysis.regulatory_info.zoning_type == 'residential' %}Residential only{% else %}{{ location_analysis.regulatory_info.zoning_type }}{% endif %} |
+| **Max Plot Ratio (FAR)** | {{ location_analysis.regulatory_info.max_plot_ratio if location_analysis.regulatory_info.max_plot_ratio else 'N/A' }} | {% if location_analysis.regulatory_info.max_plot_ratio %}{% if location_analysis.regulatory_info.max_plot_ratio >= 5.0 %}🟢 High density allowed{% elif location_analysis.regulatory_info.max_plot_ratio >= 3.0 %}🟡 Moderate density{% else %}🔴 Low density restriction{% endif %}{% else %}N/A{% endif %} |
+| **Max Building Height** | {% if location_analysis.regulatory_info.max_building_height_m %}{{ location_analysis.regulatory_info.max_building_height_m | int }}m ({{ location_analysis.regulatory_info.max_building_floors }} floors){% else %}N/A{% endif %} | Height limit |
+| **Min Lot Size** | {% if location_analysis.regulatory_info.min_lot_size_m2 %}{{ location_analysis.regulatory_info.min_lot_size_m2 | int }}m²{% else %}N/A{% endif %} | Minimum parcel size |
+| **Flood Zone** | {% if location_analysis.regulatory_info.flood_zone %}⚠️ Yes - Mitigation required{% else %}✓ No{% endif %} | Environmental |
+| **Protected Area** | {% if location_analysis.regulatory_info.protected_area %}⚠️ Yes - Additional approvals{% else %}✓ No{% endif %} | Regulatory |
+
+{% if location_analysis.regulatory_info.notes -%}
+**Notes:** {{ location_analysis.regulatory_info.notes }}
+{% endif %}
+
+{% endif %}
+
 ### 1.3 Location Strengths
 
 {% if location_analysis.strengths -%}
@@ -109,7 +143,30 @@ This comprehensive land review analyzes the development potential of a {{ land_a
 
 ### 3.1 Competitor Projects (Within 5km Radius)
 
+{% if competitor_map -%}
+#### Interactive Location Map
+
+{% if competitor_map -%}
+<details>
+<summary><b>🗺️ Click to view interactive competitor map</b></summary>
+
+{{ competitor_map }}
+
+</details>
+
+**Map Legend:**
+- 🎯 Red Star: Target land location
+- 🏢 Building Icons: Competitor projects (color-coded by grade)
+- Circles: Distance radii (Green=1km, Blue=3km, Red=5km)
+- Click on markers for detailed project information
+
+{% endif -%}
+{% endif -%}
+
 {% if competitors -%}
+
+#### Competitor Project List
+
 Found **{{ competitor_count }} competitor projects** in the {{ target_segment }} segment:
 
 | Project | Distance (km) | Grade | Units | Status | Developer | Price/m² |
@@ -197,6 +254,12 @@ Found **{{ competitor_count }} competitor projects** in the {{ target_segment }}
 - **Estimated Total Units:** {{ product_recommendations.estimated_total_units | int }} units
 - **Development Phases:** {{ product_recommendations.development_phases }} phase{% if product_recommendations.development_phases > 1 %}s{% endif %}
 - **Target Grades:** {{ product_recommendations.recommended_grades | join(', ') }}
+{% if product_recommendations.max_plot_ratio -%}
+- **Plot Ratio (FAR):** {{ product_recommendations.max_plot_ratio }}
+{% endif -%}
+{% if product_recommendations.max_building_height_m -%}
+- **Max Height:** {{ product_recommendations.max_building_height_m | int }}m ({{ product_recommendations.max_building_floors }} floors)
+{% endif %}
 
 **Optimal Unit Mix:**
 
