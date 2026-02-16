@@ -1,0 +1,284 @@
+# Market Segment Analysis: {{ city_name }}
+
+**Generated:** {{ generated_date }}
+**Period:** {{ period }}
+
+---
+
+## Executive Summary
+
+**Market Overview:**
+- **Total Supply:** {{ total_supply | int }} units
+- **Total Sold:** {{ total_sold | int }} units
+- **Overall Absorption:** {{ overall_absorption | round(1) }}%
+
+**Segment Leaders:**
+{% if highest_price_seg -%}
+- **Highest Price:** {{ highest_price_seg.segment }} (${{ highest_price_seg.avg_price | round(0) | int }}/m²)
+{% endif -%}
+{% if highest_supply_seg -%}
+- **Most Supply:** {{ highest_supply_seg.segment }} ({{ highest_supply_seg.total_supply }} units)
+{% endif -%}
+{% if highest_absorption_seg -%}
+- **Best Absorption:** {{ highest_absorption_seg.segment }} ({{ highest_absorption_seg.absorption_rate | round(1) }}%)
+{% endif %}
+
+---
+
+## 1. Segment Pricing Overview
+
+{% if chart_price -%}
+![Segment Pricing Chart]({{ chart_price }})
+{% endif %}
+
+### Price Hierarchy
+
+| Rank | Segment | Grade Codes | Avg Price | Projects |
+|------|---------|-------------|-----------|----------|
+{% for s in segments -%}
+| {{ loop.index }} | {{ s.segment }} | {{ s.grade_code }} | {% if s.avg_price > 0 %}${{ s.avg_price | round(0) | int }}{% else %}N/A{% endif %} | {{ s.new_launches }} |
+{% endfor %}
+
+**Key Insights:**
+{% set price_spread = (segments[0].avg_price - segments[-1].avg_price) if segments | length >= 2 else 0 -%}
+{% if price_spread > 0 -%}
+- Price spread between highest and lowest segment: **${{ price_spread | round(0) | int }}/m²** ({{ (price_spread / segments[-1].avg_price * 100) | round(0) | int }}x difference)
+{% endif -%}
+{% if segments | length >= 3 -%}
+- Market is segmented across {{ segments | length }} distinct price tiers
+{% endif %}
+
+---
+
+## 2. Supply & Demand Analysis
+
+{% if chart_supply_demand -%}
+![Supply vs Demand Chart]({{ chart_supply_demand }})
+{% endif %}
+
+### Segment Performance
+
+| Segment | Total Supply | Sold Units | Remaining | Absorption Rate | New Launches |
+|---------|--------------|------------|-----------|-----------------|--------------|
+{% for s in segments -%}
+| {{ s.segment }} | {{ s.total_supply }} | {{ s.total_sold }} | {{ s.total_supply - s.total_sold }} | {% if s.absorption_rate > 0 %}{{ s.absorption_rate | round(1) }}%{% else %}—{% endif %} | {{ s.new_launches }} |
+{% endfor %}
+
+**Supply Concentration:**
+{% set mid_supply = segments | selectattr('segment', 'equalto', 'Mid-Range') | first -%}
+{% if mid_supply and total_supply > 0 -%}
+- Mid-Range segment accounts for {{ (mid_supply.total_supply / total_supply * 100) | round(0) | int }}% of total supply
+{% endif -%}
+{% set high_supply = segments | selectattr('segment', 'in', ['High-End', 'Luxury', 'Super-Luxury']) | map(attribute='total_supply') | sum -%}
+{% if high_supply > 0 and total_supply > 0 -%}
+- Premium segments (High-End+) represent {{ (high_supply / total_supply * 100) | round(0) | int }}% of market
+{% endif %}
+
+---
+
+## 3. Absorption Trends
+
+{% if chart_absorption -%}
+![Absorption Rate Chart]({{ chart_absorption }})
+{% endif %}
+
+### Demand Strength by Segment
+
+{% for s in segments | sort(attribute='absorption_rate', reverse=true) -%}
+**{{ loop.index }}. {{ s.segment }}** - {{ s.absorption_rate | round(1) }}%
+{% if s.absorption_rate >= 80 -%}
+- 🔥 **Strong Demand**: Market is absorbing supply rapidly
+{% elif s.absorption_rate >= 60 -%}
+- ✅ **Healthy Demand**: Solid absorption indicating balanced supply-demand
+{% elif s.absorption_rate >= 40 -%}
+- ⚠️ **Moderate Demand**: Absorption is below optimal levels
+{% elif s.absorption_rate > 0 -%}
+- 🔴 **Weak Demand**: Significant inventory pressure
+{% else -%}
+- ⚪ **No Data**: Absorption rate not available
+{% endif %}
+
+{% endfor %}
+
+---
+
+## 4. Segment Deep Dive
+
+{% for s in segments %}
+### {{ s.segment }}
+
+**Profile:**
+- **Grade Codes:** {{ s.grade_code }}
+- **Average Price:** {% if s.avg_price > 0 %}${{ s.avg_price | round(0) | int }}/m²{% else %}N/A{% endif %}
+- **Supply:** {{ s.total_supply }} units
+- **Sold:** {{ s.total_sold }} units ({% if s.total_supply > 0 %}{{ (s.total_sold / s.total_supply * 100) | round(1) }}%{% else %}—{% endif %})
+- **Absorption Rate:** {% if s.absorption_rate > 0 %}{{ s.absorption_rate | round(1) }}%{% else %}—{% endif %}
+- **New Launches:** {{ s.new_launches }} projects
+
+**Market Position:**
+{% if loop.index == 1 -%}
+Premium tier commanding highest prices. Target: ultra-HNW buyers and investors seeking prestige assets.
+{% elif s.segment == 'Luxury' -%}
+High-end tier for affluent buyers. Strong brand names and comprehensive amenities expected.
+{% elif s.segment == 'High-End' -%}
+Upper-middle segment. Balance of quality and value for upper-income professionals.
+{% elif s.segment == 'Mid-Range' -%}
+Core market segment. Largest buyer pool, focus on functionality and location.
+{% elif s.segment == 'Affordable' -%}
+Entry-level segment. First-time buyers and investors seeking yield over capital appreciation.
+{% endif %}
+
+**Supply-Demand Balance:**
+{% if s.total_supply > 0 and s.total_sold > 0 -%}
+{% set inventory_months = (s.total_supply - s.total_sold) / (s.total_sold / 6) if s.total_sold > 0 else 0 -%}
+{% if inventory_months < 6 -%}
+🟢 **Undersupplied** - Inventory will clear in ~{{ inventory_months | round(1) }} months at current pace
+{% elif inventory_months < 12 -%}
+🟡 **Balanced** - Healthy {{ inventory_months | round(1) }}-month inventory
+{% else -%}
+🔴 **Oversupplied** - {{ inventory_months | round(1) }}-month inventory indicates excess supply
+{% endif %}
+{% else -%}
+⚪ **Insufficient Data** - Cannot calculate inventory months
+{% endif %}
+
+---
+{% endfor %}
+
+## 5. Investment Opportunities
+
+### High-Demand Segments
+{% set high_demand = segments | selectattr('absorption_rate', 'gt', 70) | list -%}
+{% if high_demand -%}
+**Strong absorption (>70%) indicates high buyer demand:**
+{% for s in high_demand -%}
+- **{{ s.segment }}**: {{ s.absorption_rate | round(1) }}% absorption, ${{ s.avg_price | round(0) | int }}/m²
+  - Recommended for: Developers planning new launches, investors seeking liquidity
+{% endfor %}
+{% else -%}
+_No segments currently showing >70% absorption_
+{% endif %}
+
+### Value Opportunities
+{% set affordable = segments | selectattr('segment', 'in', ['Affordable', 'Mid-Range']) | list -%}
+{% if affordable -%}
+**Entry-level and mid-market segments offer volume potential:**
+{% for s in affordable -%}
+- **{{ s.segment }}**: ${{ s.avg_price | round(0) | int }}/m², {{ s.total_supply }} units supply
+  - Recommended for: First-time buyers, rental investors, volume buyers
+{% endfor %}
+{% else -%}
+_Affordable and mid-range segments not tracked in this period_
+{% endif %}
+
+### Premium Positioning
+{% set premium = segments | selectattr('segment', 'in', ['Super-Luxury', 'Luxury', 'High-End']) | list -%}
+{% if premium -%}
+**High-end segments for capital appreciation:**
+{% for s in premium -%}
+- **{{ s.segment }}**: ${{ s.avg_price | round(0) | int }}/m²
+  - Recommended for: HNW buyers, prestige seekers, long-term holders
+{% endfor %}
+{% else -%}
+_Premium segments not tracked in this period_
+{% endif %}
+
+---
+
+## 6. Supply-Demand Gap Analysis
+
+### Undersupplied Segments (Opportunity)
+{% set undersupplied = segments | selectattr('absorption_rate', 'gt', 80) | list -%}
+{% if undersupplied -%}
+**High absorption indicates potential supply shortage:**
+{% for s in undersupplied -%}
+- **{{ s.segment }}**: {{ s.absorption_rate | round(1) }}% absorption, only {{ s.total_supply - s.total_sold }} units remaining
+  - **Implication:** Prices may rise due to scarcity; developers should consider new launches
+{% endfor %}
+{% else -%}
+_No clear supply shortages identified across segments_
+{% endif %}
+
+### Oversupplied Segments (Caution)
+{% set oversupplied = segments | selectattr('absorption_rate', 'lt', 50) | selectattr('absorption_rate', 'gt', 0) | list -%}
+{% if oversupplied -%}
+**Low absorption indicates excess inventory:**
+{% for s in oversupplied -%}
+- **{{ s.segment }}**: {{ s.absorption_rate | round(1) }}% absorption, {{ s.total_supply - s.total_sold }} units unsold
+  - **Implication:** Price pressure likely; buyers have negotiating power; delay new launches
+{% endfor %}
+{% else -%}
+_No clear oversupply issues identified across segments_
+{% endif %}
+
+---
+
+## 7. Segment Recommendations
+
+### For Developers
+
+**Launch Priorities:**
+{% set ranked = segments | sort(attribute='absorption_rate', reverse=true) -%}
+1. **Top Priority:** {{ ranked[0].segment }} ({{ ranked[0].absorption_rate | round(1) }}% absorption) - Strong demand, fast sales
+{% if ranked | length > 1 -%}
+2. **Secondary:** {{ ranked[1].segment }} ({{ ranked[1].absorption_rate | round(1) }}% absorption) - Solid market
+{% endif %}
+{% if ranked | length > 2 and ranked[2].absorption_rate < 50 -%}
+3. **Caution:** {{ ranked[2].segment }} ({{ ranked[2].absorption_rate | round(1) }}% absorption) - Slow absorption, high inventory risk
+{% endif %}
+
+### For Buyers
+
+**Value Hunting:**
+- Target segments with <60% absorption for better negotiation leverage
+{% set low_abs = segments | selectattr('absorption_rate', 'lt', 60) | selectattr('absorption_rate', 'gt', 0) | list -%}
+{% if low_abs -%}
+- Consider: {{ low_abs | map(attribute='segment') | join(', ') }}
+{% endif %}
+
+**Fast-Appreciating Plays:**
+- Segments with >80% absorption likely to see price increases
+{% set high_abs = segments | selectattr('absorption_rate', 'gt', 80) | list -%}
+{% if high_abs -%}
+- Consider: {{ high_abs | map(attribute='segment') | join(', ') }}
+{% endif %}
+
+### For Investors
+
+**Rental Yield:**
+- **Mid-Range** and **Affordable** segments typically offer higher rental yields (4-6%)
+- Lower entry prices enable portfolio diversification
+
+**Capital Appreciation:**
+- **High-End** and **Luxury** segments typically appreciate faster in strong markets
+- Higher prices require patient capital (3-5 year hold)
+
+---
+
+## 8. Market Outlook
+
+### Overall Market Health
+{% if overall_absorption >= 70 -%}
+🟢 **Strong Market** - {{ overall_absorption | round(1) }}% overall absorption indicates robust demand across segments
+{% elif overall_absorption >= 50 -%}
+🟡 **Stable Market** - {{ overall_absorption | round(1) }}% overall absorption reflects balanced supply-demand dynamics
+{% elif overall_absorption > 0 -%}
+🔴 **Cautious Market** - {{ overall_absorption | round(1) }}% overall absorption suggests excess inventory and buyer hesitation
+{% else -%}
+⚪ **Insufficient Data** - Cannot determine market health without absorption data
+{% endif %}
+
+### Segment Trends
+{% if highest_absorption_seg and highest_absorption_seg.absorption_rate > 0 -%}
+- **Hottest Segment:** {{ highest_absorption_seg.segment }} ({{ highest_absorption_seg.absorption_rate | round(1) }}% absorption)
+{% endif -%}
+{% if highest_price_seg and highest_price_seg.avg_price > 0 -%}
+- **Price Leader:** {{ highest_price_seg.segment }} (${{ highest_price_seg.avg_price | round(0) | int }}/m²)
+{% endif -%}
+{% if highest_supply_seg and highest_supply_seg.total_supply > 0 -%}
+- **Volume Driver:** {{ highest_supply_seg.segment }} ({{ highest_supply_seg.total_supply }} units)
+{% endif %}
+
+---
+
+*Report generated by MR-System Market Segment Analysis Module*

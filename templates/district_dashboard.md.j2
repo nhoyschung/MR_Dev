@@ -1,0 +1,164 @@
+# District Metrics Dashboard: {{ city_name }}
+
+**Generated:** {{ generated_date }}
+**Period:** {{ period }}
+
+---
+
+## Executive Summary
+
+**City Overview:**
+- **Total Districts Tracked:** {{ total_districts }}
+- **City Average Price:** ${{ avg_city_price | round(0) | int }}/m²
+- **Total Supply:** {{ total_supply | int }} units
+
+**Top Performers:**
+{% if top_price_district -%}
+- **Highest Price:** {{ top_price_district.district_name }} (${{ top_price_district.avg_price | round(0) | int }}/m²)
+{% endif -%}
+{% if top_supply_district -%}
+- **Most Supply:** {{ top_supply_district.district_name }} ({{ top_supply_district.supply_count }} units)
+{% endif -%}
+{% if bottom_price_district -%}
+- **Most Affordable:** {{ bottom_price_district.district_name }} (${{ bottom_price_district.avg_price | round(0) | int }}/m²)
+{% endif %}
+
+---
+
+## 1. Price Comparison
+
+{% if chart_price -%}
+![Price by District]({{ chart_price }})
+{% endif %}
+
+### District Price Rankings
+
+| Rank | District | Type | Avg Price | Supply |
+|------|----------|------|-----------|--------|
+{% for d in districts -%}
+| {{ loop.index }} | {{ d.district_name }} | {{ d.district_type }} | {% if d.avg_price > 0 %}${{ d.avg_price | round(0) | int }}{% else %}N/A{% endif %} | {{ d.supply_count }} |
+{% endfor %}
+
+---
+
+## 2. Supply Distribution
+
+{% if chart_supply -%}
+![Supply by District]({{ chart_supply }})
+{% endif %}
+
+### Supply Metrics by District
+
+| District | Supply Count | New Supply | Inventory | Absorption Rate |
+|----------|--------------|------------|-----------|-----------------|
+{% for d in districts if d.supply_count > 0 -%}
+| {{ d.district_name }} | {{ d.supply_count }} | {{ d.new_supply }} | {{ d.inventory }} | {% if d.absorption_rate > 0 %}{{ d.absorption_rate | round(1) }}%{% else %}—{% endif %} |
+{% endfor %}
+
+---
+
+## 3. Supply vs Price Analysis
+
+{% if chart_heatmap -%}
+![Supply vs Price Heatmap]({{ chart_heatmap }})
+{% endif %}
+
+### Key Insights:
+
+**High Price, High Supply Districts:**
+{% set high_high = districts | selectattr('avg_price', 'gt', avg_city_price) | selectattr('supply_count', 'gt', 10) | list -%}
+{% if high_high -%}
+{% for d in high_high[:3] -%}
+- **{{ d.district_name }}**: ${{ d.avg_price | round(0) | int }}/m², {{ d.supply_count }} units
+{% endfor %}
+{% else -%}
+_No districts meet this criteria_
+{% endif %}
+
+**High Price, Low Supply Districts (Exclusivity):**
+{% set high_low = districts | selectattr('avg_price', 'gt', avg_city_price) | selectattr('supply_count', 'lt', 10) | list -%}
+{% if high_low -%}
+{% for d in high_low[:3] -%}
+- **{{ d.district_name }}**: ${{ d.avg_price | round(0) | int }}/m², {{ d.supply_count }} units
+{% endfor %}
+{% else -%}
+_No districts meet this criteria_
+{% endif %}
+
+**Affordable, High Supply Districts (Value):**
+{% set low_high = districts | selectattr('avg_price', 'lt', avg_city_price) | selectattr('supply_count', 'gt', 10) | list -%}
+{% if low_high -%}
+{% for d in low_high[:3] -%}
+- **{{ d.district_name }}**: ${{ d.avg_price | round(0) | int }}/m², {{ d.supply_count }} units
+{% endfor %}
+{% else -%}
+_No districts meet this criteria_
+{% endif %}
+
+---
+
+## 4. Price Change Trends
+
+{% if chart_price_change -%}
+![Price Change by District]({{ chart_price_change }})
+{% endif %}
+
+### Districts with Price Movement
+
+| District | Current Price | Price Change | Status |
+|----------|--------------|--------------|--------|
+{% for d in districts if d.avg_price_change_pct is not none and d.avg_price_change_pct != 0 -%}
+| {{ d.district_name }} | ${{ d.avg_price | round(0) | int }} | {% if d.avg_price_change_pct > 0 %}+{% endif %}{{ d.avg_price_change_pct | round(2) }}% | {% if d.avg_price_change_pct > 2 %}🔥 Hot{% elif d.avg_price_change_pct > 0 %}📈 Rising{% elif d.avg_price_change_pct > -2 %}📊 Stable{% else %}📉 Cooling{% endif %} |
+{% endfor %}
+
+---
+
+## 5. Investment Recommendations
+
+### Premium Segment
+{% set premium = districts | selectattr('avg_price', 'gt', avg_city_price * 1.2) | list -%}
+{% if premium -%}
+**High-end districts** commanding 20%+ premium over city average:
+{% for d in premium[:5] -%}
+- **{{ d.district_name }}**: ${{ d.avg_price | round(0) | int }}/m² ({{ ((d.avg_price / avg_city_price - 1) * 100) | round(0) | int }}% above avg)
+{% endfor %}
+{% else -%}
+_No premium districts identified_
+{% endif %}
+
+### Value Segment
+{% set value = districts | selectattr('avg_price', 'gt', 0) | selectattr('avg_price', 'lt', avg_city_price * 0.8) | list -%}
+{% if value -%}
+**Affordable districts** priced 20%+ below city average:
+{% for d in value[:5] -%}
+- **{{ d.district_name }}**: ${{ d.avg_price | round(0) | int }}/m² ({{ ((1 - d.avg_price / avg_city_price) * 100) | round(0) | int }}% below avg)
+{% endfor %}
+{% else -%}
+_No value districts identified_
+{% endif %}
+
+### High Activity Zones
+{% set high_activity = districts | selectattr('supply_count', 'gt', total_supply / total_districts) | list -%}
+{% if high_activity -%}
+**Districts with above-average supply** (development hotspots):
+{% for d in high_activity[:5] -%}
+- **{{ d.district_name }}**: {{ d.supply_count }} units ({{ ((d.supply_count / total_supply * 100)) | round(1) }}% of city supply)
+{% endfor %}
+{% else -%}
+_No high-activity districts identified_
+{% endif %}
+
+---
+
+## 6. Market Segmentation
+
+| Segment | Districts | Avg Price Range | Characteristics |
+|---------|-----------|-----------------|-----------------|
+| **Ultra-Premium** | {% set ultra = districts | selectattr('avg_price', 'gt', 5000) | list %}{{ ultra | length }} | $5,000+ | {% if ultra %}{{ ultra | map(attribute='district_name') | join(', ') }}{% else %}None{% endif %} |
+| **Premium** | {% set prem = districts | selectattr('avg_price', 'ge', 3000) | selectattr('avg_price', 'lt', 5000) | list %}{{ prem | length }} | $3,000-$5,000 | {% if prem %}{{ prem | map(attribute='district_name') | join(', ') }}{% else %}None{% endif %} |
+| **Mid-Range** | {% set mid = districts | selectattr('avg_price', 'ge', 1500) | selectattr('avg_price', 'lt', 3000) | list %}{{ mid | length }} | $1,500-$3,000 | {% if mid %}{{ mid | map(attribute='district_name') | join(', ') }}{% else %}None{% endif %} |
+| **Affordable** | {% set aff = districts | selectattr('avg_price', 'gt', 0) | selectattr('avg_price', 'lt', 1500) | list %}{{ aff | length }} | <$1,500 | {% if aff %}{{ aff | map(attribute='district_name') | join(', ') }}{% else %}None{% endif %} |
+
+---
+
+*Report generated by MR-System District Metrics Dashboard*

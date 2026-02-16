@@ -1,0 +1,213 @@
+# Competitor Benchmarking Report
+
+**Generated:** {{ generated_date }}
+**Period:** {{ period }}
+
+---
+
+## Executive Summary
+
+**Projects Compared:** {{ projects | length }}
+
+**Overall Winner:** {{ overall_winner }} (highest total score)
+**Best Value:** {{ best_value }} (best score-to-price ratio)
+
+---
+
+## 1. Project Profiles
+
+{% for p in projects -%}
+### {{ loop.index }}. {{ p.name }}
+
+| Attribute | Value |
+|-----------|-------|
+| **Developer** | {{ p.developer }} |
+| **Location** | {{ p.district }}, {{ p.city }} |
+| **Grade** | {{ p.grade }} |
+| **Price** | {% if p.price_usd > 0 %}${{ p.price_usd | round(0) | int }}/m²{% else %}N/A{% endif %} |
+| **Units** | {{ p.total_units }} |
+| **Status** | {{ p.status }} |
+| **Total Score** | **{{ p.total_score | round(1) }}/110** |
+| **Value Index** | {{ p.value_index | round(2) }} |
+
+{% endfor %}
+
+---
+
+## 2. 11-Dimension Scoring Matrix
+
+{% if chart_radar -%}
+![Radar Chart]({{ chart_radar }})
+{% endif %}
+
+| Dimension | {% for p in projects %}{{ p.name[:20] }} | {% endfor %}Winner |
+|-----------|{% for p in projects %}--------|{% endfor %}--------|
+{% for dim in dimensions -%}
+| {{ dim }} | {% for p in projects %}{{ p.scores.get(dim, 0) | round(1) }} | {% endfor %}**{{ dimension_winners.get(dim, 'N/A') }}** |
+{% endfor -%}
+| **TOTAL** | {% for p in projects %}**{{ p.total_score | round(1) }}** | {% endfor %}**{{ overall_winner }}** |
+
+**Scoring Legend:**
+- 9-10: Exceptional advantage
+- 7-8: Strong
+- 5-6: Average / market standard
+- 3-4: Below average
+- 1-2: Significant weakness
+
+---
+
+## 3. Overall Score Comparison
+
+{% if chart_total -%}
+![Total Score Chart]({{ chart_total }})
+{% endif %}
+
+### Rankings
+
+| Rank | Project | Total Score | Grade | Price | Value Index |
+|------|---------|-------------|-------|-------|-------------|
+{% for p in projects | sort(attribute='total_score', reverse=true) -%}
+| {{ loop.index }} | {{ p.name }} | {{ p.total_score | round(1) }} | {{ p.grade }} | {% if p.price_usd > 0 %}${{ p.price_usd | round(0) | int }}{% else %}N/A{% endif %} | {{ p.value_index | round(2) }} |
+{% endfor %}
+
+---
+
+## 4. Dimension-by-Dimension Analysis
+
+{% for dim in dimensions %}
+### {{ loop.index }}. {{ dim }}
+
+| Project | Score | Analysis |
+|---------|-------|----------|
+{% for p in projects -%}
+| {{ p.name }} | {{ p.scores.get(dim, 0) | round(1) }} | {% if p.scores.get(dim, 0) >= 8 %}🟢 Strong{% elif p.scores.get(dim, 0) >= 6 %}🟡 Average{% else %}🔴 Weak{% endif %} |
+{% endfor %}
+
+**Winner:** {{ dimension_winners.get(dim, 'N/A') }}
+
+{% endfor %}
+
+---
+
+## 5. Strengths & Weaknesses
+
+{% for p in projects %}
+### {{ p.name }}
+
+**Top 3 Strengths:**
+{% set sorted_scores = p.scores.items() | sort(attribute='1', reverse=true) -%}
+{% for dim, score in sorted_scores[:3] -%}
+{{ loop.index }}. **{{ dim }}** ({{ score | round(1) }}): {% if score >= 8 %}Exceptional advantage{% elif score >= 7 %}Strong performance{% else %}Above average{% endif %}
+{% endfor %}
+
+**Top 3 Weaknesses:**
+{% for dim, score in sorted_scores[-3:] | reverse -%}
+{{ loop.index }}. **{{ dim }}** ({{ score | round(1) }}): {% if score <= 4 %}Needs improvement{% elif score <= 5 %}Below market standard{% else %}Room for enhancement{% endif %}
+{% endfor %}
+
+**Key Differentiator:**
+{% set best_dim = sorted_scores[0] -%}
+{{ p.name }} excels in **{{ best_dim[0] }}** ({{ best_dim[1] | round(1) }}/10), which sets it apart from competitors.
+
+---
+{% endfor %}
+
+## 6. Price-Value Assessment
+
+### Value Analysis Matrix
+
+| Project | Price | Total Score | Value Index | Assessment |
+|---------|-------|-------------|-------------|------------|
+{% for p in projects | sort(attribute='value_index', reverse=true) -%}
+| {{ p.name }} | {% if p.price_usd > 0 %}${{ p.price_usd | round(0) | int }}{% else %}N/A{% endif %} | {{ p.total_score | round(1) }} | {{ p.value_index | round(2) }} | {% if loop.index == 1 %}🏆 Best Value{% elif p.value_index >= (projects | map(attribute='value_index') | sum / projects | length) %}✅ Good Value{% else %}⚠️ Premium Pricing{% endif %} |
+{% endfor %}
+
+**Value Index Formula:** (Total Score / Price) × 1000
+
+**Interpretation:**
+- **Higher Value Index** = Better score-to-price ratio (more features/quality per dollar)
+- **Lower Value Index** = Premium pricing relative to features
+
+---
+
+## 7. Competitive Positioning
+
+### Price vs Quality Matrix
+
+| Segment | Projects | Characteristics |
+|---------|----------|-----------------|
+| **High Price, High Score** | {% set hh = projects | selectattr('price_usd', 'gt', 3000) | selectattr('total_score', 'gt', 70) | list %}{% if hh %}{{ hh | map(attribute='name') | join(', ') }}{% else %}None{% endif %} | Premium products with strong fundamentals |
+| **Low Price, High Score** | {% set lh = projects | selectattr('price_usd', 'lt', 2000) | selectattr('total_score', 'gt', 70) | list %}{% if lh %}{{ lh | map(attribute='name') | join(', ') }}{% else %}None{% endif %} | Exceptional value plays |
+| **High Price, Low Score** | {% set hl = projects | selectattr('price_usd', 'gt', 3000) | selectattr('total_score', 'lt', 70) | list %}{% if hl %}{{ hl | map(attribute='name') | join(', ') }}{% else %}None{% endif %} | Overpriced / brand premium |
+| **Low Price, Low Score** | {% set ll = projects | selectattr('price_usd', 'lt', 2000) | selectattr('total_score', 'lt', 70) | list %}{% if ll %}{{ ll | map(attribute='name') | join(', ') }}{% else %}None{% endif %} | Budget offerings |
+
+---
+
+## 8. Buyer Profile Matching
+
+{% for p in projects %}
+### {{ p.name }} - Best For:
+
+{% if p.total_score >= 80 -%}
+**Premium Buyers** seeking top-tier quality across all dimensions. Willing to pay for comprehensive features and strong developer brand.
+{% elif p.total_score >= 70 -%}
+**Mid-to-High Buyers** who want strong fundamentals with some premium touches. Balanced approach to quality and price.
+{% elif p.value_index >= (projects | map(attribute='value_index') | sum / projects | length) -%}
+**Value Hunters** looking for maximum features per dollar. Practical buyers who prioritize functionality over prestige.
+{% else -%}
+**First-time Buyers** or budget-conscious purchasers entering the market. Focus on affordability over comprehensive amenities.
+{% endif %}
+
+**Target Demographics:**
+- Grade segment: {{ p.grade }}
+- Price point: {% if p.price_usd > 0 %}${{ p.price_usd | round(0) | int }}/m²{% else %}N/A{% endif %}
+- Project scale: {{ p.total_units }} units
+
+---
+{% endfor %}
+
+## 9. Investment Recommendation
+
+### Overall Verdict
+
+**#1 Recommended:** {{ overall_winner }}
+- **Reason:** Highest total score ({{ (projects | selectattr('name', 'equalto', overall_winner) | first).total_score | round(1) }}/110) indicates strongest overall proposition
+- **Target Buyer:** {% if (projects | selectattr('name', 'equalto', overall_winner) | first).total_score >= 80 %}Premium segment seeking comprehensive quality{% else %}Mid-market buyers wanting solid fundamentals{% endif %}
+
+**Best Value Pick:** {{ best_value }}
+- **Reason:** Highest value index ({{ (projects | selectattr('name', 'equalto', best_value) | first).value_index | round(2) }}) means best score-to-price ratio
+- **Target Buyer:** Practical investors maximizing ROI and feature set per dollar
+
+### Risk Considerations
+
+{% for p in projects -%}
+**{{ p.name }}:**
+{% set sorted_scores = p.scores.items() | sort(attribute='1') -%}
+{% set weakest = sorted_scores[0] -%}
+- Primary risk: **{{ weakest[0] }}** dimension scores only {{ weakest[1] | round(1) }}/10
+- Mitigation: {% if weakest[0] == 'Developer Brand' %}Research developer track record carefully{% elif weakest[0] == 'Legal Status' %}Verify permits and land use rights{% elif weakest[0] == 'Location' %}Consider transportation alternatives{% else %}Evaluate if this weakness impacts your priorities{% endif %}
+
+{% endfor %}
+
+---
+
+## 10. Data Notes
+
+**Sources:**
+- Project data: MR-System database
+- Scoring methodology: NHO-PD 11-dimension framework
+- Period: {{ period }}
+
+**Confidence Levels:**
+- High confidence: Location, Pricing, Developer Brand (database-backed)
+- Medium confidence: Facilities, Unit Layout (partial data)
+- Low confidence: Transportation, Surroundings (limited infrastructure data)
+
+**Limitations:**
+- Auto-scoring used where dimension scores not explicitly stored in database
+- Some dimensions rely on proxy metrics (e.g., project count as developer brand strength)
+- Market conditions may have changed since period {{ period }}
+
+---
+
+*Report generated by MR-System Competitor Benchmarker*
