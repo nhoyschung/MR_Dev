@@ -217,6 +217,66 @@ DISTRICT_INFRASTRUCTURE = {
         shopping_malls=1, supermarkets=5,
         district_type="suburban"
     ),
+    "Di An": InfrastructureData(
+        metro_stations=0, bus_routes=5,
+        highway_access=True, major_roads=4,
+        international_schools=0, local_schools=5, universities=0,
+        hospitals=1, clinics=5,
+        shopping_malls=2, supermarkets=6,
+        district_type="suburban"
+    ),
+
+    # Additional HCMC Districts
+    "District 4": InfrastructureData(
+        metro_stations=1, bus_routes=14,
+        highway_access=True, major_roads=6,
+        international_schools=2, local_schools=9, universities=1,
+        hospitals=3, clinics=16,
+        shopping_malls=4, supermarkets=12,
+        district_type="urban"
+    ),
+    "District 9": InfrastructureData(
+        metro_stations=0, bus_routes=7,
+        highway_access=True, major_roads=4,
+        international_schools=1, local_schools=6, universities=1,
+        hospitals=2, clinics=8,
+        shopping_malls=3, supermarkets=8,
+        district_type="suburban"
+    ),
+    "Binh Chanh": InfrastructureData(
+        metro_stations=0, bus_routes=5,
+        highway_access=True, major_roads=3,
+        international_schools=0, local_schools=5, universities=0,
+        hospitals=2, clinics=6,
+        shopping_malls=2, supermarkets=7,
+        district_type="suburban"
+    ),
+
+    # Additional Hanoi Districts
+    "Thanh Xuan": InfrastructureData(
+        metro_stations=1, bus_routes=16,
+        highway_access=True, major_roads=7,
+        international_schools=2, local_schools=12, universities=2,
+        hospitals=4, clinics=20,
+        shopping_malls=6, supermarkets=14,
+        district_type="urban"
+    ),
+    "Gia Lam": InfrastructureData(
+        metro_stations=0, bus_routes=6,
+        highway_access=True, major_roads=4,
+        international_schools=0, local_schools=6, universities=0,
+        hospitals=2, clinics=7,
+        shopping_malls=2, supermarkets=8,
+        district_type="suburban"
+    ),
+    "Dong Anh": InfrastructureData(
+        metro_stations=0, bus_routes=4,
+        highway_access=True, major_roads=3,
+        international_schools=0, local_schools=5, universities=0,
+        hospitals=1, clinics=5,
+        shopping_malls=1, supermarkets=6,
+        district_type="suburban"
+    ),
 }
 
 

@@ -216,6 +216,113 @@ DISTRICT_REGULATIONS = {
         side_setback_m=5.0,
         notes="Industrial zone with worker housing development allowed"
     ),
+
+    "Di An": RegulatoryInfo(
+        zoning_type="industrial",
+        max_plot_ratio=3.0,
+        max_building_height_m=70.0,
+        max_building_floors=22,
+        min_lot_size_m2=800.0,
+        max_lot_coverage_pct=42.0,
+        flood_zone=False,
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=6.5,
+        side_setback_m=4.5,
+        notes="Industrial district transitioning to mixed-use residential"
+    ),
+
+    # Additional HCMC Districts
+    "District 4": RegulatoryInfo(
+        zoning_type="mixed-use",
+        max_plot_ratio=6.5,
+        max_building_height_m=130.0,
+        max_building_floors=36,
+        min_lot_size_m2=350.0,
+        max_lot_coverage_pct=55.0,
+        flood_zone=True,  # Near Saigon River
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=5.0,
+        side_setback_m=3.5,
+        notes="Inner city district with river frontage - flood mitigation required"
+    ),
+
+    "District 9": RegulatoryInfo(
+        zoning_type="residential",
+        max_plot_ratio=3.5,
+        max_building_height_m=80.0,
+        max_building_floors=25,
+        min_lot_size_m2=600.0,
+        max_lot_coverage_pct=40.0,
+        flood_zone=False,
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=6.0,
+        side_setback_m=4.5,
+        notes="Eastern expansion zone with tech park development (now part of Thu Duc City)"
+    ),
+
+    "Binh Chanh": RegulatoryInfo(
+        zoning_type="residential",
+        max_plot_ratio=2.5,
+        max_building_height_m=60.0,
+        max_building_floors=20,
+        min_lot_size_m2=800.0,
+        max_lot_coverage_pct=35.0,
+        flood_zone=True,  # Low-lying area
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=7.0,
+        side_setback_m=5.0,
+        notes="Suburban expansion zone with flood risk - drainage infrastructure required"
+    ),
+
+    # Additional Hanoi Districts
+    "Thanh Xuan": RegulatoryInfo(
+        zoning_type="mixed-use",
+        max_plot_ratio=6.0,
+        max_building_height_m=125.0,
+        max_building_floors=35,
+        min_lot_size_m2=400.0,
+        max_lot_coverage_pct=55.0,
+        flood_zone=False,
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=5.0,
+        side_setback_m=3.5,
+        notes="Central district with active urban renewal and redevelopment"
+    ),
+
+    "Gia Lam": RegulatoryInfo(
+        zoning_type="residential",
+        max_plot_ratio=3.0,
+        max_building_height_m=75.0,
+        max_building_floors=24,
+        min_lot_size_m2=700.0,
+        max_lot_coverage_pct=38.0,
+        flood_zone=False,
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=6.5,
+        side_setback_m=4.5,
+        notes="Eastern suburban development zone near Noi Bai Airport"
+    ),
+
+    "Dong Anh": RegulatoryInfo(
+        zoning_type="residential",
+        max_plot_ratio=2.5,
+        max_building_height_m=65.0,
+        max_building_floors=21,
+        min_lot_size_m2=900.0,
+        max_lot_coverage_pct=35.0,
+        flood_zone=False,
+        protected_area=False,
+        environmental_impact_required=True,
+        front_setback_m=7.0,
+        side_setback_m=5.0,
+        notes="Northern suburban zone with lower density residential development"
+    ),
 }
 
 
