@@ -1,8 +1,6 @@
 """Seeder for project_blocks from extracted JSON."""
 
-from typing import Any
-
-from src.db.models import Project, ProjectBlock
+from src.db.models import ProjectBlock
 from src.seeders.base_seeder import LineageAwareSeeder
 
 
@@ -54,11 +52,3 @@ class BlockSeeder(LineageAwareSeeder):
 
         self.session.commit()
         return count
-
-    def _find_project(self, name: str) -> Any:
-        """Find project by exact name match (case-insensitive)."""
-        return (
-            self.session.query(Project)
-            .filter(Project.name.ilike(f"%{name}%"))
-            .first()
-        )

@@ -114,11 +114,11 @@ def _top_districts_by_supply(
             func.sum(SupplyRecord.new_supply),
             func.avg(SupplyRecord.absorption_rate_pct),
         )
-        .join(Project, District.id == Project.district_id)
-        .join(SupplyRecord, Project.id == SupplyRecord.project_id)
+        .join(SupplyRecord, SupplyRecord.district_id == District.id)
         .where(
             District.city_id == city_id,
             SupplyRecord.period_id == period_id,
+            SupplyRecord.project_id.is_(None),
         )
         .group_by(District.name_en)
         .order_by(func.sum(SupplyRecord.new_supply).desc())
@@ -192,12 +192,12 @@ def render_market_briefing(
     absorption_rows = (
         session.execute(
             select(SupplyRecord.absorption_rate_pct)
-            .join(Project)
-            .join(District)
+            .join(District, SupplyRecord.district_id == District.id)
             .where(
                 District.city_id == city.id,
                 SupplyRecord.period_id == period.id,
                 SupplyRecord.absorption_rate_pct.isnot(None),
+                SupplyRecord.project_id.is_(None),
             )
         )
         .scalars()

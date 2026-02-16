@@ -1,8 +1,6 @@
 """Seeder for price_change_factors from extracted JSON."""
 
-from typing import Any
-
-from src.db.models import PriceChangeFactor, PriceRecord, Project
+from src.db.models import PriceChangeFactor, PriceRecord
 from src.seeders.base_seeder import LineageAwareSeeder
 
 
@@ -73,10 +71,3 @@ class PriceFactorSeeder(LineageAwareSeeder):
 
         self.session.commit()
         return count
-
-    def _find_project(self, name: str) -> Any:
-        return (
-            self.session.query(Project)
-            .filter(Project.name.ilike(f"%{name}%"))
-            .first()
-        )

@@ -15,6 +15,7 @@ from src.seeders.supply_seeder import SupplySeeder
 from src.reports.renderer import render_template
 from src.reports.market_briefing import render_market_briefing
 from src.reports.project_profile import render_project_profile
+from src.reports.zone_analysis import render_zone_analysis
 
 
 @pytest.fixture
@@ -115,3 +116,25 @@ class TestProjectProfile:
         """Developer HQ should show city name, not <City ...> repr."""
         result = render_project_profile(session, "Masteri Thao Dien")
         assert "<City" not in result
+
+
+class TestZoneAnalysis:
+    def test_render_zone_analysis_hcmc(self, session):
+        result = render_zone_analysis(session, "District 2", "HCMC", 2024, "H1")
+        assert result is not None
+        assert "Zone Analysis: District 2, Ho Chi Minh City" in result
+        assert "Supply Analysis" in result
+        assert "Project Roster" in result
+
+    def test_render_zone_analysis_alias_city(self, session):
+        result = render_zone_analysis(session, "District 2", "Saigon", 2024, "H1")
+        assert result is not None
+        assert "Ho Chi Minh City" in result
+
+    def test_render_zone_analysis_district_not_found(self, session):
+        result = render_zone_analysis(session, "NoSuchDistrict", "HCMC", 2024, "H1")
+        assert result is None
+
+    def test_render_zone_analysis_period_not_found(self, session):
+        result = render_zone_analysis(session, "District 2", "HCMC", 2099, "H1")
+        assert result is None

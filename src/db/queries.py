@@ -164,10 +164,10 @@ def get_district_supply(
     """Get supply records for a district in a given period."""
     stmt = (
         select(SupplyRecord)
-        .join(Project)
         .join(ReportPeriod)
         .where(
-            Project.district_id == district_id,
+            SupplyRecord.district_id == district_id,
+            SupplyRecord.project_id.is_(None),
             ReportPeriod.year == year,
             ReportPeriod.half == half,
         )

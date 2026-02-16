@@ -1,8 +1,6 @@
 """Seeder for unit_types from extracted JSON (casestudy + market passes)."""
 
-from typing import Any
-
-from src.db.models import Project, UnitType
+from src.db.models import UnitType
 from src.seeders.base_seeder import LineageAwareSeeder
 
 
@@ -77,10 +75,3 @@ class UnitTypeSeeder(LineageAwareSeeder):
 
         self.session.commit()
         return count
-
-    def _find_project(self, name: str) -> Any:
-        return (
-            self.session.query(Project)
-            .filter(Project.name.ilike(f"%{name}%"))
-            .first()
-        )

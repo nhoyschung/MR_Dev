@@ -40,13 +40,6 @@ class DistrictMetricSeeder(LineageAwareSeeder):
 
     def _seed_extracted(self, data: list[dict[str, Any]]) -> int:
         count = 0
-        period = (
-            self.session.query(ReportPeriod)
-            .filter_by(year=2024, half="H1")
-            .first()
-        )
-        if not period:
-            return 0
 
         for record in data:
             city_name = record.get("city")
@@ -57,18 +50,37 @@ class DistrictMetricSeeder(LineageAwareSeeder):
             if not city:
                 continue
 
-            # Find the first district in this city as a placeholder
-            # (extracted metrics are city-level, stored at district level)
-            districts = (
-                self.session.query(District)
-                .filter_by(city_id=city.id)
-                .all()
+            # Resolve period: use record-level fields if present, else default 2024-H1
+            period_year = record.get("period_year", 2024)
+            period_half = record.get("period_half", "H1")
+            period = (
+                self.session.query(ReportPeriod)
+                .filter_by(year=period_year, half=period_half)
+                .first()
             )
-            if not districts:
+            if not period:
                 continue
 
-            # Use first district for city-level metrics
-            district = districts[0]
+            # Resolve district: use record-level district_name if present
+            district_name = record.get("district_name")
+            if district_name:
+                district = (
+                    self.session.query(District)
+                    .filter(
+                        District.city_id == city.id,
+                        District.name_en.ilike(f"%{district_name}%"),
+                    )
+                    .first()
+                )
+            else:
+                # Fall back to first district in city (city-level metric)
+                district = (
+                    self.session.query(District)
+                    .filter_by(city_id=city.id)
+                    .first()
+                )
+            if not district:
+                continue
 
             meta = record.get("_meta", {})
             source_report = self._get_source_report(meta.get("source_file", ""))
@@ -114,62 +126,56 @@ class DistrictMetricSeeder(LineageAwareSeeder):
         """Compute district-level metrics from existing price and supply data."""
         count = 0
 
-        period = (
-            self.session.query(ReportPeriod)
-            .filter_by(year=2024, half="H1")
-            .first()
-        )
-        if not period:
-            return 0
-
+        periods = self.session.query(ReportPeriod).all()
         districts = self.session.query(District).all()
 
-        for district in districts:
-            # Compute average price for projects in this district
-            avg_price_result = (
-                self.session.query(func.avg(PriceRecord.price_usd_per_m2))
-                .join(Project, PriceRecord.project_id == Project.id)
-                .filter(
-                    Project.district_id == district.id,
-                    PriceRecord.period_id == period.id,
-                    PriceRecord.price_usd_per_m2.isnot(None),
+        for period in periods:
+            for district in districts:
+                # Compute average price for projects in this district
+                avg_price_result = (
+                    self.session.query(func.avg(PriceRecord.price_usd_per_m2))
+                    .join(Project, PriceRecord.project_id == Project.id)
+                    .filter(
+                        Project.district_id == district.id,
+                        PriceRecord.period_id == period.id,
+                        PriceRecord.price_usd_per_m2.isnot(None),
+                    )
+                    .scalar()
                 )
-                .scalar()
-            )
 
-            if avg_price_result:
-                _, created = self._get_or_create(
-                    DistrictMetric,
-                    district_id=district.id,
-                    period_id=period.id,
-                    metric_type="avg_price",
-                    defaults={
-                        "value_numeric": round(float(avg_price_result), 2),
-                        "value_text": "Computed from price_records",
-                    },
+                if avg_price_result:
+                    _, created = self._get_or_create(
+                        DistrictMetric,
+                        district_id=district.id,
+                        period_id=period.id,
+                        metric_type="avg_price",
+                        defaults={
+                            "value_numeric": round(float(avg_price_result), 2),
+                            "value_text": "Computed from price_records",
+                        },
+                    )
+                    if created:
+                        count += 1
+
+                # Compute project count (same across periods, keyed per period for consistency)
+                project_count = (
+                    self.session.query(func.count(Project.id))
+                    .filter(Project.district_id == district.id)
+                    .scalar()
                 )
-                if created:
-                    count += 1
 
-            # Compute project count
-            project_count = (
-                self.session.query(func.count(Project.id))
-                .filter(Project.district_id == district.id)
-                .scalar()
-            )
-
-            if project_count and project_count > 0:
-                _, created = self._get_or_create(
-                    DistrictMetric,
-                    district_id=district.id,
-                    period_id=period.id,
-                    metric_type="supply_count",
-                    defaults={
-                        "value_numeric": float(project_count),
-                        "value_text": "Computed from projects table",
-                    },
-                )
-                if created:
-                    count += 1
+                if project_count and project_count > 0:
+                    _, created = self._get_or_create(
+                        DistrictMetric,
+                        district_id=district.id,
+                        period_id=period.id,
+                        metric_type="supply_count",
+                        defaults={
+                            "value_numeric": float(project_count),
+                            "value_text": "Computed from projects table",
+                        },
+                    )
+                    if created:
+                        count += 1
 
         return count

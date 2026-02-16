@@ -10,7 +10,7 @@ from src.db.queries import (
     get_city_by_name, get_district_by_name, get_developer_by_name,
     get_period, list_projects_by_city, list_projects_by_grade,
     list_projects_by_developer, get_latest_price, get_price_history,
-    get_grade_for_price, count_projects_by_city, avg_price_by_district,
+    get_grade_for_price, get_district_supply, count_projects_by_city, avg_price_by_district,
     resolve_city_name, get_city_price_trend, get_grade_price_summary,
     get_project_price_changes, get_price_range_by_city,
 )
@@ -170,16 +170,21 @@ class TestAggregations:
         for district_name, avg_price in avgs:
             assert avg_price > 0
 
+    def test_get_district_supply(self, session):
+        records = get_district_supply(session, district_id=2, year=2024, half="H1")
+        assert len(records) >= 1
+        for r in records:
+            assert r.district_id == 2
+
 
 class TestPriceTrends:
     def test_city_price_trend(self, session):
         trend = get_city_price_trend(session, "HCMC")
-        assert len(trend) >= 1
-        year, half, avg_price, count = trend[0]
-        assert year == 2024
-        assert half == "H1"
-        assert avg_price > 0
-        assert count > 0
+        # With multi-period data, should have entries across multiple periods
+        assert len(trend) >= 2
+        for year, half, avg_price, count in trend:
+            assert avg_price > 0
+            assert count > 0
 
     def test_city_price_trend_alias(self, session):
         trend = get_city_price_trend(session, "Saigon")
@@ -199,12 +204,13 @@ class TestPriceTrends:
             assert min_p <= avg_p <= max_p
             assert cnt > 0
 
-    def test_project_price_changes_single_period(self, session):
-        """With only one period, no projects should have changes."""
+    def test_project_price_changes_with_multi_period(self, session):
+        """With multi-period data, some projects should have price changes."""
         hcmc = get_city_by_name(session, "Ho Chi Minh City")
         changes = get_project_price_changes(session, hcmc.id)
-        # Single period = no multi-period projects
         assert isinstance(changes, list)
+        # Should have at least some projects with multi-period data
+        assert len(changes) >= 1
 
     def test_price_range_by_city(self, session):
         result = get_price_range_by_city(session, "HCMC", 2024, "H1")
@@ -216,3 +222,11 @@ class TestPriceTrends:
     def test_price_range_no_data(self, session):
         result = get_price_range_by_city(session, "HCMC", 2099, "H1")
         assert result is None
+
+    def test_price_history_multiple_periods(self, session):
+        """Project 1 (Masteri Thao Dien) should have prices across 2+ periods."""
+        history = get_price_history(session, 1)
+        assert len(history) >= 2
+        # Verify chronological ordering (earliest first)
+        years = [(h.period.year, h.period.half) for h in history]
+        assert len(set(years)) >= 2

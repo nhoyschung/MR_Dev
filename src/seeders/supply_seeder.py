@@ -43,19 +43,13 @@ class SupplySeeder(BaseSeeder):
         for s_data in records:
             validated = SupplySchema(**s_data)
             period_id = self._get_period_id(validated.period_year, validated.period_half)
-            # Use period + district as uniqueness key (no project_id for district-level)
-            existing = (
-                self.session.query(SupplyRecord)
-                .filter_by(period_id=period_id, project_id=None)
-                .join(SupplyRecord.period)
-                .first()
-            )
-            # Simple check: if no record with this period_id exists yet, create one
             _, created = self._get_or_create(
                 SupplyRecord,
                 period_id=period_id,
-                total_inventory=validated.total_inventory,
+                district_id=validated.district_id,
+                project_id=None,
                 defaults={
+                    "total_inventory": validated.total_inventory,
                     "new_supply": validated.new_supply,
                     "sold_units": validated.sold_units,
                     "absorption_rate_pct": validated.absorption_rate_pct,

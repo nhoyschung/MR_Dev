@@ -1,8 +1,6 @@
 """Seeder for sales_statuses from extracted JSON."""
 
-from typing import Any
-
-from src.db.models import Project, ReportPeriod, SalesStatus
+from src.db.models import ReportPeriod, SalesStatus
 from src.seeders.base_seeder import LineageAwareSeeder
 
 
@@ -73,10 +71,3 @@ class SalesStatusSeeder(LineageAwareSeeder):
 
         self.session.commit()
         return count
-
-    def _find_project(self, name: str) -> Any:
-        return (
-            self.session.query(Project)
-            .filter(Project.name.ilike(f"%{name}%"))
-            .first()
-        )

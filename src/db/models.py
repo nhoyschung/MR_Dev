@@ -49,6 +49,7 @@ class District(Base):
     city: Mapped[City] = relationship(back_populates="districts")
     wards: Mapped[list[Ward]] = relationship(back_populates="district")
     projects: Mapped[list[Project]] = relationship(back_populates="district")
+    supply_records: Mapped[list[SupplyRecord]] = relationship(back_populates="district")
     district_metrics: Mapped[list[DistrictMetric]] = relationship(back_populates="district")
     market_segment_summaries: Mapped[list[MarketSegmentSummary]] = relationship(back_populates="district")
 
@@ -265,6 +266,7 @@ class SupplyRecord(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     project_id: Mapped[Optional[int]] = mapped_column(ForeignKey("projects.id"))
+    district_id: Mapped[Optional[int]] = mapped_column(ForeignKey("districts.id"))
     period_id: Mapped[int] = mapped_column(ForeignKey("report_periods.id"))
     total_inventory: Mapped[Optional[int]] = mapped_column(Integer)
     new_supply: Mapped[Optional[int]] = mapped_column(Integer)
@@ -273,6 +275,7 @@ class SupplyRecord(Base):
     remaining_inventory: Mapped[Optional[int]] = mapped_column(Integer)
 
     project: Mapped[Optional[Project]] = relationship(back_populates="supply_records")
+    district: Mapped[Optional[District]] = relationship(back_populates="supply_records")
     period: Mapped[ReportPeriod] = relationship(back_populates="supply_records")
 
     def __repr__(self) -> str:

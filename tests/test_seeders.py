@@ -111,7 +111,7 @@ class TestPriceSeeder:
         count = PriceSeeder(db_session, SEED_DIR).seed()
         assert count > 0
         prices = db_session.query(PriceRecord).all()
-        assert len(prices) >= 30
+        assert len(prices) >= 80  # Multi-period data: 57 original + ~60 new
 
 
 class TestSupplySeeder:
@@ -122,6 +122,8 @@ class TestSupplySeeder:
         assert count > 0
         records = db_session.query(SupplyRecord).all()
         assert len(records) >= 15
+        assert all(r.district_id is not None for r in records)
+        assert all(r.project_id is None for r in records)
 
 
 class TestFullPipeline:
@@ -131,9 +133,9 @@ class TestFullPipeline:
         assert session.query(City).count() == 6
         assert session.query(District).count() >= 42
         assert session.query(Developer).count() >= 15
-        assert session.query(Project).count() >= 50
-        assert session.query(PriceRecord).count() >= 40
-        assert session.query(ReportPeriod).count() >= 6
+        assert session.query(Project).count() >= 80  # 64 original + 20 new
+        assert session.query(PriceRecord).count() >= 80  # Multi-period data
+        assert session.query(ReportPeriod).count() >= 10  # 2021-2025 = 10 periods
         assert session.query(GradeDefinition).count() >= 18
 
     def test_city_district_relationship(self, seeded_session):

@@ -37,8 +37,8 @@ class GradeSeeder(BaseSeeder):
     def seed(self) -> int:
         count = 0
 
-        # Seed standard periods
-        for year in (2023, 2024, 2025):
+        # Seed standard periods (2021-2025 for historical data)
+        for year in range(2021, 2026):
             for half in ("H1", "H2"):
                 _, created = self._get_or_create(ReportPeriod, year=year, half=half)
                 if created:

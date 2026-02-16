@@ -96,6 +96,13 @@ class PricePassExtractor(BaseExtractor):
                 metrics = self._extract_district_metrics(text, filename)
                 district_metrics.extend(metrics)
 
+            # Extract multi-period district metrics from pass3
+            if "pass3" in filename:
+                multi_metrics = self._extract_multi_period_district_metrics(
+                    text, filename
+                )
+                district_metrics.extend(multi_metrics)
+
             # Extract segment summaries from pass1 and pass3
             if "pass1" in filename or "pass3" in filename:
                 segments = self._extract_segments(text, filename)
@@ -630,6 +637,85 @@ class PricePassExtractor(BaseExtractor):
                     summaries.append(record)
 
         return summaries
+
+    def _extract_multi_period_district_metrics(
+        self, text: str, filename: str
+    ) -> list[dict[str, Any]]:
+        """Extract multi-period district price data from pass3 tables.
+
+        Looks for 'Avg. Secondary Price (USD/m2)' tables with columns
+        for multiple half-years (e.g., 2021-H1 through 2024-H1).
+        """
+        metrics: list[dict[str, Any]] = []
+
+        # Pattern for multi-period price tables
+        table_header = re.search(
+            r"Avg\.?\s*Secondary\s+Price\s*\(USD/[Mm]2\)",
+            text,
+            re.IGNORECASE,
+        )
+        if not table_header:
+            return metrics
+
+        start = table_header.end()
+        chunk = text[start:start + 5000]
+
+        # Detect city context
+        city = self._detect_city_context(text[:start])
+        if not city:
+            return metrics
+
+        # Look for period headers like "2021-H1", "2021H1", "H1 2021"
+        period_pattern = re.compile(r"(20\d{2})\s*[-]?\s*(H[12])", re.IGNORECASE)
+        period_matches = list(period_pattern.finditer(chunk[:500]))
+
+        if not period_matches:
+            return metrics
+
+        periods = [(int(m.group(1)), m.group(2).upper()) for m in period_matches]
+
+        # Parse district rows: district name followed by numeric values
+        lines = chunk.split("\n")
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+
+            # Match district name at start, followed by numbers
+            district_row = re.match(
+                r"(?P<district>[A-Za-z\s]+(?:\d+)?)\s+"
+                r"(?P<values>[\d,.\s-]+)$",
+                line,
+            )
+            if not district_row:
+                continue
+
+            district_name = district_row.group("district").strip()
+            values_str = district_row.group("values").strip()
+
+            # Parse numeric values
+            values = re.findall(r"[\d,]+\.?\d*", values_str)
+            if not values:
+                continue
+
+            for i, (year, half) in enumerate(periods):
+                if i >= len(values):
+                    break
+                price = extract_number(values[i])
+                if price and price > 0:
+                    record = {
+                        "city": city,
+                        "district_name": district_name,
+                        "period_year": year,
+                        "period_half": half,
+                        "metric_type": "avg_secondary_price",
+                        "value_numeric": price,
+                        "value_text": f"Avg secondary price USD/m2 {year}-{half}",
+                    }
+                    self.add_meta(record, filename, confidence=0.85)
+                    metrics.append(record)
+
+        return metrics
 
     @staticmethod
     def _detect_city_context(text_before: str) -> Optional[str]:

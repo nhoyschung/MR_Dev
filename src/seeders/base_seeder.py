@@ -8,7 +8,7 @@ from typing import Any
 
 from sqlalchemy.orm import Session
 
-from src.db.models import DataLineage, SourceReport
+from src.db.models import DataLineage, Project, SourceReport
 
 
 class BaseSeeder(ABC):
@@ -104,3 +104,22 @@ class LineageAwareSeeder(BaseSeeder):
             .filter_by(filename=filename)
             .first()
         )
+
+    def _find_project(self, name: str) -> Project | None:
+        """Find a project by name using ProjectMatcher with alias support.
+
+        Lazy-initializes a shared ProjectMatcher instance on first call.
+        """
+        if not hasattr(self, "_matcher"):
+            from src.utils.project_matcher import ProjectMatcher
+
+            alias_path = self.seed_dir / "project_aliases.json"
+            aliases: dict[str, str] = {}
+            if alias_path.exists():
+                aliases = json.loads(alias_path.read_text(encoding="utf-8"))
+            self._matcher = ProjectMatcher(self.session, aliases=aliases)
+
+        result = self._matcher.match(name)
+        if result[0] is not None and result[1] >= 0.5:
+            return self.session.get(Project, result[0])
+        return None

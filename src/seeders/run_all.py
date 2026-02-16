@@ -6,6 +6,7 @@ from pathlib import Path
 from src.config import SEED_DIR
 from src.db.models import Base
 from src.db.connection import engine, get_session
+from src.db.init_db import ensure_schema_compatibility
 from src.seeders.city_seeder import CitySeeder
 from src.seeders.grade_seeder import GradeSeeder
 from src.seeders.developer_seeder import DeveloperSeeder
@@ -52,6 +53,7 @@ def run_all(seed_dir: Path | None = None) -> dict[str, int]:
 
     # Ensure tables exist
     Base.metadata.create_all(engine)
+    ensure_schema_compatibility()
 
     session = get_session()
     results: dict[str, int] = {}
