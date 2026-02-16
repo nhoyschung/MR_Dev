@@ -1,0 +1,301 @@
+# Data Lineage Tracking Report
+
+**Generated:** {{ generated_date }}
+
+---
+
+## Executive Summary
+
+**Data Provenance:**
+- **Total Source Reports:** {{ total_sources }}
+- **Active Sources:** {{ active_sources }}
+- **Total Lineage Records:** {{ total_lineage_records | int }}
+
+**Data Quality:**
+- **Average Confidence:** {{ quality_metrics.avg_confidence | round(2) }}
+- **High Quality Records (≥80%):** {{ quality_metrics.high_confidence | int }} ({{ (quality_metrics.high_confidence / quality_metrics.total_records * 100) | round(1) if quality_metrics.total_records > 0 else 0 }}%)
+- **Medium Quality (50-80%):** {{ quality_metrics.medium_confidence | int }} ({{ (quality_metrics.medium_confidence / quality_metrics.total_records * 100) | round(1) if quality_metrics.total_records > 0 else 0 }}%)
+- **Low Quality (<50%):** {{ quality_metrics.low_confidence | int }} ({{ (quality_metrics.low_confidence / quality_metrics.total_records * 100) | round(1) if quality_metrics.total_records > 0 else 0 }}%)
+
+---
+
+## 1. Data Lineage Coverage
+
+{% if chart_distribution -%}
+![Lineage Distribution Chart]({{ chart_distribution }})
+{% endif %}
+
+### Coverage by Table
+
+| Table Name | Records Tracked | Source Reports | Coverage |
+|------------|-----------------|----------------|----------|
+{% for item in table_coverage -%}
+| {{ item.table_name }} | {{ item.record_count | int }} | {{ item.source_count }} | {% if item.record_count >= 100 %}🟢 Excellent{% elif item.record_count >= 50 %}🟡 Good{% elif item.record_count >= 10 %}🟠 Moderate{% else %}🔴 Limited{% endif %} |
+{% endfor %}
+
+**Coverage Analysis:**
+- **Well-Tracked Tables (≥100 records):** {{ table_coverage | selectattr('record_count', 'ge', 100) | list | length }}
+- **Partially Tracked (10-99 records):** {{ table_coverage | selectattr('record_count', 'ge', 10) | selectattr('record_count', 'lt', 100) | list | length }}
+- **Limited Tracking (<10 records):** {{ table_coverage | selectattr('record_count', 'lt', 10) | list | length }}
+
+---
+
+## 2. Data Quality Distribution
+
+{% if chart_quality -%}
+![Quality Distribution Chart]({{ chart_quality }})
+{% endif %}
+
+### Quality Metrics
+
+| Metric | Value |
+|--------|-------|
+| **Total Records** | {{ quality_metrics.total_records | int }} |
+| **Average Confidence** | {{ quality_metrics.avg_confidence | round(3) }} |
+| **Confidence Range** | {{ quality_metrics.min_confidence | round(2) }} - {{ quality_metrics.max_confidence | round(2) }} |
+| **High Confidence (≥0.8)** | {{ quality_metrics.high_confidence | int }} records |
+| **Medium Confidence (0.5-0.8)** | {{ quality_metrics.medium_confidence | int }} records |
+| **Low Confidence (<0.5)** | {{ quality_metrics.low_confidence | int }} records |
+
+**Quality Assessment:**
+{% set high_pct = (quality_metrics.high_confidence / quality_metrics.total_records * 100) if quality_metrics.total_records > 0 else 0 -%}
+{% if high_pct >= 80 -%}
+🟢 **Excellent Quality** - {{ high_pct | round(1) }}% of records have high confidence scores (≥0.8)
+{% elif high_pct >= 60 -%}
+🟡 **Good Quality** - {{ high_pct | round(1) }}% of records have high confidence scores
+{% elif high_pct >= 40 -%}
+🟠 **Moderate Quality** - {{ high_pct | round(1) }}% of records have high confidence scores
+{% else -%}
+🔴 **Needs Improvement** - Only {{ high_pct | round(1) }}% of records have high confidence scores
+{% endif %}
+
+---
+
+## 3. Source Report Impact Analysis
+
+{% if chart_impact -%}
+![Source Impact Chart]({{ chart_impact }})
+{% endif %}
+
+### Top Source Reports by Record Count
+
+| Rank | Source Report | Type | Records | Status | Ingested |
+|------|---------------|------|---------|--------|----------|
+{% for r in source_impacts[:15] -%}
+| {{ loop.index }} | {{ r.filename[:50] }} | {{ r.report_type }} | {{ r.total_records | int }} | {{ r.status }} | {% if r.ingested_at %}{{ r.ingested_at.strftime('%Y-%m-%d') }}{% else %}N/A{% endif %} |
+{% endfor %}
+
+---
+
+## 4. Detailed Source Breakdown
+
+{% for r in source_impacts %}
+### {{ loop.index }}. {{ r.filename }}
+
+**Overview:**
+- **Report Type:** {{ r.report_type }}
+- **Total Records Generated:** {{ r.total_records | int }}
+- **Status:** {{ r.status }}
+- **Ingested:** {% if r.ingested_at %}{{ r.ingested_at.strftime('%Y-%m-%d %H:%M') }}{% else %}N/A{% endif %}
+
+**Table Breakdown:**
+| Table | Records | Percentage |
+|-------|---------|------------|
+{% for tb in r.table_breakdown -%}
+| {{ tb.table }} | {{ tb.count }} | {{ (tb.count / r.total_records * 100) | round(1) }}% |
+{% endfor %}
+
+**Impact Assessment:**
+{% if r.total_records >= 50 -%}
+🌟 **High Impact** - Major contributor to the database
+{% elif r.total_records >= 20 -%}
+✅ **Significant Impact** - Notable data source
+{% elif r.total_records >= 5 -%}
+📊 **Moderate Impact** - Useful supplementary data
+{% else -%}
+📝 **Limited Impact** - Small data contribution
+{% endif %}
+
+---
+{% endfor %}
+
+## 5. Extraction Timeline
+
+{% if chart_timeline -%}
+![Extraction Timeline Chart]({{ chart_timeline }})
+{% endif %}
+
+### Extraction Activity by Date
+
+| Date | Records Extracted | Activity Level |
+|------|------------------|----------------|
+{% for t in timeline -%}
+| {{ t.date }} | {{ t.count | int }} | {% if t.count >= 100 %}🔥 High{% elif t.count >= 50 %}📈 Medium{% else %}📊 Low{% endif %} |
+{% endfor %}
+
+**Timeline Insights:**
+{% set total_days = timeline | length -%}
+{% set total_extracted = timeline | sum(attribute='count') -%}
+{% if total_days > 0 -%}
+- Extraction occurred over **{{ total_days }} days**
+- Average extraction rate: **{{ (total_extracted / total_days) | round(1) }} records/day**
+{% set peak_day = timeline | max(attribute='count') -%}
+- Peak extraction: **{{ peak_day.count }} records** on {{ peak_day.date }}
+{% endif %}
+
+---
+
+## 6. Data Traceability Matrix
+
+### Record-to-Source Mapping
+
+**High-Confidence Records by Table:**
+{% for item in table_coverage | sort(attribute='record_count', reverse=true) -%}
+- **{{ item.table_name }}**: {{ item.record_count }} records from {{ item.source_count }} source{% if item.source_count != 1 %}s{% endif %}
+{% endfor %}
+
+**Traceability Benefits:**
+- ✅ Full audit trail for {{ total_lineage_records }} records
+- ✅ Source attribution for data validation
+- ✅ Confidence scores for quality assessment
+- ✅ Page-level granularity for manual verification
+
+---
+
+## 7. Data Quality Recommendations
+
+### High Priority Actions
+
+{% set low_quality_tables = table_coverage | selectattr('record_count', 'lt', 10) | list -%}
+{% if low_quality_tables -%}
+**1. Improve Coverage for Low-Tracked Tables:**
+{% for tb in low_quality_tables[:5] -%}
+- {{ tb.table_name }}: Only {{ tb.record_count }} records tracked
+{% endfor %}
+{% endif %}
+
+{% set low_conf_pct = (quality_metrics.low_confidence / quality_metrics.total_records * 100) if quality_metrics.total_records > 0 else 0 -%}
+{% if low_conf_pct > 10 -%}
+**2. Review Low-Confidence Extractions:**
+- {{ quality_metrics.low_confidence }} records ({{ low_conf_pct | round(1) }}%) have confidence <0.5
+- Recommend manual verification or re-extraction
+{% endif %}
+
+{% if active_sources < total_sources -%}
+**3. Process Pending Source Reports:**
+- {{ total_sources - active_sources }} reports with status != 'ingested'
+- Complete ingestion for full data coverage
+{% endif %}
+
+### Data Refresh Strategy
+
+**Recommended Actions:**
+1. **Re-extract Low-Confidence Data**: Focus on records with confidence <0.5
+2. **Expand Source Coverage**: Ingest additional NHO-PD reports
+3. **Validate High-Impact Sources**: Cross-check top 5 source reports
+4. **Monitor Extraction Pipeline**: Set up automated quality checks
+
+---
+
+## 8. Lineage Query Examples
+
+### Example 1: Find Source of a Specific Record
+```python
+from src.reports.data_lineage import get_record_lineage
+
+# Get lineage for project ID 42
+lineage = get_record_lineage(session, "projects", 42)
+print(f"Source: {lineage['source_report']}, Page: {lineage['page_number']}")
+```
+
+### Example 2: Analyze Source Report Impact
+```python
+from src.reports.data_lineage import get_source_impact
+
+# Get impact of source report ID 5
+impact = get_source_impact(session, 5)
+print(f"Total records: {impact['total_records']}")
+for table in impact['table_breakdown']:
+    print(f"  {table['table']}: {table['count']} records")
+```
+
+### Example 3: Check Data Quality
+```python
+from src.reports.data_lineage import get_quality_metrics
+
+metrics = get_quality_metrics(session)
+print(f"Average confidence: {metrics['avg_confidence']:.2f}")
+print(f"High quality: {metrics['high_confidence']} records")
+```
+
+---
+
+## 9. Lineage Statistics
+
+### Overall System Health
+
+| Metric | Value | Status |
+|--------|-------|--------|
+| **Total Sources** | {{ total_sources }} | {% if total_sources >= 15 %}🟢 Comprehensive{% elif total_sources >= 10 %}🟡 Good{% else %}🔴 Limited{% endif %} |
+| **Active Sources** | {{ active_sources }} | {% if active_sources >= total_sources * 0.8 %}🟢 Excellent{% elif active_sources >= total_sources * 0.6 %}🟡 Good{% else %}🔴 Needs Attention{% endif %} |
+| **Lineage Coverage** | {{ total_lineage_records }} records | {% if total_lineage_records >= 300 %}🟢 Extensive{% elif total_lineage_records >= 100 %}🟡 Moderate{% else %}🔴 Limited{% endif %} |
+| **Avg Confidence** | {{ quality_metrics.avg_confidence | round(2) }} | {% if quality_metrics.avg_confidence >= 0.8 %}🟢 High{% elif quality_metrics.avg_confidence >= 0.6 %}🟡 Medium{% else %}🔴 Low{% endif %} |
+
+### Data Provenance Coverage
+
+**Tables with Full Lineage (>50 records):**
+{% set full_coverage = table_coverage | selectattr('record_count', 'gt', 50) | list -%}
+{{ full_coverage | length }} / {{ table_coverage | length }} tables ({{ (full_coverage | length / table_coverage | length * 100) | round(0) | int }}%)
+
+**Sources per Table (Average):**
+{% set total_source_count = table_coverage | sum(attribute='source_count') -%}
+{{ (total_source_count / table_coverage | length) | round(1) }} sources/table
+
+---
+
+## 10. Audit Trail
+
+### Recent Extractions (Last 7 Days)
+{% set recent = timeline[-7:] if timeline | length >= 7 else timeline -%}
+{% for t in recent -%}
+- **{{ t.date }}**: {{ t.count }} records extracted
+{% endfor %}
+
+### Data Lineage Chain Example
+
+**Sample Record Trace:**
+```
+Record: price_records:42
+  ↓
+Source Report: hcmc_pass2.txt
+  ↓
+Report Type: market_analysis
+  ↓
+Page: 87
+  ↓
+Confidence: 0.92 (High)
+  ↓
+Extracted: 2024-02-15 14:23:00 UTC
+```
+
+---
+
+## Appendix: Lineage System Details
+
+### System Capabilities
+- ✅ **Record-level tracking**: Every record linked to source document
+- ✅ **Page-level granularity**: Exact page number captured
+- ✅ **Confidence scoring**: Quality assessment for each extraction
+- ✅ **Timestamp tracking**: Extraction time recorded
+- ✅ **Source attribution**: Full report metadata available
+
+### Future Enhancements
+- 📋 Automated data refresh workflows
+- 📊 Real-time quality monitoring dashboards
+- 🔍 Anomaly detection for low-confidence extractions
+- 🔄 Version tracking for updated records
+- 📈 Predictive quality scoring
+
+---
+
+*Report generated by MR-System Data Lineage Tracking Module*
