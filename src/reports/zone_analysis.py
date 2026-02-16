@@ -14,6 +14,12 @@ from src.db.queries import (
     get_district_supply,
     get_period,
 )
+from src.reports.charts import (
+    grade_distribution_chart,
+    price_comparison_chart,
+    supply_demand_chart,
+    price_range_scatter,
+)
 from src.reports.renderer import render_template
 
 
@@ -165,6 +171,19 @@ def render_zone_analysis(
     elif sold_units > 0:
         outlook.append("Sold units are keeping pace with incoming supply.")
 
+    # Generate charts
+    grade_dist = _grade_distribution(projects)
+    chart_grade_dist = grade_distribution_chart(grade_dist)
+    chart_price_comp = price_comparison_chart(
+        zone_avg_price, zone_min_price, zone_max_price,
+        city_avg_price, district.name_en, city.name_en
+    )
+    chart_supply_demand = supply_demand_chart(
+        total_inventory, new_supply, sold_units,
+        remaining_inventory, avg_absorption
+    )
+    chart_price_scatter = price_range_scatter(roster)
+
     context = {
         "generated_date": date.today().isoformat(),
         "period": f"{year}-{half}",
@@ -183,8 +202,13 @@ def render_zone_analysis(
         "zone_min_price": zone_min_price,
         "zone_max_price": zone_max_price,
         "city_avg_price": city_avg_price,
-        "grade_distribution": _grade_distribution(projects),
+        "grade_distribution": grade_dist,
         "projects": roster,
         "outlook": outlook,
+        # Charts (base64-encoded images)
+        "chart_grade_distribution": chart_grade_dist,
+        "chart_price_comparison": chart_price_comp,
+        "chart_supply_demand": chart_supply_demand,
+        "chart_price_scatter": chart_price_scatter,
     }
     return render_template("zone_analysis.md.j2", **context)

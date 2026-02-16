@@ -28,6 +28,11 @@
 | Remaining Inventory | {{ remaining_inventory | int }} |
 | Avg. Absorption | {{ avg_absorption | round(1) }}% |
 
+{% if chart_supply_demand -%}
+### Supply & Demand Visualization
+![Supply Demand Chart]({{ chart_supply_demand }})
+{% endif %}
+
 ---
 
 ## 3. Price Landscape
@@ -45,6 +50,15 @@
 | {{ row.grade }} | {{ row.count }} |
 {% endfor %}
 
+{% if chart_grade_distribution -%}
+![Grade Distribution Chart]({{ chart_grade_distribution }})
+{% endif %}
+
+{% if chart_price_comparison -%}
+### Price Comparison Chart
+![Price Comparison]({{ chart_price_comparison }})
+{% endif %}
+
 ---
 
 ## 4. Project Roster
@@ -54,6 +68,11 @@
 {% for p in projects -%}
 | {{ p.name }} | {{ p.developer }} | {{ p.units }} | {% if p.price_usd %}${{ p.price_usd | round(0) | int }}{% else %}N/A{% endif %} | {{ p.grade }} | {{ p.status }} |
 {% endfor %}
+
+{% if chart_price_scatter -%}
+### Price Range Analysis
+![Price Scatter Chart]({{ chart_price_scatter }})
+{% endif %}
 
 ---
 
