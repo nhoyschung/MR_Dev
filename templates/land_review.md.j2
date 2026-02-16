@@ -1,0 +1,452 @@
+# Land Review & Site Analysis Report
+
+**Generated:** {{ generated_date }}
+**Location:** {{ city }}, {{ district }}, {{ ward }}
+**Land Area:** {{ land_area_ha }} ha ({{ land_area_m2 | int | replace(',', '') }} m²)
+**Development Type:** {{ development_type }}
+**Target Segment:** {{ target_segment }}
+
+---
+
+## Executive Summary
+
+This comprehensive land review analyzes the development potential of a {{ land_area_ha }} hectare site in {{ district }}, {{ city }}. Based on market analysis and competitive landscape assessment, the site is suitable for **{{ target_segment }}** segment development targeting grades {{ target_grades | join(', ') }}.
+
+**Key Highlights:**
+- **Market Position:** {{ target_segment }} segment with {{ competitor_count }} nearby competitors within 5km radius
+- **Estimated Development Scale:** ~{{ product_recommendations.estimated_total_units | int }} units across {{ product_recommendations.development_phases }} phase{% if product_recommendations.development_phases > 1 %}s{% endif %}
+- **Recommended Pricing:** {{ pricing_strategy.recommended_price_m2 }}/m² (market average: {{ pricing_strategy.market_average_m2 }}/m²)
+- **Development Timeline:** {{ product_recommendations.development_phases * 2 }}-{{ product_recommendations.development_phases * 3 }} years (estimated)
+
+---
+
+## 1. Location Analysis
+
+### 1.1 Geographic Overview
+
+**Administrative Location:**
+- **City:** {{ city }}
+- **District:** {{ district }}
+- **Ward:** {{ ward }}
+{% if land_input.latitude and land_input.longitude -%}
+- **Coordinates:** {{ land_input.latitude }}, {{ land_input.longitude }}
+{% endif %}
+
+### 1.2 Accessibility & Connectivity
+
+{% if location_analysis.accessibility -%}
+{% for item in location_analysis.accessibility -%}
+- {{ item }}
+{% endfor %}
+{% else -%}
+*Accessibility data to be determined based on detailed site survey*
+{% endif %}
+
+### 1.3 Location Strengths
+
+{% if location_analysis.strengths -%}
+{% for strength in location_analysis.strengths -%}
+- ✅ {{ strength }}
+{% endfor %}
+{% else -%}
+- To be determined through detailed site analysis
+{% endif %}
+
+### 1.4 Location Constraints
+
+{% if location_analysis.weaknesses -%}
+{% for weakness in location_analysis.weaknesses -%}
+- ⚠️ {{ weakness }}
+{% endfor %}
+{% else -%}
+- No major constraints identified at this stage
+{% endif %}
+
+---
+
+## 2. Market Analysis
+
+### 2.1 Supply Overview ({{ period }})
+
+{% if market_analysis.supply_summary -%}
+| Grade | New Supply (units) | Absorption Rate (%) |
+|-------|-------------------|---------------------|
+{% for grade, data in market_analysis.supply_summary.items() -%}
+| {{ grade }} | {{ data.new_supply | int }} | {{ data.absorption_rate }}% |
+{% endfor %}
+
+**Market Dynamics:**
+{% set total_supply = market_analysis.supply_summary.values() | map(attribute='new_supply') | sum -%}
+{% set avg_absorption = market_analysis.supply_summary.values() | map(attribute='absorption_rate') | sum / market_analysis.supply_summary.values() | list | length if market_analysis.supply_summary else 0 -%}
+- Total new supply: **{{ total_supply | int }}** units
+- Average absorption rate: **{{ avg_absorption | round(1) }}%**
+{% if avg_absorption > 70 -%}
+- 🟢 **Strong demand** - High absorption indicates favorable market conditions
+{% elif avg_absorption > 50 -%}
+- 🟡 **Moderate demand** - Stable market with reasonable absorption
+{% else -%}
+- 🔴 **Weak demand** - Oversupply situation requires careful product positioning
+{% endif %}
+{% else -%}
+*Market supply data not available for this location/period. Recommend conducting primary market research.*
+{% endif %}
+
+### 2.2 Pricing Trends ({{ period }})
+
+{% if market_analysis.price_trends -%}
+| Grade | Average Price/m² | Price Range |
+|-------|-----------------|-------------|
+{% for grade, data in market_analysis.price_trends.items() -%}
+| {{ grade }} | ${{ data.avg_price_m2 | int | replace(',', '') }} | {{ data.price_range }} |
+{% endfor %}
+{% else -%}
+*Pricing data not available. Recommend detailed market survey to establish pricing benchmarks.*
+{% endif %}
+
+---
+
+## 3. Competitive Landscape
+
+### 3.1 Competitor Projects (Within 5km Radius)
+
+{% if competitors -%}
+Found **{{ competitor_count }} competitor projects** in the {{ target_segment }} segment:
+
+| Project | Distance (km) | Grade | Units | Status | Developer | Price/m² |
+|---------|--------------|-------|-------|--------|-----------|----------|
+{% for comp in competitors -%}
+| {{ comp.name }} | {{ comp.distance_km }} | {{ comp.grade }} | {% if comp.total_units %}{{ comp.total_units | int }}{% else %}N/A{% endif %} | {{ comp.status }} | {{ comp.developer }} | {% if comp.price_m2 %}${{ comp.price_m2 | int | replace(',', '') }}{% else %}N/A{% endif %} |
+{% endfor %}
+
+### 3.2 Competitive Intensity
+
+{% set luxury_count = competitors | selectattr('grade', 'in', ['SL', 'L', 'H-I']) | list | length -%}
+{% set nearby_count = competitors | selectattr('distance_km', 'lt', 3) | list | length -%}
+
+**Competition Assessment:**
+- **Within 3km:** {{ nearby_count }} projects (direct competitors)
+- **Luxury segment:** {{ luxury_count }} projects
+{% if competitor_count > 7 -%}
+- 🔴 **High Competition** - Saturated market requiring strong differentiation
+{% elif competitor_count > 4 -%}
+- 🟡 **Moderate Competition** - Competitive market with room for well-positioned product
+{% else -%}
+- 🟢 **Low Competition** - Favorable competitive landscape
+{% endif %}
+
+{% else -%}
+*No competitor data available. This could indicate:*
+- Under-developed area with limited comparable projects
+- Coordinates not provided for proximity analysis
+- Opportunity for first-mover advantage
+
+**Recommendation:** Conduct field survey to identify competing developments
+{% endif %}
+
+---
+
+## 4. SWOT Analysis
+
+### 4.1 Strengths
+
+{% if swot_analysis.strengths -%}
+{% for strength in swot_analysis.strengths -%}
+- ✅ {{ strength }}
+{% endfor %}
+{% else -%}
+- To be determined based on detailed site assessment
+{% endif %}
+
+### 4.2 Weaknesses
+
+{% if swot_analysis.weaknesses -%}
+{% for weakness in swot_analysis.weaknesses -%}
+- ⚠️ {{ weakness }}
+{% endfor %}
+{% else -%}
+- No major weaknesses identified at preliminary stage
+{% endif %}
+
+### 4.3 Opportunities
+
+{% if swot_analysis.opportunities -%}
+{% for opportunity in swot_analysis.opportunities -%}
+- 🎯 {{ opportunity }}
+{% endfor %}
+{% else -%}
+- Market-specific opportunities to be identified through detailed analysis
+{% endif %}
+
+### 4.4 Threats
+
+{% if swot_analysis.threats -%}
+{% for threat in swot_analysis.threats -%}
+- ⚠️ {{ threat }}
+{% endfor %}
+{% else -%}
+- No immediate market threats identified
+{% endif %}
+
+---
+
+## 5. Development Recommendations
+
+### 5.1 Product Mix Strategy
+
+**Recommended Development Scale:**
+- **Estimated Total Units:** {{ product_recommendations.estimated_total_units | int }} units
+- **Development Phases:** {{ product_recommendations.development_phases }} phase{% if product_recommendations.development_phases > 1 %}s{% endif %}
+- **Target Grades:** {{ product_recommendations.recommended_grades | join(', ') }}
+
+**Optimal Unit Mix:**
+
+| Unit Type | Percentage | Estimated Units |
+|-----------|-----------|----------------|
+{% for unit_type, pct in product_recommendations.unit_mix.items() -%}
+| {{ unit_type }} | {{ pct }}% | {{ (product_recommendations.estimated_total_units * pct / 100) | int }} |
+{% endfor %}
+
+**Rationale:**
+- Unit mix optimized for **{{ target_segment }}** market segment
+- Based on {{ city }} market preferences and {{ district }} demographics
+- Balances market demand with optimal unit sizes for target segment
+
+### 5.2 Pricing Strategy
+
+**Market Positioning:**
+- **Market Average:** {{ pricing_strategy.market_average_m2 }}/m²
+- **Recommended Price:** {{ pricing_strategy.recommended_price_m2 }}/m²
+- **Positioning:** {{ pricing_strategy.positioning }}
+
+**Price Range by Unit Type (Estimated):**
+
+{% set base_price = pricing_strategy.recommended_price_m2 | replace('$', '') | replace(',', '') | int -%}
+{% for unit_type, pct in product_recommendations.unit_mix.items() -%}
+{% if 'Studio' in unit_type -%}
+{% set unit_sqm = 35 -%}
+{% elif '1BR' in unit_type -%}
+{% set unit_sqm = 55 -%}
+{% elif '2BR' in unit_type -%}
+{% set unit_sqm = 75 -%}
+{% elif '3BR' in unit_type -%}
+{% set unit_sqm = 95 -%}
+{% elif '4BR' in unit_type or 'Penthouse' in unit_type -%}
+{% set unit_sqm = 140 -%}
+{% else -%}
+{% set unit_sqm = 80 -%}
+{% endif -%}
+{% set total_price = base_price * unit_sqm -%}
+- **{{ unit_type }}:** ~{{ unit_sqm }} m² → **${{ total_price | int | replace(',', '') }}** ({{ base_price }} × {{ unit_sqm }} m²)
+{% endfor %}
+
+### 5.3 Development Timeline
+
+**Estimated Timeline:**
+
+| Phase | Duration | Key Activities |
+|-------|----------|---------------|
+| Pre-Development | 6-12 months | Land acquisition, permits, master planning |
+| Phase 1 Construction | 18-24 months | Foundation, structure, MEP installation |
+{% if product_recommendations.development_phases > 1 -%}
+| Phase 2 Construction | 18-24 months | Additional blocks, facilities completion |
+{% endif -%}
+| Handover & Closeout | 6-12 months | Final inspections, customer handover |
+
+**Total Development Period:** {{ product_recommendations.development_phases * 2 }}-{{ product_recommendations.development_phases * 3 }} years
+
+---
+
+## 6. Risk Assessment
+
+### 6.1 Market Risks
+
+{% if competitor_count > 7 -%}
+- **HIGH RISK:** Intense competition may lead to price pressure and slower absorption
+{% elif competitor_count > 4 -%}
+- **MEDIUM RISK:** Competitive market requires strong marketing and differentiation
+{% else -%}
+- **LOW RISK:** Limited competition provides favorable market entry conditions
+{% endif %}
+
+### 6.2 Development Risks
+
+- **Regulatory:** Ensure compliance with {{ city }} zoning and building regulations
+- **Construction:** {{ land_area_ha }}ha development requires experienced contractor
+- **Market Timing:** Align launch with market cycle (currently {{ period }})
+
+### 6.3 Mitigation Strategies
+
+1. **Competitive Differentiation:** Focus on unique design, amenities, and location advantages
+2. **Phased Development:** Reduce risk through {{ product_recommendations.development_phases }}-phase approach
+3. **Strategic Pricing:** {{ pricing_strategy.positioning }}
+4. **Strong Developer Brand:** Partner with reputable developer for market credibility
+
+---
+
+## 7. Financial Feasibility (Preliminary)
+
+### 7.1 Revenue Estimate
+
+**Gross Development Value (GDV):**
+
+{% set base_price = pricing_strategy.recommended_price_m2 | replace('$', '') | replace(',', '') | int -%}
+{% set avg_unit_size = 75 -%}
+{% set total_units = product_recommendations.estimated_total_units -%}
+{% set total_saleable_area = total_units * avg_unit_size -%}
+{% set total_revenue = total_saleable_area * base_price -%}
+
+- **Total Saleable Area:** ~{{ total_saleable_area | int | replace(',', '') }} m² ({{ total_units }} units × {{ avg_unit_size }}m² avg)
+- **Average Price:** {{ pricing_strategy.recommended_price_m2 }}/m²
+- **Estimated GDV:** ${{ total_revenue | int | replace(',', '') }} (~${{ (total_revenue / 1000000) | int }}M)
+
+### 7.2 Cost Considerations
+
+*Detailed cost analysis to be conducted based on:*
+- Land acquisition cost
+- Construction cost (~$500-800/m² for {{ target_segment }} segment)
+- Development fees and permits
+- Marketing and sales (~3-5% of GDV)
+- Finance costs
+
+### 7.3 Profitability Indicators
+
+*Preliminary feasibility metrics:*
+- **Target IRR:** 18-22% (typical for {{ city }} {{ target_segment }} projects)
+- **Development Margin:** 20-25% (before land cost)
+- **Payback Period:** {{ product_recommendations.development_phases * 3 }}-{{ product_recommendations.development_phases * 4 }} years
+
+**Note:** Detailed financial modeling required with actual land cost and construction quotes.
+
+---
+
+## 8. Implementation Roadmap
+
+### 8.1 Immediate Next Steps (Month 1-3)
+
+1. **Site Due Diligence**
+   - Topographic survey
+   - Geotechnical investigation
+   - Environmental assessment
+   - Utilities availability check
+
+2. **Regulatory Review**
+   - Confirm zoning and land use designation
+   - Understand plot ratio and height restrictions
+   - Review approval timeline and requirements
+
+3. **Market Validation**
+   - Primary research with target customers
+   - Competitor site visits and mystery shopping
+   - Price sensitivity testing
+
+### 8.2 Design Development (Month 4-9)
+
+1. **Master Planning**
+   - Engage international design firm
+   - Optimize layout for {{ product_recommendations.estimated_total_units }} units
+   - Plan phasing strategy
+
+2. **Product Design**
+   - Develop unit layouts per recommended mix
+   - Design amenities and common areas
+   - Sustainable design features (EDGE/LOTUS certification)
+
+3. **Cost Engineering**
+   - Detailed quantity surveying
+   - Contractor pre-qualification
+   - Value engineering workshops
+
+### 8.3 Pre-Sales & Launch (Month 10-12)
+
+1. **Marketing Preparation**
+   - Brand positioning and messaging
+   - Sales gallery and show unit
+   - Digital marketing campaign
+
+2. **Sales Strategy**
+   - Early bird pricing incentives
+   - Payment scheme optimization
+   - Channel partner network
+
+---
+
+## 9. Conclusion & Recommendations
+
+### 9.1 Development Viability
+
+{% set viability_score = 0 -%}
+{% if market_analysis.supply_summary -%}
+  {% set avg_absorption = market_analysis.supply_summary.values() | map(attribute='absorption_rate') | sum / market_analysis.supply_summary.values() | list | length -%}
+  {% if avg_absorption > 70 -%}{% set viability_score = viability_score + 2 -%}
+  {% elif avg_absorption > 50 -%}{% set viability_score = viability_score + 1 -%}{% endif -%}
+{% endif -%}
+{% if competitor_count < 5 -%}{% set viability_score = viability_score + 2 -%}
+{% elif competitor_count < 8 -%}{% set viability_score = viability_score + 1 -%}{% endif -%}
+{% if land_area_ha >= 20 -%}{% set viability_score = viability_score + 1 -%}{% endif -%}
+
+{% if viability_score >= 4 -%}
+**🟢 HIGHLY VIABLE** - Strong market fundamentals support development
+
+This {{ land_area_ha }}ha site in {{ district }}, {{ city }} presents an **excellent development opportunity** for {{ target_segment }} segment housing. Market conditions are favorable with strong absorption and manageable competition.
+
+**Recommendation:** **PROCEED** to next stage - Conduct detailed feasibility study and site due diligence.
+
+{% elif viability_score >= 2 -%}
+**🟡 MODERATELY VIABLE** - Feasible with appropriate positioning
+
+The site shows **moderate potential** for {{ target_segment }} development. Success depends on effective differentiation and competitive pricing strategy.
+
+**Recommendation:** **CONDITIONAL PROCEED** - Validate assumptions through primary market research before committing.
+
+{% else -%}
+**🔴 REQUIRES FURTHER STUDY** - Market challenges identified
+
+Development viability uncertain based on current data. Additional analysis required to assess market dynamics and competitive positioning.
+
+**Recommendation:** **DETAILED STUDY REQUIRED** - Conduct comprehensive market research and financial modeling.
+{% endif %}
+
+### 9.2 Critical Success Factors
+
+1. **Location Leverage:** Maximize natural advantages of {{ district }} location
+2. **Product Differentiation:** Unique design and amenities vs. competitors
+3. **Pricing Strategy:** {{ pricing_strategy.positioning }}
+4. **Developer Credibility:** Strong brand and track record essential
+5. **Market Timing:** Launch aligned with {{ city }} market cycle
+
+### 9.3 Key Risks to Monitor
+
+1. Regulatory approval timeline and conditions
+2. Competitor new launches in proximity
+3. Market absorption rate trends
+4. Construction cost inflation
+5. Interest rate and financing environment
+
+---
+
+## Appendix A: Data Sources
+
+- **Market Data:** MR-System database ({{ period }})
+- **Project Data:** {{ competitor_count }} competitor projects analyzed
+- **Geographic Analysis:** Haversine distance calculations
+- **Pricing Benchmarks:** {{ city }} {{ target_segment }} segment averages
+
+---
+
+## Appendix B: Methodology
+
+This land review report was generated using the MR-System automated analysis framework:
+
+1. **Location Analysis:** Geographic positioning and accessibility assessment
+2. **Market Analysis:** Supply, demand, and pricing trend evaluation
+3. **Competitive Analysis:** Nearby project identification (5km radius) and comparison
+4. **SWOT Framework:** Systematic evaluation of strengths, weaknesses, opportunities, threats
+5. **Product Optimization:** Data-driven unit mix and pricing recommendations
+6. **Risk Assessment:** Multi-dimensional risk evaluation and mitigation strategies
+
+**Analysis Period:** {{ period }}
+**Report Generated:** {{ generated_date }}
+
+---
+
+*This report is generated by the MR-System Land Review Automation module. For detailed feasibility studies, contact market research team.*
