@@ -1,0 +1,10 @@
+[
+  {"site_name": "Di_An_2.3ha", "direction": "W", "view_type": "negative",
+   "view_target": "Binh An Textile IP", "impact_on_positioning": "air/noise pollution risk"},
+  {"site_name": "Di_An_2.3ha", "direction": "E", "view_type": "positive",
+   "view_target": "Hung Kings Temple + Dong Nai River", "impact_on_positioning": "heritage/nature view"},
+  {"site_name": "Di_An_2.3ha", "direction": "SW", "view_type": "positive",
+   "view_target": "City CBD direction", "impact_on_positioning": "urban connectivity feel"},
+  {"site_name": "Di_An_2.3ha", "direction": "NE", "view_type": "negative",
+   "view_target": "Heavy vehicle warehouses", "impact_on_positioning": "messy industrial view"}
+]

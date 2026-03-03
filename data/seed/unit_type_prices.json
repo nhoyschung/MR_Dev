@@ -1,0 +1,164 @@
+[
+  {
+    "project_name": "Starview Apartment",
+    "district_name": "Thuan An",
+    "product_type": "apartment",
+    "unit_types": [
+      {
+        "type_name": "1.5BR",
+        "net_area_m2": 45.2,
+        "price_vnd_per_m2": 66690000,
+        "price_usd_per_m2": 2615
+      },
+      {
+        "type_name": "2BR",
+        "net_area_m2": 51.4,
+        "price_vnd_per_m2": 76570000,
+        "price_usd_per_m2": 3003
+      },
+      {
+        "type_name": "2.5BR",
+        "net_area_m2": 66.9,
+        "price_vnd_per_m2": 75330000,
+        "price_usd_per_m2": 2954
+      },
+      {
+        "type_name": "3BR",
+        "net_area_m2": 72.0,
+        "price_vnd_per_m2": 85870000,
+        "price_usd_per_m2": 3368
+      }
+    ]
+  },
+  {
+    "project_name": "Starview Officetel",
+    "district_name": "Thuan An",
+    "product_type": "officetel",
+    "unit_types": [
+      {
+        "type_name": "Studio",
+        "net_area_m2": 28.5,
+        "price_vnd_per_m2": 46930000,
+        "price_usd_per_m2": 1840
+      },
+      {
+        "type_name": "2.5BR-2WC",
+        "net_area_m2": 72.4,
+        "price_vnd_per_m2": 60710000,
+        "price_usd_per_m2": 2381
+      },
+      {
+        "type_name": "3BR-2WC",
+        "net_area_m2": 71.9,
+        "price_vnd_per_m2": 65620000,
+        "price_usd_per_m2": 2573
+      }
+    ]
+  },
+  {
+    "project_name": "The Emerald 68",
+    "district_name": "Thuan An",
+    "product_type": "apartment",
+    "unit_types": [
+      {
+        "type_name": "1BR",
+        "net_area_m2": 34.8,
+        "price_vnd_per_m2": 69300000,
+        "price_usd_per_m2": 2718
+      },
+      {
+        "type_name": "1.5BR",
+        "net_area_m2": 45.7,
+        "price_vnd_per_m2": 63500000,
+        "price_usd_per_m2": 2490
+      },
+      {
+        "type_name": "2BR",
+        "net_area_m2": 67.8,
+        "price_vnd_per_m2": 63200000,
+        "price_usd_per_m2": 2478
+      },
+      {
+        "type_name": "3BR",
+        "net_area_m2": 81.9,
+        "price_vnd_per_m2": 64900000,
+        "price_usd_per_m2": 2545
+      }
+    ]
+  },
+  {
+    "project_name": "A&T Saigon Riverside",
+    "district_name": "Thuan An",
+    "product_type": "apartment",
+    "unit_types": [
+      {
+        "type_name": "Studio",
+        "net_area_m2": 29.0,
+        "price_vnd_per_m2": 69800000,
+        "price_usd_per_m2": 2737
+      },
+      {
+        "type_name": "1.5BR",
+        "net_area_m2": 42.9,
+        "price_vnd_per_m2": 62900000,
+        "price_usd_per_m2": 2467
+      },
+      {
+        "type_name": "2BR",
+        "net_area_m2": 58.1,
+        "price_vnd_per_m2": 61300000,
+        "price_usd_per_m2": 2404
+      },
+      {
+        "type_name": "3BR",
+        "net_area_m2": 80.8,
+        "price_vnd_per_m2": 65300000,
+        "price_usd_per_m2": 2561
+      }
+    ]
+  },
+  {
+    "project_name": "Symlife",
+    "district_name": "Thuan An",
+    "product_type": "apartment",
+    "unit_types": [
+      {
+        "type_name": "1BR",
+        "net_area_m2": 47.6,
+        "price_vnd_per_m2": 48800000,
+        "price_usd_per_m2": 1914
+      },
+      {
+        "type_name": "2BR",
+        "net_area_m2": 70.9,
+        "price_vnd_per_m2": 43000000,
+        "price_usd_per_m2": 1686
+      },
+      {
+        "type_name": "3BR",
+        "net_area_m2": 86.7,
+        "price_vnd_per_m2": 43600000,
+        "price_usd_per_m2": 1710
+      }
+    ]
+  },
+  {
+    "project_name": "Happy One Mori",
+    "district_name": "Thuan An",
+    "product_type": "apartment",
+    "unit_types": [
+      {
+        "type_name": "2BR",
+        "net_area_m2": 65.0,
+        "price_vnd_per_m2": 46000000,
+        "price_usd_per_m2": 1804
+      },
+      {
+        "type_name": "3BR",
+        "net_area_m2": 85.0,
+        "price_vnd_per_m2": 45000000,
+        "price_usd_per_m2": 1765
+      }
+    ]
+  }
+]

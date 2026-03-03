@@ -1,0 +1,140 @@
+# Unit-Type Price Structure Analysis
+
+**Generated:** {{ generated_date }}
+**Subject:** {{ subject_name }}
+**Competitors:** {{ competitor_names | join(', ') }}
+**Period:** {{ period }}
+
+---
+
+## 1. Executive Summary
+
+{% if subject_variance %}
+**{{ subject_name }}** unit-type price analysis:
+- **Average Price:** ${{ subject_variance.avg_price_usd | int }}/m²
+- **Price Range:** ${{ subject_variance.min_price_usd | int }} – ${{ subject_variance.max_price_usd | int }}/m²
+- **Coefficient of Variation:** {{ subject_variance.cv_pct }}%
+- **Area-Price Correlation:** {{ subject_variance.price_area_correlation }}
+- **Structure:** {% if subject_variance.is_inverted %}**INVERTED** (larger units cost MORE per m²){% else %}Normal (smaller units cost more per m²){% endif %}
+
+{% if anomalies %}
+### Anomaly Alerts
+
+{% for anomaly in anomalies %}
+- {{ anomaly }}
+{% endfor %}
+{% endif %}
+{% else %}
+*Insufficient unit-type price data for {{ subject_name }}.*
+{% endif %}
+
+---
+
+## 2. Subject Unit-Type Pricing
+
+{% if subject_prices %}
+| Unit Type | Net Area (m²) | Price (USD/m²) | Price (VND mil/m²) |
+|-----------|---------------|----------------|---------------------|
+{% for ut in subject_prices %}
+| {{ ut.type_name }} | {{ ut.net_area_m2 }} | ${{ ut.price_usd_per_m2 | int }} | {{ (ut.price_vnd_per_m2 / 1000000) | round(1) if ut.price_vnd_per_m2 else 'N/A' }} |
+{% endfor %}
+{% else %}
+*No unit-type price data available.*
+{% endif %}
+
+---
+
+## 3. Competitor Comparison
+
+### 3.1 Variance Comparison
+
+{% if comparison %}
+| Project | Avg Price (USD/m²) | CV (%) | Inverted? | Correlation |
+|---------|-------------------|--------|-----------|-------------|
+{% if subject_variance %}
+| **{{ subject_name }}** | **${{ subject_variance.avg_price_usd | int }}** | **{{ subject_variance.cv_pct }}%** | **{{ 'YES' if subject_variance.is_inverted else 'No' }}** | **{{ subject_variance.price_area_correlation }}** |
+{% endif %}
+{% for comp in comparison.competitors %}
+| {{ comp.project_name if comp.project_name is defined else 'Competitor' }} | ${{ comp.avg_price_usd | int }} | {{ comp.cv_pct }}% | {{ 'YES' if comp.is_inverted else 'No' }} | {{ comp.price_area_correlation }} |
+{% endfor %}
+
+**Market Averages:**
+- Market Average CV: {{ comparison.market_avg_cv_pct }}%
+- Market Average Price: ${{ comparison.market_avg_price_usd | int }}/m²
+{% if subject_variance %}
+- Subject CV Premium: {{ comparison.subject_cv_premium }}pp
+- Subject Price Gap: {{ comparison.subject_price_gap_pct }}%
+{% endif %}
+{% endif %}
+
+### 3.2 Grouped Bar Chart
+
+*(Unit-type prices by project — see PPTX for chart)*
+
+### 3.3 Variance Comparison Chart
+
+*(CV% comparison — see PPTX for chart)*
+
+### 3.4 Area vs Price Scatter
+
+*(Trend line analysis — see PPTX for chart)*
+
+---
+
+## 4. Competitor Detail Tables
+
+{% for comp in competitor_details %}
+### {{ comp.project_name }}
+
+| Unit Type | Net Area (m²) | Price (USD/m²) |
+|-----------|---------------|----------------|
+{% for ut in comp.unit_types %}
+| {{ ut.type_name }} | {{ ut.net_area_m2 }} | ${{ ut.price_usd_per_m2 | int }} |
+{% endfor %}
+
+{% endfor %}
+
+---
+
+## 5. Market Positioning Assessment
+
+{% if subject_variance and comparison %}
+{% if comparison.subject_price_gap_pct > 15 %}
+**{{ subject_name }}** is priced **{{ comparison.subject_price_gap_pct }}% above** the competitor average — premium positioning that requires strong justification through location, facilities, or brand.
+{% elif comparison.subject_price_gap_pct < -15 %}
+**{{ subject_name }}** is priced **{{ comparison.subject_price_gap_pct | abs }}% below** the competitor average — value positioning or underpriced.
+{% else %}
+**{{ subject_name }}** is priced **within ±15%** of the competitor average — competitive market positioning.
+{% endif %}
+
+{% if subject_variance.is_inverted %}
+**CRITICAL FINDING:** {{ subject_name }} has an **inverted price structure** where larger units command higher per-m² prices than smaller units. This is atypical in Vietnam residential markets where the normal pattern shows ~7.5% premium for smaller units. This suggests either:
+1. Premium floor/view placement for larger units
+2. Aggressive pricing strategy for entry-level buyers
+3. Supply-demand imbalance by unit type
+{% endif %}
+{% endif %}
+
+---
+
+## 6. Conclusions & Recommendations
+
+{% if subject_variance %}
+{% if subject_variance.is_inverted %}
+1. **Inverted structure detected** — review pricing logic for consistency with market norms
+2. Smaller units may be underpriced relative to market, creating arbitrage opportunity
+3. Larger unit premium ({{ subject_variance.cv_pct }}% CV) exceeds market norm (~7.5%)
+{% else %}
+1. Price structure follows normal market pattern (smaller units at premium)
+2. CV of {{ subject_variance.cv_pct }}% {% if subject_variance.cv_pct > 15 %}is elevated — consider narrowing the price range{% else %}is within acceptable range{% endif %}
+{% endif %}
+{% if comparison and comparison.subject_price_gap_pct > 0 %}
+3. Premium of {{ comparison.subject_price_gap_pct }}% vs market needs competitive justification
+{% endif %}
+{% else %}
+*Insufficient data for conclusions.*
+{% endif %}
+
+---
+
+*Generated by MR-System Unit-Type Price Structure Analysis Module*

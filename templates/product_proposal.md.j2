@@ -1,0 +1,142 @@
+# Product Development Proposal: {{ site_name }}
+
+**Generated:** {{ generated_date }}
+**Location:** {{ city }}, {{ district }}
+**Land Area:** {{ land_area_ha }} ha
+**Concept:** {{ development_concept or 'N/A' }}
+**Total Units:** {{ total_units_target | default('N/A') }} (High-rise: {{ total_highrise_units | default('N/A') }}, Low-rise: {{ total_lowrise_units | default('N/A') }})
+
+---
+
+## 1. Market Overview
+
+{{ city }} — {{ district }} development area.
+
+---
+
+## 2. Zone Breakdown
+
+{% if zones %}
+| Zone | Area (ha) | High-rise | Low-rise | Key Anchor | Phase | Benchmark |
+|------|-----------|-----------|----------|------------|-------|-----------|
+{% for z in zones %}
+| Zone {{ z.zone_code }} | {{ z.area_ha }} | {{ z.highrise_units_planned or '-' }} | {{ z.lowrise_units_planned or '-' }} | {{ z.key_anchor or '-' }} | P{{ z.phase_sequence or '-' }} | {{ z.benchmark_project or '-' }} |
+{% endfor %}
+{% endif %}
+
+---
+
+## 3. Competitor Landscape
+
+{% if competitors %}
+| Project | Developer | Distance | Units | TH Price | SH Price | Villa Price | Status | Launch |
+|---------|-----------|----------|-------|----------|----------|-------------|--------|--------|
+{% for c in competitors %}
+| {{ c.name }} | {{ c.developer or '-' }} | {{ c.distance_km or '-' }}km | {{ c.total_units or '-' }} | {{ '$%s' % (c.townhouse_price | int) if c.townhouse_price else '-' }} | {{ '$%s' % (c.shophouse_price | int) if c.shophouse_price else '-' }} | {{ '$%s' % (c.villa_price | int) if c.villa_price else '-' }} | {{ c.status or '-' }} | {{ c.launch_date or '-' }} |
+{% endfor %}
+{% endif %}
+
+---
+
+## 4. SWOT Analysis
+
+{% if swot.S %}**Strengths:**
+{% for s in swot.S %}- {{ s }}
+{% endfor %}{% endif %}
+{% if swot.W %}**Weaknesses:**
+{% for w in swot.W %}- {{ w }}
+{% endfor %}{% endif %}
+{% if swot.O %}**Opportunities:**
+{% for o in swot.O %}- {{ o }}
+{% endfor %}{% endif %}
+{% if swot.T %}**Threats:**
+{% for t in swot.T %}- {{ t }}
+{% endfor %}{% endif %}
+
+---
+
+## 5. Target Customer Segmentation
+
+{% if target_customers %}
+| Segment | Ratio | Purpose | Products | Profile |
+|---------|-------|---------|----------|---------|
+{% for tc in target_customers %}
+| {{ tc.segment_name }} | {{ tc.ratio_pct }}% | {{ tc.purpose }} | {{ tc.target_products }} | {{ tc.profile }} |
+{% endfor %}
+{% endif %}
+
+---
+
+## 6. Development Directions
+
+{% for d in development_directions %}
+### Direction {{ d.direction_number }}: {{ d.direction_name }}
+
+{% if d.concept_keywords %}**Keywords:** {{ d.concept_keywords }}{% endif %}
+
+{% if d.standard_amenities %}**Standard Amenities:** {{ d.standard_amenities }}{% endif %}
+
+{% if d.premium_amenities %}**Premium Amenities:** {{ d.premium_amenities }}{% endif %}
+
+{% if d.driving_amenities %}**Driving Amenities:** {{ d.driving_amenities }}{% endif %}
+
+{% if d.target_positioning %}**Positioning:** {{ d.target_positioning }}{% endif %}
+
+{% endfor %}
+
+---
+
+## 7. FS Planning — NHO Price Targets
+
+{% if price_targets %}
+| Product Type | USD/m² | Total (VND bil) | Unit Size (m²) | Units | Launch |
+|-------------|--------|-----------------|-----------------|-------|--------|
+{% for p in price_targets %}
+| {{ p.product_type }} | ${{ p.price_usd_m2 | int }} | {{ p.total_price_vnd_bil or '-' }} | {{ p.unit_size_m2 or '-' }} | {{ p.unit_count or '-' }} | {{ p.launch or '-' }} |
+{% endfor %}
+{% endif %}
+
+---
+
+## 8. Case Study Reference
+
+{% for cs in case_studies %}
+### {{ cs.project_name }} — {{ cs.developer_name or 'N/A' }}
+
+**Location:** {{ cs.city_text }}
+**Land Area:** {{ cs.land_area_ha or '-' }} ha | **BCR:** {{ cs.bcr_pct or '-' }}% | **Units:** {{ cs.total_units or '-' }}
+**Avg Price:** {{ '$%s/m²' % (cs.avg_price_usd_m2 | int) if cs.avg_price_usd_m2 else 'N/A' }}
+**Concept:** {{ cs.positioning_concept or 'N/A' }}
+{% if cs.management_company %}**Management:** {{ cs.management_company }}{% endif %}
+
+{% if cs.phases %}
+| Phase | Name | Area (ha) | Units | Launch | Status | Sold % | Absorption |
+|-------|------|-----------|-------|--------|--------|--------|------------|
+{% for p in cs.phases %}
+| {{ p.phase_code }} | {{ p.phase_name or '-' }} | {{ p.area_ha or '-' }} | {{ p.total_units or '-' }} | {{ p.launch_date or '-' }} | {{ p.sales_status or '-' }} | {{ '%s%%' % (p.sold_pct | int) if p.sold_pct else '-' }} | {{ '%s days' % p.absorption_days if p.absorption_days else '-' }} |
+{% endfor %}
+
+{% for p in cs.phases %}
+{% if p.unit_types %}
+**{{ p.phase_code }} {{ p.phase_name or '' }} Unit Types:**
+
+| Type | Units | Land Min (m²) | Land Max (m²) | GFA (m²) | Price (USD/m²) |
+|------|-------|---------------|---------------|----------|---------------|
+{% for ut in p.unit_types %}
+| {{ ut.product_type }} | {{ ut.unit_count or '-' }} | {{ ut.land_size_min_m2 or '-' }} | {{ ut.land_size_max_m2 or '-' }} | {{ ut.gfa_m2 or '-' }} | {{ '$%s' % (ut.avg_price_usd_m2 | int) if ut.avg_price_usd_m2 else '-' }} |
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+
+---
+
+## 9. Conclusions & PD Recommendations
+
+*Based on market analysis and competitive landscape, the recommended development strategy balances unit mix, pricing, and phasing to maximize returns while maintaining competitive positioning.*
+
+---
+
+*Generated by MR-System Product Proposal Module*

@@ -375,21 +375,22 @@ def _pricing_strategy(
     }
 
 
-def generate_land_review_report(
+def _assemble_land_review_context(
     session: Session,
     land_input: dict,
-) -> str:
-    """Generate comprehensive land review report.
+    include_map: bool = True,
+) -> dict:
+    """Assemble all data needed for a land review report.
+
+    Shared by both the Markdown renderer and the PPTX generator.
 
     Args:
         session: Database session
-        land_input: Dictionary with land information
-            Required: city, land_area_ha
-            Optional: district, ward, latitude, longitude, land_use,
-                     development_type, target_segment, strengths, weaknesses
+        land_input: Dictionary with land information (city required).
+        include_map: Whether to generate the HTML competitor map (expensive).
 
     Returns:
-        Rendered markdown report string
+        Context dict. Raises ValueError if city not found.
     """
     # Get city
     city_name = land_input.get("city")
@@ -437,10 +438,9 @@ def generate_land_review_report(
     product_mix = _recommend_product_mix(session, land_input, target_grades, market_data, location_data.get("regulatory_info"))
     pricing = _pricing_strategy(market_data, target_grades, segment)
 
-    # Generate competitor location map if coordinates provided
+    # Generate competitor location map if coordinates provided (markdown only)
     competitor_map_html = None
-    if land_input.get("latitude") and land_input.get("longitude") and competitors:
-        # Get raw competitor list with Project objects for map
+    if include_map and land_input.get("latitude") and land_input.get("longitude") and competitors:
         competitor_projects = find_competitors_by_grade(
             session,
             land_input["latitude"],
@@ -458,8 +458,7 @@ def generate_land_review_report(
             zoom_start=13,
         )
 
-    # Build context for template
-    context = {
+    return {
         "generated_date": date.today().isoformat(),
         "land_input": land_input,
         "city": city.name_en,
@@ -481,4 +480,22 @@ def generate_land_review_report(
         "period": f"{latest_period.year}-{latest_period.half}" if latest_period else "N/A",
     }
 
+
+def generate_land_review_report(
+    session: Session,
+    land_input: dict,
+) -> str:
+    """Generate comprehensive land review report.
+
+    Args:
+        session: Database session
+        land_input: Dictionary with land information
+            Required: city, land_area_ha
+            Optional: district, ward, latitude, longitude, land_use,
+                     development_type, target_segment, strengths, weaknesses
+
+    Returns:
+        Rendered markdown report string
+    """
+    context = _assemble_land_review_context(session, land_input, include_map=True)
     return render_template("land_review.md.j2", **context)

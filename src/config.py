@@ -14,10 +14,16 @@ USER_RESOURCES_DIR = PROJECT_ROOT / "user_resources"
 DB_PATH = DATA_DIR / "mr_system.db"
 DATABASE_URL = f"sqlite:///{DB_PATH}"
 
+# Output directories (PPTX exports and job artifacts)
+OUTPUT_DIR = PROJECT_ROOT / "output"
+JOBS_DIR = OUTPUT_DIR / "jobs"
+
 # Ensure directories exist
 DATA_DIR.mkdir(exist_ok=True)
 SEED_DIR.mkdir(exist_ok=True)
 TEMPLATES_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR.mkdir(exist_ok=True)
+JOBS_DIR.mkdir(exist_ok=True)
 
 # Constants
 REGIONS = ("South", "North", "Central")
@@ -28,7 +34,8 @@ UNIT_TYPES = ("studio", "1BR", "2BR", "3BR", "4BR", "penthouse", "duplex",
               "officetel", "shophouse", "villa")
 SEGMENTS = ("super-luxury", "luxury", "high-end", "mid-end", "affordable")
 REPORT_TYPES = ("market_analysis", "price_analysis", "land_review",
-                "case_study", "developer_analysis", "development_proposal")
+                "case_study", "developer_analysis", "development_proposal",
+                "web_scrape")
 HALF_PERIODS = ("H1", "H2")
 FACTOR_TYPES = ("increase", "decrease")
 FACTOR_CATEGORIES = (

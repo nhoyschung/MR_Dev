@@ -40,5 +40,19 @@
     "name_vi": "Bình Định",
     "name_ko": "빈딘",
     "region": "Central"
+  },
+  {
+    "id": 7,
+    "name_en": "Hai Phong",
+    "name_vi": "Hải Phòng",
+    "name_ko": "하이퐁",
+    "region": "North"
+  },
+  {
+    "id": 8,
+    "name_en": "Bac Ninh",
+    "name_vi": "Bắc Ninh",
+    "name_ko": "박닌",
+    "region": "North"
   }
 ]

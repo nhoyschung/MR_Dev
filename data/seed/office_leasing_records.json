@@ -1,0 +1,167 @@
+[
+  {
+    "office_project_name": "The Hallmark",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 43,
+    "rent_max_usd": 58,
+    "management_fee_usd": 7.5,
+    "occupancy_rate_pct": null,
+    "area_basis": "NLA",
+    "notes": "Launch pricing on market entry Q1 2023"
+  },
+  {
+    "office_project_name": "The Hallmark",
+    "period_year": 2024,
+    "period_half": "H2",
+    "rent_min_usd": 45,
+    "rent_max_usd": 60,
+    "management_fee_usd": 7.5,
+    "occupancy_rate_pct": 75,
+    "area_basis": "NLA",
+    "notes": "Stabilizing occupancy 18 months post-opening"
+  },
+  {
+    "office_project_name": "Friendship Tower",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 50,
+    "rent_max_usd": 55,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 90,
+    "area_basis": "NLA",
+    "notes": "CBD Grade A with LEED Gold, stable occupancy"
+  },
+  {
+    "office_project_name": "Friendship Tower",
+    "period_year": 2024,
+    "period_half": "H2",
+    "rent_min_usd": 52,
+    "rent_max_usd": 57,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 92,
+    "area_basis": "NLA",
+    "notes": "Near-full occupancy; slight rent increase YoY"
+  },
+  {
+    "office_project_name": "Vietcombank Tower",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 62,
+    "rent_max_usd": 68,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 95,
+    "area_basis": "NLA",
+    "notes": "Highest asking rent CBD market; riverside premium"
+  },
+  {
+    "office_project_name": "Deutsches Haus",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 65,
+    "rent_max_usd": 74,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 88,
+    "area_basis": "NLA",
+    "notes": "Premium for LEED Platinum + DGNB Gold dual certification"
+  },
+  {
+    "office_project_name": "Deutsches Haus",
+    "period_year": 2024,
+    "period_half": "H2",
+    "rent_min_usd": 67,
+    "rent_max_usd": 76,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 90,
+    "area_basis": "NLA",
+    "notes": "Sustained premium; ESG-driven demand from multinationals"
+  },
+  {
+    "office_project_name": "Sonatus Building",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 46,
+    "rent_max_usd": 50,
+    "management_fee_usd": 6.0,
+    "occupancy_rate_pct": 85,
+    "area_basis": "NLA",
+    "notes": "Older stock; competitive pricing to maintain occupancy"
+  },
+  {
+    "office_project_name": "Saigon Center 2",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 58,
+    "rent_max_usd": 65,
+    "management_fee_usd": 7.0,
+    "occupancy_rate_pct": 91,
+    "area_basis": "NLA",
+    "notes": "Mixed-use building; retail podium draws foot traffic"
+  },
+  {
+    "office_project_name": "Worc@Q2",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 23.5,
+    "rent_max_usd": 30,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 80,
+    "area_basis": "NLA",
+    "notes": "Highest-priced office in Thao Dien submarket before The Hallmark opened"
+  },
+  {
+    "office_project_name": "Worc@Q2",
+    "period_year": 2024,
+    "period_half": "H2",
+    "rent_min_usd": 23.5,
+    "rent_max_usd": 30,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 80,
+    "area_basis": "NLA",
+    "notes": "Stable despite new Grade A supply entry from The Hallmark"
+  },
+  {
+    "office_project_name": "Cobi Tower 1",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 22,
+    "rent_max_usd": 24,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 88,
+    "area_basis": "NLA",
+    "notes": "District 7 Grade B pricing"
+  },
+  {
+    "office_project_name": "Cobi Tower 2",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 22,
+    "rent_max_usd": 24,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 90,
+    "area_basis": "NLA",
+    "notes": "District 7 Grade B; larger floor plates attract bigger tenants"
+  },
+  {
+    "office_project_name": "MeLinh Point Tower",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 48,
+    "rent_max_usd": 60,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 87,
+    "area_basis": "NLA",
+    "notes": "LEED Platinum aging stock; premium for CBD riverside location"
+  },
+  {
+    "office_project_name": "A&B Tower",
+    "period_year": 2023,
+    "period_half": "H1",
+    "rent_min_usd": 37,
+    "rent_max_usd": 42,
+    "management_fee_usd": null,
+    "occupancy_rate_pct": 89,
+    "area_basis": "NLA",
+    "notes": "Value-positioned Grade A; LEED Gold but non-riverfront"
+  }
+]

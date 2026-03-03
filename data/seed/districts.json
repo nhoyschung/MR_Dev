@@ -46,5 +46,17 @@
 
   {"id": 43, "city_id": 4, "name_en": "Vung Tau", "name_vi": "Vũng Tàu", "district_type": "urban"},
   {"id": 44, "city_id": 5, "name_en": "Nhon Trach", "name_vi": "Nhơn Trạch", "district_type": "suburban"},
-  {"id": 45, "city_id": 6, "name_en": "Quy Nhon", "name_vi": "Quy Nhơn", "district_type": "urban"}
+  {"id": 45, "city_id": 6, "name_en": "Quy Nhon", "name_vi": "Quy Nhơn", "district_type": "urban"},
+
+  {"id": 46, "city_id": 7, "name_en": "Duong Kinh", "name_vi": "Dương Kinh", "district_type": "urban"},
+  {"id": 47, "city_id": 7, "name_en": "Kien An",    "name_vi": "Kiến An",    "district_type": "urban"},
+  {"id": 48, "city_id": 7, "name_en": "Do Son",     "name_vi": "Đồ Sơn",     "district_type": "urban"},
+
+  {"id": 49, "city_id": 8, "name_en": "Kim Chan",   "name_vi": "Kim Chân",   "district_type": "urban"},
+  {"id": 50, "city_id": 8, "name_en": "Dai Phuc",   "name_vi": "Đại Phúc",   "district_type": "urban"},
+  {"id": 51, "city_id": 8, "name_en": "Ninh Xa",    "name_vi": "Ninh Xá",    "district_type": "urban"},
+  {"id": 52, "city_id": 8, "name_en": "Vo Cuong",   "name_vi": "Võ Cường",   "district_type": "urban"},
+  {"id": 53, "city_id": 8, "name_en": "Yen Phong",  "name_vi": "Yên Phong",  "district_type": "suburban"},
+  {"id": 54, "city_id": 8, "name_en": "Tien Du",    "name_vi": "Tiên Du",    "district_type": "suburban"},
+  {"id": 55, "city_id": 8, "name_en": "Hoa Long",   "name_vi": "Hòa Long",   "district_type": "suburban"}
 ]

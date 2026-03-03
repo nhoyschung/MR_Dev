@@ -1,0 +1,37 @@
+[
+  {
+    "hotel_project_name": "Mozac Hotel (Plan B)",
+    "room_type": "standard",
+    "area_m2": 30,
+    "room_count": 70,
+    "notes": "Standard room 30m². Largest count category. Metro-view or garden-facing."
+  },
+  {
+    "hotel_project_name": "Mozac Hotel (Plan B)",
+    "room_type": "deluxe",
+    "area_m2": 35,
+    "room_count": 55,
+    "notes": "Deluxe room 35m². River or city-view rooms."
+  },
+  {
+    "hotel_project_name": "Mozac Hotel (Plan B)",
+    "room_type": "family_deluxe",
+    "area_m2": 40,
+    "room_count": 15,
+    "notes": "Family Deluxe 40m². Suitable for families; larger bathroom and sleeping area."
+  },
+  {
+    "hotel_project_name": "Mozac Hotel (Plan B)",
+    "room_type": "executive",
+    "area_m2": 50,
+    "room_count": 5,
+    "notes": "Executive room 50m². Access to executive lounge. Upper floors with panoramic views."
+  },
+  {
+    "hotel_project_name": "Mozac Hotel (Plan B)",
+    "room_type": "suite",
+    "area_m2": 70,
+    "room_count": 3,
+    "notes": "Suite 70m². Top floor. River-view living area + separate bedroom."
+  }
+]

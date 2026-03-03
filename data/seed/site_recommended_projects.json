@@ -1,0 +1,17 @@
+[
+  {"site_name": "Di_An_2.3ha", "project_name": "The Gio Gio Nam", "developer": "An Gia",
+   "city_text": "Binh Duong", "district_text": "Di An", "grade": "M-I",
+   "price_usd_m2": 2134, "sales_performance": "89% on launch day",
+   "design_highlight": "Rose-gold boutique hotel concept",
+   "recommendation_reason": "Closest comparable — same district, similar grade, strong absorption"},
+  {"site_name": "Di_An_2.3ha", "project_name": "La Pura Zenia", "developer": "Phu Long",
+   "city_text": "Binh Duong", "district_text": "Thuan An", "grade": "M-I",
+   "price_usd_m2": 2016, "sales_performance": "1,082 bookings",
+   "design_highlight": "Wellness/meditation garden, rooftop yoga",
+   "recommendation_reason": "Wellness positioning benchmark"},
+  {"site_name": "Di_An_2.3ha", "project_name": "The Opus One", "developer": "Vinhomes",
+   "city_text": "Binh Duong", "district_text": "Di An", "grade": "H-I",
+   "price_usd_m2": 3454, "sales_performance": "78% in 5 months",
+   "design_highlight": "5-star resort, triple infinity pool, sky garden",
+   "recommendation_reason": "Premium positioning benchmark — aspirational target"}
+]

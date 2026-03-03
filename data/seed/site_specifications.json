@@ -1,0 +1,12 @@
+[
+  {"site_name": "HP_25ha_Duong_Kinh", "spec_type": "main_road", "value_text": "DT402",
+   "value_numeric": 28, "status": "planning", "notes": "Expansion to 28m"},
+  {"site_name": "HP_25ha_Duong_Kinh", "spec_type": "ring_road", "value_text": "Ring Road 2",
+   "value_numeric": 68, "status": "planning"},
+  {"site_name": "HP_25ha_Duong_Kinh", "spec_type": "ring_road", "value_text": "Ring Road 3",
+   "value_numeric": 68, "status": "planning"},
+  {"site_name": "HP_25ha_Duong_Kinh", "spec_type": "main_road", "value_text": "Cau Rao 3",
+   "value_numeric": 55, "status": "planning", "notes": "50.5-60m width"},
+  {"site_name": "HP_25ha_Duong_Kinh", "spec_type": "river_frontage", "value_text": "He River",
+   "direction": "south", "notes": "Waterfront landscape asset"}
+]

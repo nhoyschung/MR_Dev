@@ -1,0 +1,38 @@
+[
+  {
+    "site_name": "HP_7.2ha_Kien_An",
+    "option_scenario": "Option 3",
+    "design_concept": "Back to the Mountain, Facing the River",
+    "orientation_constraints": "Avoid west-facing units; shadow study for TH due to north-high/south-low terrain",
+    "buffer_requirements": "Pagoda buffer zone — reduce sport land width if needed",
+    "premiumization_strategy": "Under 7F perceived as low-cost → position as boutique condominiums with iconic design",
+    "facade_direction": "Japandi (natural light, eco-friendly) + Sculptural (curved facade, dynamic balconies)",
+    "product_specs": [
+      {"product_type": "TH/SH", "ratio_pct": 20, "floors": 3,
+       "unit_size_min_m2": 60, "unit_size_max_m2": 75, "typical_size_m2": 65,
+       "target_price_usd_m2": 3000, "target_price_vnd_mil": 78, "expected_launch": "2028"},
+      {"product_type": "commercial_apt", "ratio_pct": 50, "floors": 7,
+       "unit_size_min_m2": 50, "unit_size_max_m2": 80, "typical_size_m2": 60,
+       "unit_count": 613, "target_price_usd_m2": 1600, "target_price_vnd_mil": 41.6, "expected_launch": "2027-Q4"},
+      {"product_type": "social_apt", "ratio_pct": 30, "floors": 7,
+       "unit_size_min_m2": 30, "unit_size_max_m2": 70, "typical_size_m2": 50,
+       "unit_count": 296, "target_price_usd_m2": 700, "target_price_vnd_mil": 18.2, "expected_launch": "2027-Q4"}
+    ],
+    "design_case_studies": [
+      {"reference_category": "masterplan", "project_name": "Golden Point", "developer": "Van Phuc Dien", "city_text": "Hai Phong", "design_style": "neoclassical", "reference_purpose": "zoning"},
+      {"reference_category": "masterplan", "project_name": "Phu Gia Royal Park", "city_text": "Hai Phong", "design_style": "neoclassical", "reference_purpose": "zoning"},
+      {"reference_category": "masterplan", "project_name": "TNR Lam Son", "city_text": "Thanh Hoa", "reference_purpose": "buffer_zone"},
+      {"reference_category": "masterplan", "project_name": "Calyx Residence", "city_text": "Hanoi", "reference_purpose": "zoning"},
+      {"reference_category": "masterplan", "project_name": "Him Lam Central Park", "city_text": "Can Tho", "reference_purpose": "facility_layout"},
+      {"reference_category": "masterplan", "project_name": "CityLand Park Hills", "city_text": "HCMC", "reference_purpose": "facility_layout"},
+      {"reference_category": "masterplan", "project_name": "The Matrix", "city_text": "HCMC", "reference_purpose": "zoning"},
+      {"reference_category": "commercial_apt", "project_name": "Sky Residence", "city_text": "Hai Phong", "design_style": "Japandi", "reference_purpose": "facade"},
+      {"reference_category": "commercial_apt", "project_name": "Legacy Hinori", "city_text": "Hai Phong", "design_style": "Japandi", "reference_purpose": "facade"},
+      {"reference_category": "commercial_apt", "project_name": "The Sculptura", "city_text": "HCMC", "design_style": "Sculptural", "reference_purpose": "facade", "design_highlight": "Sculptural balconies, curved facade, marble/wood/glass"},
+      {"reference_category": "commercial_apt", "project_name": "The Base Bangkok", "city_text": "Bangkok", "design_style": "courtyard-centric", "reference_purpose": "facade"},
+      {"reference_category": "commercial_apt", "project_name": "The Commune Phnom Penh", "city_text": "Phnom Penh", "design_style": "op-art", "reference_purpose": "facade"},
+      {"reference_category": "social_apt", "project_name": "HUD Dong Van", "city_text": "Ha Nam", "reference_purpose": "facade"},
+      {"reference_category": "social_apt", "project_name": "Happy Home", "city_text": "HCMC", "reference_purpose": "facade"}
+    ]
+  }
+]

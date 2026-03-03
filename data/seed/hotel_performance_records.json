@@ -1,0 +1,72 @@
+[
+  {
+    "hotel_project_name": null,
+    "city": "Ho Chi Minh City",
+    "district": null,
+    "period_year": 2024,
+    "period_half": "H2",
+    "occupancy_rate_pct": 68,
+    "adr_vnd": 2200000,
+    "revpar_vnd": 1496000,
+    "adr_usd": null,
+    "international_visitor_count": 1600000,
+    "domestic_visitor_count": null,
+    "notes": "HCMC citywide hotel market Q1 2025: 16,666 rooms, 118 projects. Int'l visitors +18% YoY. Source: Mozac Proposal 2025."
+  },
+  {
+    "hotel_project_name": null,
+    "city": "Ho Chi Minh City",
+    "district": "Thu Duc",
+    "period_year": 2024,
+    "period_half": "H2",
+    "occupancy_rate_pct": 72,
+    "adr_vnd": 1800000,
+    "revpar_vnd": 1296000,
+    "adr_usd": null,
+    "international_visitor_count": null,
+    "domestic_visitor_count": null,
+    "notes": "Thao Dien (Thu Duc) submarket. 26 hotels total: 7 branded (2.3-2.9M VND/night), 19 unbranded (0.3-1.3M VND/night). 6 sky bars exist but all in low-rise 4-6F buildings. Source: Mozac Proposal 2025."
+  },
+  {
+    "hotel_project_name": null,
+    "city": "Ho Chi Minh City",
+    "district": "Thu Duc",
+    "period_year": 2023,
+    "period_half": "H2",
+    "occupancy_rate_pct": 65,
+    "adr_vnd": 1650000,
+    "revpar_vnd": 1072500,
+    "adr_usd": null,
+    "international_visitor_count": null,
+    "domestic_visitor_count": null,
+    "notes": "Thao Dien submarket 2023-H2. Pre-Metro-Line-1 opening period. Branded hotels performing above submarket average."
+  },
+  {
+    "hotel_project_name": null,
+    "city": "Ho Chi Minh City",
+    "district": null,
+    "period_year": 2023,
+    "period_half": "H1",
+    "occupancy_rate_pct": 60,
+    "adr_vnd": 1900000,
+    "revpar_vnd": 1140000,
+    "adr_usd": null,
+    "international_visitor_count": 1200000,
+    "domestic_visitor_count": null,
+    "notes": "HCMC citywide H1 2023. Recovery post-COVID; international arrivals recovering strongly."
+  },
+  {
+    "hotel_project_name": null,
+    "city": "Ho Chi Minh City",
+    "district": null,
+    "period_year": 2023,
+    "period_half": "H2",
+    "occupancy_rate_pct": 64,
+    "adr_vnd": 2050000,
+    "revpar_vnd": 1312000,
+    "adr_usd": null,
+    "international_visitor_count": 1400000,
+    "domestic_visitor_count": null,
+    "notes": "HCMC citywide H2 2023. Continued recovery; domestic tourism strong alongside int'l rebound."
+  }
+]

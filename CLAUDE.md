@@ -19,7 +19,7 @@ MR-system/
 │   ├── config.py           # Paths, DB URL, constants
 │   ├── db/                 # Database layer
 │   │   ├── connection.py   # Engine, session factory
-│   │   ├── models.py       # SQLAlchemy models (20 tables)
+│   │   ├── models.py       # SQLAlchemy models (54 tables)
 │   │   ├── init_db.py      # Create tables + seed reference data
 │   │   └── queries.py      # Common query helpers
 │   ├── seeders/            # Data seeding pipeline

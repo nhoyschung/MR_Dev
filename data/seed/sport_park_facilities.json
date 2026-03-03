@@ -1,0 +1,12 @@
+[
+  {"case_study_name": "Vinhomes Grand Park", "park_area_ha": 1.3,
+   "clubhouse_count": 0, "tennis_courts": 2, "badminton_courts": 3,
+   "mini_basketball_courts": 2, "mini_football_courts": 1, "kids_playgrounds": 1,
+   "pool_count": 1, "kids_pool_count": 0, "jacuzzi_count": 0,
+   "outdoor_gym_count": 1, "picnic_lawn_count": 1, "bbq_count": 0, "jogging_track_count": 1},
+  {"case_study_name": "The Fulton", "park_area_ha": 1.9,
+   "clubhouse_count": 1, "tennis_courts": 1, "badminton_courts": 4,
+   "mini_basketball_courts": 0, "mini_football_courts": 0, "kids_playgrounds": 4,
+   "pool_count": 1, "kids_pool_count": 1, "jacuzzi_count": 1,
+   "outdoor_gym_count": 1, "picnic_lawn_count": 1, "bbq_count": 3, "jogging_track_count": 1}
+]

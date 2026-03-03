@@ -13,6 +13,9 @@ from src.db.queries import (
     get_grade_for_price, get_district_supply, count_projects_by_city, avg_price_by_district,
     resolve_city_name, get_city_price_trend, get_grade_price_summary,
     get_project_price_changes, get_price_range_by_city,
+    get_price_momentum, get_supply_demand_ratio_by_period,
+    get_grade_migration_cohort, get_price_volatility_by_grade,
+    get_district_ranking_change,
 )
 from src.seeders.city_seeder import CitySeeder
 from src.seeders.grade_seeder import GradeSeeder
@@ -230,3 +233,128 @@ class TestPriceTrends:
         # Verify chronological ordering (earliest first)
         years = [(h.period.year, h.period.half) for h in history]
         assert len(set(years)) >= 2
+
+
+class TestTemporalTrendQueries:
+    """Tests for the five new temporal trend analysis queries."""
+
+    def test_get_price_momentum_returns_list(self, session):
+        result = get_price_momentum(session, "HCMC")
+        assert isinstance(result, list)
+
+    def test_get_price_momentum_structure(self, session):
+        result = get_price_momentum(session, "HCMC")
+        assert len(result) >= 1
+        first = result[0]
+        assert "period" in first
+        assert "avg_price_usd" in first
+        assert "project_count" in first
+        assert "change_pct" in first
+        assert "acceleration" in first
+        assert "momentum" in first
+
+    def test_get_price_momentum_first_period_no_change(self, session):
+        """First period has no previous to compare against."""
+        result = get_price_momentum(session, "HCMC")
+        assert result[0]["change_pct"] is None
+        assert result[0]["acceleration"] is None
+
+    def test_get_price_momentum_second_period_has_change(self, session):
+        """Second period onwards should have a change_pct."""
+        result = get_price_momentum(session, "HCMC")
+        if len(result) >= 2:
+            assert result[1]["change_pct"] is not None
+
+    def test_get_price_momentum_unknown_city(self, session):
+        result = get_price_momentum(session, "Atlantis")
+        assert result == []
+
+    def test_get_supply_demand_ratio_returns_list(self, session):
+        result = get_supply_demand_ratio_by_period(session, "HCMC")
+        assert isinstance(result, list)
+
+    def test_get_supply_demand_ratio_structure(self, session):
+        result = get_supply_demand_ratio_by_period(session, "HCMC")
+        if result:
+            row = result[0]
+            assert "period" in row
+            assert "new_supply" in row
+            assert "sold_units" in row
+            assert "supply_demand_ratio" in row
+            assert "signal" in row
+
+    def test_get_supply_demand_ratio_signal_values(self, session):
+        result = get_supply_demand_ratio_by_period(session, "HCMC")
+        valid_signals = {"oversupply", "shortage", "balanced", "no_data"}
+        for row in result:
+            assert row["signal"] in valid_signals
+
+    def test_get_supply_demand_ratio_unknown_city(self, session):
+        result = get_supply_demand_ratio_by_period(session, "Nowhere")
+        assert result == []
+
+    def test_get_grade_migration_cohort_returns_list(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_grade_migration_cohort(session, hcmc.id)
+        assert isinstance(result, list)
+
+    def test_get_grade_migration_cohort_structure(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_grade_migration_cohort(session, hcmc.id)
+        for row in result:
+            assert "project_id" in row
+            assert "project_name" in row
+            assert "migrated_from" in row
+            assert "migrated_to" in row
+            assert "direction" in row
+            assert row["direction"] in ("upgrade", "downgrade")
+
+    def test_get_price_volatility_by_grade_returns_list(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_price_volatility_by_grade(session, hcmc.id, 2024, "H1")
+        assert isinstance(result, list)
+
+    def test_get_price_volatility_by_grade_structure(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_price_volatility_by_grade(session, hcmc.id, 2024, "H1")
+        assert len(result) >= 1
+        for row in result:
+            assert "grade_code" in row
+            assert "avg_price_usd" in row
+            assert "std_dev_usd" in row
+            assert "cv_pct" in row
+            assert "project_count" in row
+            assert "volatility" in row
+            assert row["volatility"] in ("high", "moderate", "low")
+
+    def test_get_price_volatility_no_data(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_price_volatility_by_grade(session, hcmc.id, 2099, "H1")
+        assert result == []
+
+    def test_get_district_ranking_change_returns_list(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_district_ranking_change(session, hcmc.id, 2023, "H2", 2024, "H1")
+        assert isinstance(result, list)
+
+    def test_get_district_ranking_change_structure(self, session):
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_district_ranking_change(session, hcmc.id, 2023, "H2", 2024, "H1")
+        for row in result:
+            assert "district_name" in row
+            assert "rank_change" in row
+            assert "movement" in row
+            assert row["movement"] in ("risen", "fallen", "stable")
+
+    def test_get_district_ranking_change_ordered_by_rank(self, session):
+        """Results should be sorted by rank_change descending (biggest risers first)."""
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_district_ranking_change(session, hcmc.id, 2023, "H2", 2024, "H1")
+        changes = [r["rank_change"] for r in result if r["rank_change"] is not None]
+        assert changes == sorted(changes, reverse=True)
+
+    def test_get_district_ranking_no_overlap(self, session):
+        """If periods have no overlapping districts, returns empty list."""
+        hcmc = get_city_by_name(session, "Ho Chi Minh City")
+        result = get_district_ranking_change(session, hcmc.id, 2099, "H1", 2099, "H2")
+        assert result == []

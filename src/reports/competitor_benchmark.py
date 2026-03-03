@@ -16,7 +16,7 @@ from src.db.models import (
     ProjectFacility, ProjectSalesPoint
 )
 from src.db.queries import get_latest_price, get_period
-from src.reports.charts import _fig_to_base64
+from src.reports.charts import _fig_to_base64, create_radar_figure
 from src.reports.renderer import render_template
 
 
@@ -183,38 +183,9 @@ def _radar_chart(projects_scores: list[tuple[str, dict[str, float]]]) -> Optiona
     Returns:
         Base64-encoded PNG image data URL
     """
-    if not projects_scores:
+    fig = create_radar_figure(projects_scores, DIMENSIONS)
+    if fig is None:
         return None
-
-    # Use standard dimensions
-    categories = DIMENSIONS
-    num_vars = len(categories)
-
-    # Create angles for radar chart
-    angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
-    angles += angles[:1]  # Complete the circle
-
-    fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(projection='polar'))
-
-    colors = ['blue', 'red', 'green', 'orange', 'purple']
-    for idx, (proj_name, scores) in enumerate(projects_scores[:5]):  # Max 5 projects
-        values = [scores.get(cat, 0) for cat in categories]
-        values += values[:1]  # Complete the circle
-
-        ax.plot(angles, values, 'o-', linewidth=2, label=proj_name,
-                color=colors[idx % len(colors)])
-        ax.fill(angles, values, alpha=0.15, color=colors[idx % len(colors)])
-
-    ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(categories, size=10)
-    ax.set_ylim(0, 10)
-    ax.set_yticks([2, 4, 6, 8, 10])
-    ax.set_yticklabels(['2', '4', '6', '8', '10'], size=8)
-    ax.grid(True, linestyle='--', alpha=0.7)
-    ax.set_title('11-Dimension Competitive Analysis', size=14, fontweight='bold', pad=20)
-    ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1), fontsize=10)
-
-    plt.tight_layout()
     return _fig_to_base64(fig)
 
 
@@ -259,22 +230,16 @@ def _score_comparison_chart(projects_scores: list[tuple[str, dict[str, float]]])
     return _fig_to_base64(fig)
 
 
-def render_competitor_benchmark(
+def _build_competitor_data(
     session: Session,
     project_names: list[str],
     year: int = 2024,
     half: str = "H1",
-) -> Optional[str]:
-    """Generate an 11-dimension competitor benchmarking report.
+) -> Optional[dict]:
+    """Assemble all data needed for a competitor benchmark report.
 
-    Args:
-        session: Database session
-        project_names: List of 2-5 project names to compare
-        year: Year for analysis
-        half: Half for analysis (H1 or H2)
-
-    Returns:
-        Rendered markdown report string, or None if projects not found
+    Shared by both the Markdown renderer and the PPTX generator.
+    Returns context dict, or None if fewer than 2 projects found.
     """
     if len(project_names) < 2:
         return None
@@ -342,20 +307,44 @@ def render_competitor_benchmark(
     overall_winner = max(projects_data, key=lambda x: x["total_score"])
     best_value = max(projects_data, key=lambda x: x["value_index"])
 
-    # Generate charts
-    chart_radar = _radar_chart(projects_scores)
-    chart_total = _score_comparison_chart(projects_scores)
-
-    context = {
+    return {
         "generated_date": date.today().isoformat(),
         "period": f"{year}-{half}",
+        "year": year,
+        "half": half,
         "projects": projects_data,
+        "projects_scores": projects_scores,
         "dimensions": DIMENSIONS,
         "dimension_winners": dimension_winners,
         "overall_winner": overall_winner["name"],
         "best_value": best_value["name"],
-        "chart_radar": chart_radar,
-        "chart_total": chart_total,
     }
 
+
+def render_competitor_benchmark(
+    session: Session,
+    project_names: list[str],
+    year: int = 2024,
+    half: str = "H1",
+) -> Optional[str]:
+    """Generate an 11-dimension competitor benchmarking report.
+
+    Args:
+        session: Database session
+        project_names: List of 2-5 project names to compare
+        year: Year for analysis
+        half: Half for analysis (H1 or H2)
+
+    Returns:
+        Rendered markdown report string, or None if projects not found
+    """
+    data = _build_competitor_data(session, project_names, year, half)
+    if data is None:
+        return None
+
+    # Generate charts for markdown output
+    chart_radar = _radar_chart(data["projects_scores"])
+    chart_total = _score_comparison_chart(data["projects_scores"])
+
+    context = {**data, "chart_radar": chart_radar, "chart_total": chart_total}
     return render_template("competitor_benchmark.md.j2", **context)

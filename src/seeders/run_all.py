@@ -23,6 +23,14 @@ from src.seeders.sales_status_seeder import SalesStatusSeeder
 from src.seeders.market_segment_seeder import MarketSegmentSeeder
 from src.seeders.district_metric_seeder import DistrictMetricSeeder
 from src.seeders.competitor_seeder import CompetitorSeeder
+from src.seeders.macro_indicator_seeder import MacroIndicatorSeeder
+from src.seeders.office_project_seeder import OfficeProjectSeeder
+from src.seeders.office_leasing_seeder import OfficeLeasingSeeder
+from src.seeders.office_market_summary_seeder import OfficeMarketSummarySeeder
+from src.seeders.hotel_project_seeder import HotelProjectSeeder
+from src.seeders.hotel_room_type_seeder import HotelRoomTypeSeeder
+from src.seeders.hotel_performance_seeder import HotelPerformanceSeeder
+from src.seeders.land_site_seeder import LandSiteSeeder
 
 
 SEEDERS = [
@@ -44,6 +52,16 @@ SEEDERS = [
     ("Market Segments", MarketSegmentSeeder),
     ("District Metrics", DistrictMetricSeeder),
     ("Competitors", CompetitorSeeder),
+    ("Macro Indicators", MacroIndicatorSeeder),
+    # Office & Hotel market (17-22)
+    ("Office Projects", OfficeProjectSeeder),
+    ("Office Leasing Records", OfficeLeasingSeeder),
+    ("Office Market Summaries", OfficeMarketSummarySeeder),
+    ("Hotel Projects", HotelProjectSeeder),
+    ("Hotel Room Types", HotelRoomTypeSeeder),
+    ("Hotel Performance Records", HotelPerformanceSeeder),
+    # Land site analysis (23-23) — Parts B-E
+    ("Land Sites & Children", LandSiteSeeder),
 ]
 
 

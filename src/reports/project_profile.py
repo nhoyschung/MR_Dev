@@ -54,13 +54,14 @@ def _build_price_history(session: Session, project: Project) -> list[dict]:
     return history
 
 
-def render_project_profile(
+def _assemble_profile_context(
     session: Session,
     project_name: str,
-) -> Optional[str]:
-    """Render a project profile report.
+) -> Optional[dict]:
+    """Assemble all data needed for a project profile report.
 
-    Returns rendered markdown string, or None if project not found.
+    Shared by both the Markdown renderer and the PPTX generator.
+    Returns context dict, or None if project not found.
     """
     project = _find_project(session, project_name)
     if not project:
@@ -165,7 +166,7 @@ def render_project_profile(
 
     price_history = _build_price_history(session, project)
 
-    context = {
+    return {
         "generated_date": date.today().isoformat(),
         "project": project_ctx,
         "price_history": price_history if len(price_history) > 1 else [],
@@ -176,4 +177,16 @@ def render_project_profile(
         "grade_peers": grade_peers,
     }
 
-    return render_template("project_profile.md.j2", **context)
+
+def render_project_profile(
+    session: Session,
+    project_name: str,
+) -> Optional[str]:
+    """Render a project profile report.
+
+    Returns rendered markdown string, or None if project not found.
+    """
+    ctx = _assemble_profile_context(session, project_name)
+    if ctx is None:
+        return None
+    return render_template("project_profile.md.j2", **ctx)

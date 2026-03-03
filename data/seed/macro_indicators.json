@@ -1,0 +1,290 @@
+[
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "gdp_growth_pct",
+    "value": 6.42,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "GDP growth Jan-Jun 2022 vs same period 2021"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "cpi_pct",
+    "value": 2.44,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "Average CPI H1 2022 vs H1 2021"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 10.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Average housing mortgage lending rate mid-2022"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "policy_rate_pct",
+    "value": 4.0,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "SBV refinancing rate H1 2022"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "fdi_usd_billion",
+    "value": 8.57,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Realized FDI H1 2022"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H1",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 23000,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Average USD/VND rate H1 2022"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "gdp_growth_pct",
+    "value": 8.02,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "Full year 2022 GDP growth; H2 growth estimated at ~9.7% QoQ"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "cpi_pct",
+    "value": 3.28,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "CPI H2 2022, energy and food-driven"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 11.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Rates rose sharply after SBV rate hike Oct 2022"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "policy_rate_pct",
+    "value": 6.0,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "SBV raised refinancing rate to 6.0% in Oct 2022 (+200bps)"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "fdi_usd_billion",
+    "value": 8.94,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Realized FDI H2 2022; full year total $17.51B"
+  },
+  {
+    "period_year": 2022,
+    "period_half": "H2",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 24200,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "VND depreciated ~4% in H2 2022 vs USD"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "gdp_growth_pct",
+    "value": 3.72,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "GDP growth H1 2023 — slowdown due to weak exports and tighter credit"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "cpi_pct",
+    "value": 3.29,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "Average CPI H1 2023; food and housing costs remained elevated"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 10.0,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "SBV cut rates twice in H1 2023; mortgage rates started declining"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "policy_rate_pct",
+    "value": 4.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "SBV cut refinancing rate from 6.0% to 4.5% across H1 2023 (3 cuts)"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "fdi_usd_billion",
+    "value": 9.27,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Realized FDI H1 2023; electronics and manufacturing led"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H1",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 23500,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "VND stabilized H1 2023; SBV intervened to maintain band"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "gdp_growth_pct",
+    "value": 6.24,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "H2 2023 recovery; export recovery and domestic demand rebound"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "cpi_pct",
+    "value": 2.63,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "CPI moderated in H2 2023; energy prices fell"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 8.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Commercial banks lowered mortgage rates to stimulate real estate recovery"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "policy_rate_pct",
+    "value": 4.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Policy rate held at 4.5% through H2 2023"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "fdi_usd_billion",
+    "value": 12.35,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Strong H2 FDI; full year 2023 total ~$23.18B (+3.5% YoY)"
+  },
+  {
+    "period_year": 2023,
+    "period_half": "H2",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 24100,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "VND weakened slightly in H2 2023; year-end rate ~24,260"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "gdp_growth_pct",
+    "value": 6.93,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "GDP growth H1 2024; manufacturing, FDI, and exports drove recovery"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "cpi_pct",
+    "value": 4.08,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "CPI rose in H1 2024; housing, food, and healthcare costs increased"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 9.0,
+    "source": "State Bank of Vietnam (SBV) / Commercial Bank Survey",
+    "notes": "Average housing loan rate H1 2024; some banks offer 7-8% promotional rates"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "policy_rate_pct",
+    "value": 4.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "SBV held policy rate at 4.5% through H1 2024"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "fdi_usd_billion",
+    "value": 9.54,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Realized FDI H1 2024 (+8.2% YoY); Samsung, Intel expansions"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H1",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 25300,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "VND depreciated ~4.5% in H1 2024 vs USD; SBV sold reserves to defend"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "gdp_growth_pct",
+    "value": 7.55,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "Full year 2024 GDP growth 7.09%; H2 estimated ~7.55%"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "cpi_pct",
+    "value": 3.63,
+    "source": "General Statistics Office (GSO) Vietnam",
+    "notes": "CPI moderated in H2 2024; full year average 3.63%"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "mortgage_rate_pct",
+    "value": 9.5,
+    "source": "State Bank of Vietnam (SBV) / Commercial Bank Survey",
+    "notes": "Mortgage rates edged up slightly in H2 2024 as demand recovered"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "policy_rate_pct",
+    "value": 4.5,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "Policy rate unchanged at 4.5% through end of 2024"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "fdi_usd_billion",
+    "value": 11.97,
+    "source": "Ministry of Planning and Investment (MPI)",
+    "notes": "Realized FDI H2 2024; full year 2024 total ~$25.35B (++9.4% YoY)"
+  },
+  {
+    "period_year": 2024,
+    "period_half": "H2",
+    "indicator_type": "exchange_rate_vnd",
+    "value": 25450,
+    "source": "State Bank of Vietnam (SBV)",
+    "notes": "VND relatively stable H2 2024; year-end rate ~25,400 VND/USD"
+  }
+]

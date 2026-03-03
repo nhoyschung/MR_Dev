@@ -48,12 +48,14 @@ class TestCitySeeder:
         count = CitySeeder(db_session, SEED_DIR).seed()
         assert count > 0
         cities = db_session.query(City).all()
-        assert len(cities) == 6
+        assert len(cities) == 8
         names = {c.name_en for c in cities}
         assert "Ho Chi Minh City" in names
         assert "Hanoi" in names
         assert "Binh Duong" in names
         assert "Ba Ria - Vung Tau" in names
+        assert "Hai Phong" in names
+        assert "Bac Ninh" in names
 
     def test_seed_districts(self, db_session):
         CitySeeder(db_session, SEED_DIR).seed()
@@ -130,8 +132,8 @@ class TestFullPipeline:
     def test_full_seed(self, seeded_session):
         """Run the full pipeline and verify counts."""
         session = seeded_session
-        assert session.query(City).count() == 6
-        assert session.query(District).count() >= 42
+        assert session.query(City).count() == 8
+        assert session.query(District).count() >= 55
         assert session.query(Developer).count() >= 15
         assert session.query(Project).count() >= 80  # 64 original + 20 new
         assert session.query(PriceRecord).count() >= 80  # Multi-period data

@@ -1,0 +1,60 @@
+[
+  {
+    "project_name": "Vinhomes Golden City",
+    "developer_name": "Vinhomes",
+    "city_text": "Hai Phong",
+    "district_text": "Duong Kinh",
+    "land_area_ha": 240.57,
+    "bcr_pct": 27,
+    "total_units": 4800,
+    "positioning_concept": "City of Ecological Parks — 40+ ha green space",
+    "phases": [
+      {"phase_code": "P1", "phase_name": "Starlight Park", "area_ha": 53.4,
+       "total_units": 1206, "launch_date": "2025-Q2", "handover_date": "2026-Q3",
+       "sold_pct": 94, "sold_units": 629, "absorption_days": 60,
+       "unit_types": [
+         {"product_type": "TH", "unit_count": 641, "land_size_min_m2": 63, "land_size_max_m2": 170, "gfa_m2": 193, "avg_price_usd_m2": 3352},
+         {"product_type": "SH", "unit_count": 537, "land_size_min_m2": 75, "land_size_max_m2": 108, "gfa_m2": 257, "avg_price_usd_m2": 3837},
+         {"product_type": "Villa", "unit_count": 28, "land_size_min_m2": 240, "land_size_max_m2": 306, "gfa_m2": 468, "avg_price_usd_m2": 4791}
+       ]},
+      {"phase_code": "P2", "phase_name": "Horizon Park", "area_ha": 48.3,
+       "total_units": 1288, "launch_date": "2025-Q3", "handover_date": "2027",
+       "sold_pct": 100, "sales_status": "sold_out",
+       "unit_types": [
+         {"product_type": "TH", "unit_count": 966, "land_size_min_m2": 57.5, "land_size_max_m2": 120, "avg_price_usd_m2": 3684},
+         {"product_type": "Semi-villa", "unit_count": 186, "land_size_min_m2": 170, "land_size_max_m2": 260, "gfa_m2": 332},
+         {"product_type": "Single Villa", "unit_count": 136, "land_size_min_m2": 256, "land_size_max_m2": 327, "gfa_m2": 474}
+       ]},
+      {"phase_code": "P3", "phase_name": "Sunny Park", "area_ha": 45.5,
+       "total_units": 1173, "launch_date": "2025-Q4",
+       "sales_status": "on_booking", "avg_price_usd_m2": 4000},
+      {"phase_code": "P4", "phase_name": "Aurora Park", "area_ha": 28,
+       "total_units": 997, "sales_status": "planning"},
+      {"phase_code": "P5", "phase_name": "Luna Park", "area_ha": 24.6,
+       "total_units": 810, "sales_status": "planning"}
+    ]
+  },
+  {
+    "project_name": "Vinhomes Green City",
+    "developer_name": "Vinhomes",
+    "city_text": "Long An",
+    "district_text": "Duc Hoa",
+    "land_area_ha": 197.2,
+    "bcr_pct": 25,
+    "total_units": 4572,
+    "avg_price_usd_m2": 2662,
+    "positioning_concept": "Commercial City — Prosperous Ecology"
+  },
+  {
+    "project_name": "Eco Village Saigon River",
+    "developer_name": "EcoPark",
+    "city_text": "Dong Nai",
+    "district_text": "Nhon Trach",
+    "land_area_ha": 55.52,
+    "bcr_pct": 15,
+    "total_units": 666,
+    "avg_price_usd_m2": 5500,
+    "positioning_concept": "First Blue Zone & 6-star Resort Residence in Vietnam",
+    "management_company": "Intercontinental Hotel Group"
+  }
+]

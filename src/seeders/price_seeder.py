@@ -53,6 +53,7 @@ class PriceSeeder(BaseSeeder):
                     "price_change_pct": validated.price_change_pct,
                     "price_incl_vat": validated.price_incl_vat,
                     "source_report": validated.source_report,
+                    "data_source": "nho_pdf",
                 },
             )
             if created:

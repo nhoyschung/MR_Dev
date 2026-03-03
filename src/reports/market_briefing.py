@@ -12,7 +12,7 @@ from src.db.models import (
 )
 from src.db.queries import (
     get_city_by_name, get_period, list_projects_by_city,
-    avg_price_by_district,
+    avg_price_by_district, get_latest_price,
 )
 from src.reports.renderer import render_template
 
@@ -145,15 +145,39 @@ def _supply_pipeline(
     return sorted(status_map.values(), key=lambda x: x["count"], reverse=True)
 
 
-def render_market_briefing(
+def _project_detail_list(session: Session, projects: list) -> list[dict]:
+    """Return all city projects with their latest available price from any period.
+
+    This gives a complete picture even when the current period has sparse price data.
+    """
+    result = []
+    for p in projects:
+        latest = get_latest_price(session, p.id)
+        price_usd = latest.price_usd_per_m2 if latest and latest.price_usd_per_m2 else 0
+        price_vnd = latest.price_vnd_per_m2 if latest and latest.price_vnd_per_m2 else 0
+        result.append({
+            "name": p.name,
+            "grade": p.grade_primary or "N/A",
+            "status": p.status or "unknown",
+            "total_units": p.total_units or 0,
+            "price_usd": price_usd,
+            "price_vnd": price_vnd,
+            "district": p.district.name_en if p.district else "N/A",
+            "developer": p.developer.name_en if p.developer else "N/A",
+        })
+    return result
+
+
+def _assemble_briefing_context(
     session: Session,
     city_name: str,
     year: int,
     half: str,
-) -> Optional[str]:
-    """Render a full market briefing for a city/period.
+) -> Optional[dict]:
+    """Assemble all data needed for a market briefing report.
 
-    Returns rendered markdown string, or None if city/period not found.
+    Shared by both the Markdown renderer and the PPTX generator.
+    Returns context dict, or None if city/period not found.
     """
     city = get_city_by_name(session, city_name)
     if not city:
@@ -207,16 +231,25 @@ def render_market_briefing(
         sum(absorption_rows) / len(absorption_rows) if absorption_rows else 0
     )
 
-    context = {
+    # Project details with latest available price (any period) — richer than period-locked
+    project_details = _project_detail_list(session, projects)
+    priced = [p for p in project_details if p["price_usd"] > 0]
+    avg_price_latest = sum(p["price_usd"] for p in priced) / len(priced) if priced else avg_price
+
+    return {
         "city_name": city.name_en,
         "period": f"{year}-{half}",
+        "year": year,
+        "half": half,
         "generated_date": date.today().isoformat(),
         "project_count": len(projects),
         "active_selling": active_selling,
         "under_construction": under_construction,
         "avg_price_usd": avg_price,
+        "avg_price_latest": avg_price_latest,  # latest price across any period
         "avg_absorption": avg_absorption,
         "grades": _grade_distribution(session, city.id, period.id, projects),
+        "project_details": project_details,  # all projects with latest price
         "top_districts_by_price": _top_districts_by_price(
             session, city.id, year, half
         ),
@@ -226,12 +259,26 @@ def render_market_briefing(
         "price_changes": [],  # Requires multi-period data
         "supply_pipeline": _supply_pipeline(session, projects),
         "takeaways": _generate_takeaways(
-            city.name_en, len(projects), avg_price, avg_absorption,
+            city.name_en, len(projects), avg_price_latest, avg_absorption,
             active_selling,
         ),
     }
 
-    return render_template("market_briefing.md.j2", **context)
+
+def render_market_briefing(
+    session: Session,
+    city_name: str,
+    year: int,
+    half: str,
+) -> Optional[str]:
+    """Render a full market briefing for a city/period.
+
+    Returns rendered markdown string, or None if city/period not found.
+    """
+    ctx = _assemble_briefing_context(session, city_name, year, half)
+    if ctx is None:
+        return None
+    return render_template("market_briefing.md.j2", **ctx)
 
 
 def _generate_takeaways(

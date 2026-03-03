@@ -40,6 +40,30 @@ def ensure_schema_compatibility() -> None:
             if removed:
                 print(f"Schema cleanup: removed {removed} legacy supply rows")
 
+    # Added in Sprint 9: bds_slug and bds_url columns on projects.
+    if "projects" in inspector.get_table_names():
+        cols = {c["name"] for c in inspector.get_columns("projects")}
+        for col_name, col_type in [("bds_slug", "VARCHAR(200)"), ("bds_url", "VARCHAR(500)")]:
+            if col_name not in cols:
+                with engine.begin() as conn:
+                    conn.execute(text(f"ALTER TABLE projects ADD COLUMN {col_name} {col_type}"))
+                print(f"Schema upgraded: added projects.{col_name}")
+
+    # Added in Sprint 10: macro_indicators table (new table — created by create_all for fresh DBs).
+    # Existing DB files: no ALTER needed; create_all handles new tables idempotently.
+
+    # Added in Sprint 10: reconcile_status and reconcile_detail on scraped_listings.
+    if "scraped_listings" in inspector.get_table_names():
+        cols = {c["name"] for c in inspector.get_columns("scraped_listings")}
+        for col_name, col_type in [
+            ("reconcile_status", "VARCHAR(30)"),
+            ("reconcile_detail", "TEXT"),
+        ]:
+            if col_name not in cols:
+                with engine.begin() as conn:
+                    conn.execute(text(f"ALTER TABLE scraped_listings ADD COLUMN {col_name} {col_type}"))
+                print(f"Schema upgraded: added scraped_listings.{col_name}")
+
 
 def init_database() -> None:
     """Create all tables defined in models.py."""
